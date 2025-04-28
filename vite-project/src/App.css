@@ -1,42 +1,246 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header
+{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+}
+.header .navbar-brand img{
+    height: 55px;
+    width: 100%;
+}
+.header form{
+    width: 40%;
+}
+.header form input{
+    height: 40px;
+   width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    z-index: 1;
+    background-color: rgb(241, 241, 241);
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.header form i{
+    position: absolute;
+    left: 45%;
+    top:35%;
+    z-index: 2;
+    color:  rgb(114, 112, 112);
+    font-size: 20px;
+  
   }
-  to {
-    transform: rotate(360deg);
-  }
+ .main-icon{
+    font-size: 25px;
+}
+ .main-icon a p{
+    font-size: 11px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+ .list1 .list a{
+    color: black;
+}
+.list2 .list a{
+    color: black;
+}
+.list3 .list a{
+    color: black;
+}
+.list4 .list a{
+    color: black;
+}
+.list5 .list a{
+    color: black;
 }
 
-.card {
-  padding: 2em;
+
+
+.header ul .list1{
+    position: relative;
 }
 
-.read-the-docs {
-  color: #888;
+ .list1 .list{
+    display: none;
+}
+.list1:hover .list{
+    display: flex;
+    margin-top: 50%;
+    background-color:white;
+    width: 1750%;
+    height: 450px;
+} 
+.list1 .list{
+    position: absolute;
+    top: 46%;
+    left: -50%;
+}
+
+
+
+.header ul .list2{
+    position: relative;
+}
+
+ .list2 .list{
+    display: none;
+}
+.list2:hover .list{
+    display: block;
+    margin-top: 50%;
+    background-color:white;
+    width: 1305%;
+    height: 450px;
+   
+   
+   
+    
+    
+} 
+.list2 .list{
+    position: absolute;
+    top: 20%;
+    right:-1100%;
+}
+
+
+
+.header ul .list3{
+    position: relative;
+}
+
+ .list3 .list{
+    display: none;
+}
+.list3:hover .list{
+    display: block;
+    margin-top: 50%;
+background-color: white;
+    width: 1880%;
+    height: 450px;
+   
+    
+    
+} 
+.list3 .list{
+    position: absolute;
+    top: 55%;
+    left: -290%;
+}
+
+
+
+.header ul .list4{
+    position: relative;
+}
+
+ .list4 .list{
+    display: none;
+}
+.list4:hover .list{
+    display: block;
+    margin-top: 100%;
+ background-color: white;
+    width: 1800%;
+    height: 450px;
+    
+    
+    
+} 
+.list4 .list{
+    position: absolute;
+    top: -50%;
+    left: -170%;
+}
+
+
+.header ul .list5{
+    position: relative;
+}
+
+ .list5 .list{
+    display: none;
+}
+.list5:hover .list{
+    display: block;
+    margin-top: 50%;
+    width: 1365%;
+    height: 450px;
+   background-color: white;
+    
+    
+} 
+.list5 .list{
+    position: absolute;
+    top: 23%;
+    left: -460%;
+}
+
+
+
+  .fs-6 a{
+    font-size: 10px;
+    height: 25px;
+}
+
+
+
+.header ul li::after{
+    content: '';
+    border: 2px solid black;
+    display: none;
+    width: 90%;
+    margin: auto;
+   
+}
+
+.list1:hover::after{
+    display: block;
+    
+    border-color: rgb(228, 10, 82);
+    position:absolute;
+    top:120%;
+}
+
+.list2:hover::after{
+    display: block;
+    position:absolute;
+    top:120%;
+    border-color:rgb(211, 62, 154);
+    left: 10%;
+}
+
+.list3:hover::after{
+    display: block;
+    position:absolute;
+    top:120%;
+    border-color: rgb(239, 108, 7);
+    left: 10%;
+}
+
+.list4:hover::after{
+    display: block;
+    position:absolute;
+    top:120%;
+    border-color: orange;
+    left: 10%;
+}
+
+.list5:hover::after{
+    display: block;
+    position:absolute;
+    top:120%;
+    border-color:rgb(29, 180, 200);
+    left: 10%;
 }
