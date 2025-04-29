@@ -314,15 +314,36 @@ background-color: white;
    
 /* myntra */
 .carousel-indicators [data-bs-target] {
-    width: 5px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #333; /* or your preferred color */
-    margin: 0 5px;
-    border: none;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background-color: #333 !important;
+    border: none !important;
+    margin: 0 9px;
   }
-  
+
   .carousel-indicators .active {
-    background-color: #000; /* color for active dot */
+    background-color: #000 !important;
   }
-  
+
+  /* swiper */
+  swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
