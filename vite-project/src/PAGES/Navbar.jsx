@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 
 
@@ -1411,27 +1413,27 @@ const Navbar = () => (
 
 
                             <form className="d-flex">
-                                <i className="ri-search-line"></i>
+                            <i className="bi bi-search  mx-2 mb-5" ></i>
                                 <input
-                                    type="text"
-                                    placeholder="Search for products,brands and more "
-                                    style={{ paddingLeft: '10%' }}
+                                    type="text" 
+                                    placeholder= "Search for products,brands and more "
+                                    style={{ paddingLeft: '8%' }}
                                     className="w-100"
                                 />
                             </form>
                             <div className="main-icon d-flex">
                                 <a href="#" className="nav-link text-dark mt-2">
-                                    <i className="ri-user-line"></i>
+                                <i className="bi bi-person-add"></i>
                                     <p>User</p>
                                 </a>
 
-                                <a href="#" className="nav-link text-dark text-center mt-2">
-                                    <i className="ri-heart-line"></i>
+                                <a href="#" className="nav-link text-dark text-center mt-2  ms-4">
+                                <i className="bi bi-heart"></i>
                                     <p>Wishlist</p>
                                 </a>
 
-                                <a href="#" className="nav-link text-dark mt-2">
-                                    <i className="ri-shopping-bag-line"></i>
+                                <a href="#" className="nav-link text-dark mt-2  ms-4">
+                                <i className="bi bi-bag-check"></i>
                                     <p>Bag</p>
                                 </a>
                             </div>
