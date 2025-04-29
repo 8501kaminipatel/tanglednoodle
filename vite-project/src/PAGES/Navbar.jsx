@@ -33,11 +33,11 @@ const Navbar = () => (
                                     <Link to="/men" className="nav-link text-dark">MEN</Link>
                                     <ul className="list">
                                         <div className="main-box d-flex">
-                                            <div className="col-2">
+                                            <div className="col-2 ">
                                                 <li className="nav-item list-unstyled">
                                                     <a href=""
                                                         className="nav-link"
-                                                        style={{color:" rgb(228, 10, 82)"}}>Topwear</a>
+                                                        style={{ color: " rgb(228, 10, 82)" }}>Topwear</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
@@ -267,7 +267,7 @@ const Navbar = () => (
                                                 <a
                                                     href=""
                                                     className="nav-link"
-                                                style={{color:" rgb(228, 10, 82)"}}
+                                                    style={{ color: " rgb(228, 10, 82)" }}
                                                 >Gadgets</a>
                                             </li>
                                             <li className="nav-item list-unstyled fs-6">
@@ -1069,7 +1069,7 @@ const Navbar = () => (
                                     </ul>
                                 </li>
 
-                                <li className="nav-item list5">
+                                <li className="nav-item list4">
                                     <Link to="/beauty" className="nav-link text-dark">BEAUTY</Link>
                                     <ul className="list">
                                         <div className="main-box d-flex">
@@ -1173,8 +1173,8 @@ const Navbar = () => (
                                     </ul>
                                 </li>
 
-                            
-                                <li className="nav-item list5">
+
+                                <li className="nav-item list4">
                                     <Link to="/genz" className="nav-link text-dark">GENZ</Link>
                                     <ul className="list">
                                         <div className="main-box d-flex">
@@ -1291,149 +1291,62 @@ const Navbar = () => (
                                         </div>
                                     </ul>
                                 </li>
-                            
+
                                 <li className="nav-item list5">
                                     <Link to="/studio" className="nav-link text-dark">STUDIO</Link>
                                     <ul className="list">
-                                        <div className="main-box d-flex">
-                                            <div className="col-2">
+                                        <div className="main-box d-flex justify-content-center">
+                                            <div
+                                                className="image-box d-flex flex-column align-items-center justify-content-center"
+                                                style={{ width: "500px", height: "500px" }}
+                                            >
+                                                <li className="nav-item list-unstyled mb-3">
+                                                    <img
+                                                        src="/public/IMAGES/Studio-logo-new.svg"
+                                                        style={{ width: "100px", height: "auto" }}
+                                                        alt="Studio Logo"
+                                                    />
+                                                    
+                                                </li>
+                                                <div style={{fontSize:"20px",fontWeight:"normal"}}>Your daily inspiration for everything fashion</div>
+                                                
                                                 <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Makeup</a>
+                                                    <img
+                                                        src="/public/IMAGES/Sudio-nav-banner.png"
+                                                        style={{ width: "500px", height: "300px",paddingTop:"20px" }}
+                                                        alt="Studio Banner"
+                                                    />
                                                 </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Lipstick</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Lip gloss</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Lip liner</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Mascara</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Eyeliner</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Kajal</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Eyeshadow</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Foundation</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Primer</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Concealer</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Compact</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Nail polish</a></li>
-                                            </div>
-
-                                            <div className="col-2" style={{ backgroundColor: "rgb(248, 248, 248)" }}>
-                                                <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Skincare,bath & body</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Face moisturiser</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Cleanser</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Masks & peel</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Sunscreen</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Serum</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Face wash</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Eye cream</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Lip balm</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Body wash</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Body srub</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hand cream</a></li>
-                                                <hr className="w-75" />
-                                                <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Baby care</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Masks</a>
-                                                </li>
-                                            </div>
-
-                                            <div className="col-2">
-                                                <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Haircare</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Shampoo</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Conditioner</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair cream</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair oil</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair gel</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair color</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair serum</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair accessory</a></li>
-                                                <hr className="w-75" />
-                                                <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Fragrances</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Perfume</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Deodorant</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Body mist</a></li>
-                                            </div>
-
-                                            <div className="col-2" style={{ backgroundColor: "rgb(248, 248, 248)" }}>
-                                                <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Appliances</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair straightener</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair dryer</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Epilator</a></li>
-                                                <hr className="w-75" />
-                                                <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Men's grooming</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Trimmers</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Hair wax</a></li>
-                                                <hr className="w-75" />
-                                                <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Beauty gifts & makeup</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Beauty gift</a></li>
-                                                <hr className="w-75" />
-                                                <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Premium beauty set</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Wellness & hygiene</a>
-                                                </li>
-                                            </div>
-
-                                            <div className="col-2">
-                                                <li className="nav-item list-unstyled">
-                                                    <a href="" className="nav-link" style={{ color: "rgb(29, 180, 200)" }}>Top brands</a>
-                                                </li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Lakme</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Maybelline</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Loreal</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Philips</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Bath & body shop</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">The body shop</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Biotique</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Mamaearth</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Mcaffeine</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Nivea</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Lotus herbals</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Loreal professionnel</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Kama ayurveda</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Mac</a></li>
-                                                <li className="nav-item list-unstyled fs-6"><a href="" className="nav-link">Forest essentials</a></li>
                                             </div>
                                         </div>
                                     </ul>
                                 </li>
+
                             </ul>
 
 
                             <form className="d-flex">
-                            <i className="bi bi-search  mx-2 mb-5" ></i>
+                                <i className="bi bi-search  mx-2 mb-5" ></i>
                                 <input
-                                    type="text" 
-                                    placeholder= "Search for products,brands and more "
+                                    type="text"
+                                    placeholder="Search for products,brands and more "
                                     style={{ paddingLeft: '8%' }}
                                     className="w-100"
                                 />
                             </form>
                             <div className="main-icon d-flex">
                                 <a href="#" className="nav-link text-dark mt-2">
-                                <i className="bi bi-person-add"></i>
+                                    <i className="bi bi-person-add"></i>
                                     <p>User</p>
                                 </a>
 
                                 <a href="#" className="nav-link text-dark text-center mt-2  ms-4">
-                                <i className="bi bi-heart"></i>
+                                    <i className="bi bi-heart"></i>
                                     <p>Wishlist</p>
                                 </a>
 
                                 <a href="#" className="nav-link text-dark mt-2  ms-4">
-                                <i className="bi bi-bag-check"></i>
+                                    <i className="bi bi-bag-check"></i>
                                     <p>Bag</p>
                                 </a>
                             </div>

@@ -78,13 +78,13 @@
     display: flex;
     margin-top: 50%;
     background-color:white;
-    width: 1750%;
-    height: 450px;
+    width: 1800%;
+    height: 500px;
 } 
 .list1 .list{
     position: absolute;
     top: 46%;
-    left: -50%;
+
 }
 
 
@@ -172,19 +172,20 @@ background-color: white;
  .list5 .list{
     display: none;
 }
+
 .list5:hover .list{
     display: block;
-    margin-top: 50%;
-    width: 1365%;
-    height: 450px;
+    margin-top: 40%;
+    width: 520px;
+    height: 480px;
    background-color: white;
-    
+    padding-right: 30px;
     
 } 
 .list5 .list{
     position: absolute;
     top: 23%;
-    left: -460%;
+    left: -300%;
 }
 
 
@@ -207,7 +208,6 @@ background-color: white;
 
 .list1:hover::after{
     display: block;
-    
     border-color: rgb(228, 10, 82);
     position:absolute;
     top:120%;
@@ -244,6 +244,7 @@ background-color: white;
     border-color:rgb(29, 180, 200);
     left: 10%;
 }
+
 
 
 
@@ -311,3 +312,17 @@ background-color: white;
     margin-top: 10px;
    }
    
+/* myntra */
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #333; /* or your preferred color */
+    margin: 0 5px;
+    border: none;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #000; /* color for active dot */
+  }
+  
