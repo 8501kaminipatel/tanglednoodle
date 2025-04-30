@@ -342,11 +342,14 @@ const Myntra = () => {
             <img src="/IMAGES/img47.webp" className="d-block w-100" />
           </div>
           <div className="col-6 col-md-3">
-            <img src="/IMAGES/48.webp" className="d-block w-100" />
+            <img src="/IMAGES/img48.webp" className="d-block w-100" />
           </div>
 
         </div>
       </div>
+
+      
+
 
     </>
 

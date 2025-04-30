@@ -52,10 +52,10 @@ const Footer = () => {
             <h6 style={{ margin: "10px 0px" }}>EXPERIENCE MYNTRA APP ON MOBILE</h6>
             <ul style={{ display: "flex", padding: 0, color: "rgb(129, 129, 129)" }}>
               <li>
-                <a href="#"><img src="image/image.png" alt="App Store" style={{ height: "45px", width: "90%" }} /></a>
+                <a href="#"><img src="/IMAGES/FOOTER1.png" alt="App Store" style={{ height: "45px", width: "90%" }} /></a>
               </li>
               <li>
-                <a href="#"><img src="image/image1.png" alt="Play Store" style={{ height: "45px", width: "90%" }} /></a>
+                <a href="#"><img src="/IMAGES/FOOTER2.png" alt="Play Store" style={{ height: "45px", width: "90%" }} /></a>
               </li>
             </ul>
 

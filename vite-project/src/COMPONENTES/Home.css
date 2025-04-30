@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.banner1{
+    height: 400px;
+    width: 60%;
+    margin-top: 7%;
+   
+
+}
+.banner1 img{
+    height: 400px;
+    width: 100%;
+    padding-left: 3%;
+
+ 
+    
+}
+.gallary{
+    height:1500px;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 4%;
+}
+.gallary .container .row{
+width: 81%;
+margin-left: -4.4%;
+}
+.gallary .container .row h2{
+    padding-left: 4%;
+   
+    
+}
+.gallary .gallary-box1{
+    height: 400px;
+    width: 50%;
+   margin-top: 3%;
+    overflow: hidden;
+   
+   
+
+}
+.gallary .gallary-box1 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box1 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+
+} 
+.gallary .gallary-box2{
+    height: 400px;
+    width: 50%;
+   
+   
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box2 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box2 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+   
+
+} 
+
+
+.gallary .gallary-box3{
+    height: 400px;
+    width: 50%;   
+    margin-top: 8%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box3 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box3 img:hover{
+    transform: scale(1.5);
+     transition: 2.5s;
+   
+} 
+
+.gallary .gallary-box4{
+    height: 400px;
+    width: 50%;
+   margin-top: 8%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box4 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box4 img:hover{
+    transform: scale(1.5);  
+    transition: 2.5s;
+   
+   
+
+} 
+
+
+.gallary .gallary-box5{
+    height: 400px;
+    width: 50%;
+   margin-top: 8%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box5 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box5 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+
+ }
+ 
+.gallary .gallary-box4{
+    height: 400px;
+    width: 50%;
+   margin-top: 8%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box4 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box4 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+}  
+
+
+.gallary .gallary-box5{
+    height: 400px;
+    width: 50%;
+   margin-top: 8%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box5 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box5 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+   
+
+}
+
+.gallary .gallary-box6{
+    height: 400px;
+    width: 50%;
+   margin-top: 8%;
+    overflow: hidden;
+}
+
+.gallary .gallary-box6 img{
+    height: 400px;
+    width: 100%;
+}
+ .gallary-box6 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+   
+
+}  
+.gallary-box{
+    width: 19%;
+  padding-left: 3%;
+
+  margin-left: 2%;
+}
+
+.trending img{
+    height: 100%;
+    width: 100%;
+}
+.tranding-images .container-fluid .row{
+    width: 95%;
+    margin: auto;
+    margin-left: 2%;
+    /* background-color: aqua; */
+}
+
+.tranding-images .tranding-box1 {
+   
+    width: 33.3%;
+    height: 450px;
+    overflow: hidden;
+
+}
+.tranding-images .tranding-box1 img{
+    
+    width: 100%;
+    height: 450px;
+
+}
+.tranding-images .tranding-box1 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+   
+
+}
+.tranding-images .tranding-box2 {
+   
+    width: 33.3%;
+    height: 450px;
+    overflow: hidden;
+
+}
+.tranding-images .tranding-box2 img{
+    
+    width: 100%;
+    height: 450px;
+
+}
+.tranding-images .tranding-box2 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+   
+   
+
+}
+.tranding-images .tranding-box3 {
+   
+    width: 33.3%;
+    height: 450px;
+    overflow: hidden;
+
+}
+.tranding-images .tranding-box3 img{
+    
+    width: 100%;
+    height: 450px;
+
+}
+.tranding-images .tranding-box3 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+
+}
+
+.brands img{
+    width: 100%;
+    padding-left: 3%;
+}
+.brand-boxes .row{
+    width: 95%;
+    margin: auto;
+   
+}
+.brand-boxes .brand-box1{
+    height: 160px;
+    width: 20%;
+  
+    overflow: hidden;
+}
+.brand-box1 img{
+    height: 100%;
+    width: 100%;
+}
+.brand-box1 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+
+}
+.brand-boxes .brand-box2{
+    height: 160px;
+    width: 20%;
+   
+    overflow: hidden;
+}
+.brand-box2 img{
+    height: 100%;
+    width: 100%;
+}
+.brand-box2 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+
+}
+.brand-boxes .brand-box3{
+    height: 160px;
+    width: 20%;
+   
+    overflow: hidden;
+}
+.brand-box3 img{
+    height: 100%;
+    width: 100%;
+}
+.brand-box3 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+
+}
+.brand-boxes .brand-box4{
+    height: 160px;
+    width: 20%;
+  
+    overflow: hidden;
+}
+.brand-box4 img{
+    height: 100%;
+    width: 100%;
+}
+.brand-box4 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+
+}
+.brand-boxes .brand-box5{
+    height: 160px;
+    width: 20%;
+   
+    overflow: hidden;
+}
+.brand-box5 img{
+    height: 100%;
+    width: 100%;
+}
+.brand-box5 img:hover{
+    transform: scale(1.5);
+    transition: 2.5s;
+}
+

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Login from '../COMPONENTES/Login';
 
 
 
@@ -17,8 +18,9 @@ const Navbar = () => (
                         style={{ height: "80px", width: "100%" }}
                     >
                         <div className="navbar-brand">
-                            <Link to="/" className="nav-link text-dark"></Link>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ2aVKHUduja9219ut8P9CFqhpJMjIk5dqog&s" />
+                            <Link to="/" className="nav-link text-dark">
+                            <img src="/IMAGES/logo.png" st/>
+                            </Link>
 
                         </div>
 
@@ -1306,14 +1308,14 @@ const Navbar = () => (
                                                         style={{ width: "100px", height: "auto" }}
                                                         alt="Studio Logo"
                                                     />
-                                                    
+
                                                 </li>
-                                                <div style={{fontSize:"20px",fontWeight:"normal"}}>Your daily inspiration for everything fashion</div>
-                                                
+                                                <div style={{ fontSize: "20px", fontWeight: "normal" }}>Your daily inspiration for everything fashion</div>
+
                                                 <li className="nav-item list-unstyled">
                                                     <img
                                                         src="/public/IMAGES/Sudio-nav-banner.png"
-                                                        style={{ width: "500px", height: "300px",paddingTop:"20px" }}
+                                                        style={{ width: "500px", height: "300px", paddingTop: "20px" }}
                                                         alt="Studio Banner"
                                                     />
                                                 </li>
@@ -1326,7 +1328,9 @@ const Navbar = () => (
 
 
                             <form className="d-flex">
-                                <i className="bi bi-search  mx-2 mb-5" ></i>
+                                <i className="bi bi-search  mx-2 mb-5" >
+
+                                </i>
                                 <input
                                     type="text"
                                     placeholder="Search for products,brands and more "
@@ -1335,10 +1339,12 @@ const Navbar = () => (
                                 />
                             </form>
                             <div className="main-icon d-flex">
-                                <a href="#" className="nav-link text-dark mt-2">
-                                    <i className="bi bi-person-add"></i>
+                                <Link to="/login">
+                                    <i className="bi bi-person-add">
+
+                                    </i>
                                     <p>User</p>
-                                </a>
+                                </Link>
 
                                 <a href="#" className="nav-link text-dark text-center mt-2  ms-4">
                                     <i className="bi bi-heart"></i>

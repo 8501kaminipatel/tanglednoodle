@@ -1,0 +1,175 @@
+.image1
+  {
+    width: 100%;
+   margin-top: 100px;
+  }
+  .image1 img 
+  {
+    width: 100%;
+  }
+  .image1 .swiper-slide
+  {
+    height: 430px;
+    width: 100%;
+  }
+  .content 
+  {
+    height: 35px;
+    width: 100%;
+    margin-top: -30px;
+  }
+  .content h4 
+  {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+    
+  }
+  .image2 
+  {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .image2 .box
+  {
+    width: 11.11%;
+  }
+  .image2 .box img
+  {
+    width: 100%;
+  }
+  .image3
+  {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .image3 .box1
+  {
+    width: 9.09%;
+  }
+  .image3 .box1 img
+  {
+    width: 100%;
+  }
+  .image4
+  {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .image4 .box2
+  {
+    width: 20%;
+  }
+  .image4 .box2 img
+  {
+    width: 100%;
+  }
+  .image5
+  {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .image5 .box3
+  {
+    width: 20%;
+  }
+  .image5 .box3 img
+  {
+    width: 100%;
+  }
+  .image6
+  {
+    width: 100%;
+  }
+  .image6 .box4
+  {
+    width: 20%;
+  }
+  .image6 .box4 img
+  {
+    width: 100%;
+  }
+  .image7
+  {
+    width: 100%;
+  }
+  .image7 .box5
+  {
+    width: 50%;
+  }
+  .image7 .box5 img
+  {
+    width: 100%;
+  }
+  .image8
+  {
+    width: 100%;
+  }
+  .image8 .box6
+  {
+    width: 50%;
+    
+  }
+  .image8 .box6 img
+  {
+    width: 100%;
+  }
+  .image9
+  {
+    width: 100%;
+  }
+  .image9 .box7
+  {
+    width: 50%;
+    
+  }
+  .image9 .box7 img
+  {
+    width: 100%;
+  }
+  .image10
+  {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .image10 .box8
+  {
+    width: 50%;
+    
+  }
+  .image10 .box8 img
+  {
+    width: 100%;
+  }
+  .image11
+  {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .image11 .box9
+  {
+    width: 16.67%;
+    
+  }
+  .image11 .box9 img
+  {
+    width: 100%;
+  }
+  .image12
+  {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .image12 .box10
+  {
+    width: 20%;
+    
+  }
+  .image12 .box10 img
+  {
+    width: 100%;
+  }

@@ -8,6 +8,8 @@ import Home from '../COMPONENTES/Home'
 import Beauty from '../COMPONENTES/Beauty'
 import GENZ from '../COMPONENTES/GENZ'
 import Studio from '../COMPONENTES/Studio'
+import Login from '../COMPONENTES/Login'
+import ProductList from '../COMPONENTES/product'
 
 const Allroutes = () => {
   return (
@@ -20,6 +22,8 @@ const Allroutes = () => {
           <Route path="/beauty" element={<Beauty />} />
           <Route path="/genz" element={<GENZ />} />
           <Route path="/studio" element={<Studio />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/product" element={<ProductList />} />
      
       </Routes>
   )
