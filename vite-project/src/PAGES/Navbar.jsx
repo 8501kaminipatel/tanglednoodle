@@ -19,7 +19,7 @@ const Navbar = () => (
                     >
                         <div className="navbar-brand">
                             <Link to="/" className="nav-link text-dark">
-                            <img src="/IMAGES/logo.png" st/>
+                            <img src="/IMAGES/logo.png" style={{paddingLeft:"50px",}}/>
                             </Link>
 
                         </div>
