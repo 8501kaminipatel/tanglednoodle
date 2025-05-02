@@ -16,8 +16,10 @@
     "bootstrap-icons": "^1.11.3",
     "firebase": "^11.6.1",
     "json-server": "^0.17.4",
+    "motion": "^12.9.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-google-button": "^0.8.0",
     "react-router-dom": "^7.5.2"
   },
   "devDependencies": {

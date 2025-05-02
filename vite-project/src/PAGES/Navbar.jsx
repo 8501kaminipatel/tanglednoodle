@@ -19,7 +19,7 @@ const Navbar = () => (
                     >
                         <div className="navbar-brand">
                             <Link to="/" className="nav-link text-dark">
-                            <img src="/IMAGES/logo.png" style={{paddingLeft:"50px",}}/>
+                                <img src="/IMAGES/logo.png" style={{ paddingLeft: "50px", }} />
                             </Link>
 
                         </div>
@@ -35,27 +35,27 @@ const Navbar = () => (
                                     <Link to="/men" className="nav-link text-dark">MEN</Link>
                                     <ul className="list">
                                         <div className="main-box d-flex">
-                                            <div className="col-2 ">
-                                                <li className="nav-item list-unstyled">
+                                            <div className="col-2">
+                                                <li className="nav-item list-unstyled  fs-6">
                                                     <a href=""
                                                         className="nav-link"
                                                         style={{ color: " rgb(228, 10, 82)" }}>Topwear</a>
                                                 </li>
 
-                                                <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">T-shirts</a>
+                                                <li className="nav-item list-unstyled fs-6 d-flex">
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>T-shirts</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Csual-shirts</a>
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Csual shirts</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Formal shirts</a>
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Formal shirts</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Sweatshirts</a>
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Sweat shirts</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
@@ -67,7 +67,7 @@ const Navbar = () => (
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Blazers &coats</a>
+                                                    <a href="" className="nav-link">Blazers&coats</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
@@ -75,8 +75,9 @@ const Navbar = () => (
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Rain jackets</a>
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Rain jackets</a>
                                                 </li>
+
 
                                                 <hr className="w-75" />
 
@@ -84,12 +85,12 @@ const Navbar = () => (
                                                     <a
                                                         href=""
                                                         className="nav-link"
-                                                        style={{ color: " rgb(228, 10, 82)" }}
+                                                        style={{ color: " rgb(228, 10, 82)", whiteSpace: "nowrap" }}
                                                     >Indian & festive wear</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Kurtas & kurta sets</a>
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Kurtas & kurta sets</a>
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
@@ -97,7 +98,7 @@ const Navbar = () => (
                                                 </li>
 
                                                 <li className="nav-item list-unstyled fs-6">
-                                                    <a href="" className="nav-link">Nehru jackets</a>
+                                                    <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Nehru jackets</a>
                                                 </li>
                                             </div>
                                         </div>
@@ -119,7 +120,7 @@ const Navbar = () => (
                                             </li>
 
                                             <li className="nav-item list-unstyled fs-6">
-                                                <a href="" className="nav-link">Casual traousers</a>
+                                                <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Casual traousers</a>
                                             </li>
 
                                             <li className="nav-item list-unstyled fs-6">
@@ -127,7 +128,7 @@ const Navbar = () => (
                                             </li>
 
                                             <li className="nav-item list-unstyled fs-6">
-                                                <a href="" className="nav-link">Track pants & joggers</a>
+                                                <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Track pants & joggers</a>
                                             </li>
                                             <hr className="w-75" />
                                             <li className="nav-item list-unstyled">
@@ -139,7 +140,7 @@ const Navbar = () => (
                                             </li>
 
                                             <li className="nav-item list-unstyled fs-6">
-                                                <a href="" className="nav-link">Briefs & trunks</a>
+                                                <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Briefs & trunks</a>
                                             </li>
 
                                             <li className="nav-item list-unstyled fs-6">
@@ -151,7 +152,7 @@ const Navbar = () => (
                                             </li>
 
                                             <li className="nav-item list-unstyled fs-6">
-                                                <a href="" className="nav-link">Sleepwear &longwear</a>
+                                                <a href="" className="nav-link" style={{ whiteSpace: "nowrap" }}>Sleepwear &longwear</a>
                                             </li>
 
                                             <hr className="w-75" />
@@ -1319,6 +1320,9 @@ const Navbar = () => (
                                                         alt="Studio Banner"
                                                     />
                                                 </li>
+                                                <Link to="/studio" className="explore-btn">
+                                                    EXPLORE STUDIO <i className="bi bi-chevron-right ms-2"></i>
+                                                </Link>
                                             </div>
                                         </div>
                                     </ul>

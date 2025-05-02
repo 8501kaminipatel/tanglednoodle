@@ -100,26 +100,17 @@
     display: block;
     margin-top: 50%;
     background-color:white;
-    width: 1305%;
-    height: 450px;
-   
-   
-   
-    
-    
+    width: 1200%;
+    height: 450px;  
 } 
 .list2 .list{
     position: absolute;
     top: 20%;
     right:-1100%;
 }
-
-
-
 .header ul .list3{
     position: relative;
 }
-
  .list3 .list{
     display: none;
 }
@@ -129,18 +120,12 @@
 background-color: white;
     width: 1880%;
     height: 450px;
-   
-    
-    
 } 
 .list3 .list{
     position: absolute;
     top: 55%;
     left: -290%;
 }
-
-
-
 .header ul .list4{
     position: relative;
 }
@@ -161,7 +146,7 @@ background-color: white;
 .list4 .list{
     position: absolute;
     top: -50%;
-    left: -170%;
+    left: -290%;
 }
 
 
@@ -185,7 +170,7 @@ background-color: white;
 .list5 .list{
     position: absolute;
     top: 23%;
-    left: -300%;
+    left: -400%;
 }
 
 
@@ -243,6 +228,27 @@ background-color: white;
     top:120%;
     border-color:rgb(29, 180, 200);
     left: 10%;
+}
+.explore-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid rgba(28, 28, 28, 0.3);
+  border-radius: 50px;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.explore-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(3px);
 }
 
 
@@ -384,3 +390,367 @@ background-color: white;
     border-top: 1px solid #ddd;
   }
   
+ 
+
+
+
+
+  /* studio */
+  /* General */
+.product-container {
+  font-family: 'Poppins', sans-serif;
+  max-width: 500px;
+  margin: auto;
+
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.product-nav {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  padding: 0px 10px;
+  width: 498.5px;
+  z-index: 1000;
+  height: 80px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff3f6c;
+  letter-spacing: 1px;
+}
+
+.product-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.product-nav-link:hover {
+  color: #ff3f6c;
+}
+
+/* Section */
+.product-section {
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+/* Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+/* Brand Section */
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.brand-logo {
+  width: 60px;
+  height: auto;
+}
+
+.brand-banner {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.brand-video {
+  width: 100%;
+  border-radius: 10px;
+  margin: 24px 0;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.brand-description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Cards */
+.product-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.product-card {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.product-original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.product-discount {
+  color: #28a745;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Loading Text */
+.loading-text {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+
+
+/* description */
+/* Product Section Background */
+.description-wrapper {
+  background: linear-gradient(120deg, #f6f9fc, #e9ecf2);
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  
+}
+
+/* Right Panel: Modern Glassmorphic Card */
+.product-card-glass {
+  
+  padding: 30px;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+ 
+}
+
+/* Main Image */
+.main-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+}
+
+.main-img:hover {
+  transform: scale(1.05);
+}
+
+/* Image Wrapper with Glass Effect */
+.main-image-glass {
+  background: rgba(255, 255, 255, 0.453);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 5px;
+}
+
+/* Thumbnail Images */
+.thumb-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.thumb-img:hover {
+  transform: scale(1.08);
+  border-color: #ff3e6c;
+  box-shadow: 0 6px 18px rgba(255, 62, 108, 0.25);
+}
+
+/* Size Buttons */
+.btn-outline-light {
+  color: #444;
+  border-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffecf0;
+  color: #ff3e6c;
+  border-color: #ff3e6c;
+}
+
+.btn-light.text-dark {
+  background-color: #ff3e6c;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+/* Action Buttons */
+.btn-danger {
+  background-color: #ff3e6c;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  letter-spacing: 0.5px;
+}
+
+.btn-danger:hover {
+  background-color: #e7335b;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: #555;
+  border-color: #bbb;
+}
+
+.btn-outline-light:hover {
+  background-color: #e2e6ea;
+  color: #222;
+}
+
+/* Rating Highlight */
+.product-card-glass p strong {
+  color: #ffc107;
+}
+
+/* Responsive Optimizations */
+@media (max-width: 768px) {
+  .main-img,
+  .thumb-img {
+    height: auto;
+  }
+
+  .product-card-glass {
+    margin-top: 20px;
+  }
+}
+.glassmorphic-row {
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.rating-bars .bg-warning {
+  background-color: #fecd57 !important;
+}
+
+
+
+/* login */
+/* General container for the login page */
+/* Basic styling for the login page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9; /* Light background */
+}
+
+.login-content {
+  text-align: center;
+  background: #ffffff; /* White background for the login box */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  max-width: 400px;
+  width: 100%;
+}
+
+.brand-logo {
+  width: 100%;
+  max-width: 250px; /* Adjust logo size */
+  margin-bottom: 20px;
+}
+
+.login-heading {
+  font-size: 24px;
+  color: #333333; /* Dark text for better readability */
+  margin-bottom: 20px;
+}
+
+.google-button {
+  width: 100%; /* Full-width button */
+  background-color: #4285f4; /* Google's signature blue */
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+  background-color: #357ae8; /* Darker shade of blue on hover */
+}

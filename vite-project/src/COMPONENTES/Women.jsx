@@ -157,8 +157,11 @@ const Women = () => {
       <div style={{ width: "90%", height: "auto", margin: "auto" }}>
         <img src="/IMAGES/men30.webp" className="d-block w-100" />
       </div>
-
-
+{/* 
+      <video width="600" controls>
+    <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video> */}
    </>
   )
 }

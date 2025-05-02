@@ -10,6 +10,7 @@ import GENZ from '../COMPONENTES/GENZ'
 import Studio from '../COMPONENTES/Studio'
 import Login from '../COMPONENTES/Login'
 import ProductList from '../COMPONENTES/product'
+import Description from '../COMPONENTES/Description'
 
 const Allroutes = () => {
   return (
@@ -24,6 +25,7 @@ const Allroutes = () => {
           <Route path="/studio" element={<Studio />} />
           <Route path="/login" element={<Login />} />
           <Route path="/product" element={<ProductList />} />
+          <Route path="/description/:id" element={<Description />} />
      
       </Routes>
   )

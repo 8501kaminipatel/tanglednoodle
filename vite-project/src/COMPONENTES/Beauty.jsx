@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Beauty.css'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Beauty = () => {
 
@@ -242,7 +243,9 @@ const Beauty = () => {
             />
             <div className="overlay">
               <a href={product.product_url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <Link to={`/description/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                 Buy Now
+                </Link>
               </a>
             </div>
           </div>
