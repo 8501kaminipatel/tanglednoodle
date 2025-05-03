@@ -3,7 +3,7 @@ import React from 'react'
 const GENZ = () => {
   return (
    <>
-   <div style={{ width: "100%", height: "430px", marginTop: "80px" }}>
+   <div style={{ width: "100%", height: "430px", marginTop: "30px" }}>
 
 
 

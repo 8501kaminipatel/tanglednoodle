@@ -3,7 +3,7 @@ import React from 'react'
 const Women = () => {
   return (
    <>
-    <div style={{ width: "90%", height: "auto", paddingTop: "80px", margin: "auto" }}>
+    <div style={{ width: "90%", height: "auto", paddingTop: "30px", margin: "auto" }}>
         <img src="/IMAGES/men1.webp" className="d-block w-100" />
       </div>
       <div style={{ width: "90%", height: "auto", margin: "auto" }}>

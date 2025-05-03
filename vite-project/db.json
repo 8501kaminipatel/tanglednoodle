@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id":1,
+      "id": 1,
       "rating": 1.5,
       "rating_count": "11.3k",
       "ad": true,
@@ -15,7 +15,7 @@
       "discount": "35% OFF"
     },
     {
-      "id":2,
+      "id": 2,
       "rating": 4.3,
       "rating_count": "1.9k",
       "ad": true,
@@ -26,10 +26,10 @@
       "volume": "Onesize",
       "discounted_price": "Rs. 699",
       "original_price": "Rs. 750",
-      "discount": "Rs. 51 OFF"
+      "discount": "Rs. 51% OFF"
     },
     {
-      "id":3,
+      "id": 3,
       "rating": 4.5,
       "rating_count": "39.2k",
       "ad": false,
@@ -43,7 +43,7 @@
       "discount": "7% OFF"
     },
     {
-      "id":4,
+      "id": 4,
       "rating": 4.5,
       "rating_count": "21.1k",
       "ad": false,
@@ -54,10 +54,10 @@
       "volume": "40-50gm",
       "discounted_price": "Rs. 331",
       "original_price": "Rs. 349",
-      "discount": "5% OFF"
+      "discount": "20% OFF"
     },
     {
-      "id":5,
+      "id": 5,
       "rating": 4.6,
       "rating_count": "42.5k",
       "ad": true,
@@ -71,7 +71,7 @@
       "discount": "43% OFF"
     },
     {
-      "id":6,
+      "id": 6,
       "rating": 4.6,
       "rating_count": "11.7k",
       "ad": false,
@@ -80,12 +80,12 @@
       "brand": "LOreal Professionnel",
       "product_name": "Absolut Repair Hair Mask-250g",
       "volume": "200-250 ML",
-      "discounted_price": "",
-      "original_price": "",
-      "discount": ""
+      "discounted_price": "Rs. 239",
+      "original_price": "Rs. 420",
+      "discount": "10% OFF"
     },
     {
-      "id":7,
+      "id": 7,
       "rating": 4.4,
       "rating_count": "41.3k",
       "ad": false,
@@ -99,7 +99,7 @@
       "discount": "41% OFF"
     },
     {
-      "id":8,
+      "id": 8,
       "rating": 4.3,
       "rating_count": "1.1k",
       "ad": true,
@@ -113,7 +113,7 @@
       "discount": "Rs. 51 OFF"
     },
     {
-      "id":9,
+      "id": 9,
       "rating": 4.5,
       "rating_count": "3.2k",
       "ad": false,
@@ -127,7 +127,7 @@
       "discount": "7% OFF"
     },
     {
-      "id":10,
+      "id": 10,
       "rating": 4.5,
       "rating_count": "56.5k",
       "ad": false,
@@ -141,190 +141,190 @@
       "discount": "37% OFF"
     },
     {
-      "id":11,
+      "id": 11,
       "rating": 4.5,
-      "reviews": "14.5k",
+      "rating_count": "14.5k",
       "ad": true,
       "product_url": "https://www.myntra.com/serum-and-gel/minimalist/minimalist-vitamin-c-10-face-serum-for-glowing-skin-30-ml/14173102/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14173102/2024/8/7/d244d100-2645-4658-adf1-a686908651d01723024186451-Minimalist-Vitamin-C-10-Face-Serum-for-Glowing-Skin-30-ml-64-1.jpg",
       "brand": "Minimalist",
       "title": "Vitamin C Serum",
       "volume": "20-30 ML",
-      "price": "Rs. 664",
+      "discounted_price": "Rs. 664",
       "original_price": "Rs. 699",
       "discount": "5% OFF"
     },
     {
-      "id":12,
+      "id": 12,
       "rating": 4.5,
-      "reviews": "13.5k",
+      "rating_count": "13.5k",
       "ad": false,
       "product_url": "https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-100-ml/2508145/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2508145/2023/5/31/1e1b780b-66b6-42a3-a08e-7a3256c6f4641685528431373-Indulekha-Bringha-Hair-Oil-100-ml-5081685528430928-1.jpg",
       "brand": "indulekha",
       "title": "Bringha Hair Oil 100 ml",
       "volume": "100ML",
-      "price": "Rs. 280",
+      "discounted_price": "Rs. 280",
       "original_price": "Rs. 468",
       "discount": "40% OFF"
     },
     {
-      "id":13,
+      "id": 13,
       "rating": 4.5,
-      "reviews": "6.3k",
+      "rating_count": "6.3k",
       "ad": false,
       "product_url": "https://www.myntra.com/lipstick/maybelline/maybelline-new-york-superstay-vinyl-ink-liquid-lipstick-45-ml---lippy/19444472/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/13/nxgAxDgB_199e36ce65d34f6583b5b7697ea0fae2.jpg",
       "brand": "Maybelline",
       "title": "Superstay Lipstick - Lippy",
       "volume": "4-5 ML",
-      "price": "Rs. 534",
+      "discounted_price": "Rs. 534",
       "original_price": "Rs. 849",
       "discount": "37% OFF"
     },
     {
-      "id":14,
+      "id": 14,
       "rating": 4.3,
-      "reviews": "9.3k",
+      "rating_count": "9.3k",
       "ad": true,
       "product_url": "https://www.myntra.com/kajal/renee/renee-midnight-kohl-kajal-pencil---15g---black/27362474/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/27362474/2024/2/5/0a270d3d-64d9-445a-bf4a-619bbe760f671707137241015ReneeMidnightKohlKajalPencil-15g-Black1.jpg",
       "brand": "Renee",
       "title": "Midnight Kohl Kajal Pencil",
       "volume": "1-2 ML",
-      "price": "Rs. 399",
+      "discounted_price": "Rs. 399",
       "original_price": "Rs. 450",
       "discount": "Rs. 51 OFF"
     },
     {
-      "id":15,
+      "id": 15,
       "rating": 4.5,
-      "reviews": "4.1k",
+      "rating_count": "4.1k",
       "ad": false,
       "product_url": "https://www.myntra.com/hair-colour/nat+habit/nat-habit-2pcs-ready-to-apply-henna-paste-with-black-tea--herbs-220g-each---rich-brown/22048752/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/22048752/2024/8/21/520bed21-1483-4f55-8e92-12660911721f1724221876350-Nat-Habit-Set-of-2-100-Natural-Ready-To-Apply-Henna-Paste-22-11.jpg",
       "brand": "Nat Habit",
       "title": "Set of 2 Henna Paste HairColor",
       "volume": "Pack",
-      "price": "Rs. 346",
+      "discounted_price": "Rs. 346",
       "original_price": "Rs. 462",
       "discount": "25% OFF"
     },
     {
-      "id":16,
+      "id": 16,
       "rating": 4.4,
-      "reviews": "3.7k",
+      "rating_count": "3.7k",
       "ad": false,
       "product_url": "https://www.myntra.com/eyeshadow/mars/mars-back-to-basics-eyeshadow-palette-shade-02/16228114/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/25/t8hUW84R_cea13351a377476fa118ec250f03acab.jpg",
       "brand": "MARS",
       "title": "Back to Basics Palette",
       "volume": "10-15 ML",
-      "price": "Rs. 269",
+      "discounted_price": "Rs. 269",
       "original_price": "Rs. 299",
       "discount": "10% OFF"
     },
     {
-      "id":17,
+      "id": 17,
       "rating": 4.6,
-      "reviews": "2k",
+      "rating_count": "2k",
       "ad": true,
       "product_url": "https://www.myntra.com/hair-serum/tresemme/tresemme-gloss-ultimate-ultra-shine-hair-serum-with-macademia--coconut-oil---100-ml/20875346/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20875346/2024/1/23/17be188c-25f4-478b-a024-901e677954191705990762968-TRESemme-Gloss-Ultimate-Ultra-Shine-Hair-Serum-with-Macademi-1.jpg",
       "brand": "TRESemme",
       "title": "Gloss Ultimate Hair Serum",
       "volume": "80-100 ML",
-      "price": "Rs. 389",
+      "discounted_price": "Rs. 389",
       "original_price": "Rs. 599",
       "discount": "35% OFF"
     },
     {
-      "id":18,
+      "id": 18,
       "rating": 4.9,
-      "reviews": "20",
+      "rating_count": "20",
       "ad": false,
       "product_url": "https://www.myntra.com/body-wash-and-shower-gel/marks+%26+spencer/marks--spencer-neroli-jasmine--sea-salt-shower-gel-500-ml/20488124/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20488124/2022/10/21/0077a29b-03e1-43dd-aed0-2d5580968eca1666335582023BodyWashandScrub1.jpg",
       "brand": "Marks & Spencer",
       "title": "Neroli, Jasmine & Sea Salt Shower Gel 500 ml",
       "volume": "500 ML & Above",
-      "price": "",
-      "original_price": "",
-      "discount": ""
+      "discounted_price": "Rs. 389",
+      "original_price": "Rs. 599",
+      "discount": "35% OFF"
     },
     {
-      "id":19,
+      "id": 19,
       "rating": 4.6,
-      "reviews": "7",
+      "rating_count": "7",
       "ad": false,
       "product_url": "https://www.myntra.com/body-cream-and-lotion/marks+%26+spencer/marks--spencer-library-of-scent-lime-bergamot--mandarin-hand--body-lotion---300ml/27565378/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/27565378/2024/2/13/0b30707d-1dc9-42bb-bfdd-b5704f0ca3281707815137248BodyCreamandLotion1.jpg",
       "brand": "Marks & Spencer",
       "title": "Hand & Body Lotion - 300ml",
       "volume": "250-350 ML",
-      "price": "",
-      "original_price": "",
-      "discount": ""
+      "discounted_price": "Rs. 389",
+      "original_price": "Rs. 599",
+      "discount": "35% OFF"
     },
     {
-      "id":20,
+      "id": 20,
       "rating": 4.5,
-      "reviews": "18.2k",
+      "rating_count": "18.2k",
       "ad": true,
       "product_url": "https://www.myntra.com/serum-and-gel/minimalist/minimalist-10-niacinamide-face-serum-with-zinc---30-ml/14197742/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14197742/2022/4/11/fa46c621-7f6a-4a6b-9c42-9d97cc5e88ff1649661795019Minimalist10NiacinamideFaceSerumwithZinc-30ml1.jpg",
       "brand": "Minimalist",
       "title": "10% Niacinamide Face Serum",
       "volume": "20-30 ML",
-      "price": "Rs. 569",
+      "discounted_price": "Rs. 569",
       "original_price": "Rs. 599",
       "discount": "5% OFF"
     },
     {
-      "id":21,
+      "id": 21,
       "rating": 4.4,
-      "reviews": "33.4k",
+      "rating_count": "33.4k",
       "ad": false,
       "product_url": "https://www.myntra.com/compact/maybelline/maybelline-new-york-fit-me-matte--poreless-spf-32-compact-powder-6g---ivory-115/13609226/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/13/eWAYHtH0_7856e436e9f045b4b16ed0695ed454d2.jpg",
       "brand": "Maybelline",
       "title": "Fit Me Compact - Ivory 115",
       "volume": "6-7 ML",
-      "price": "Rs. 177",
+      "discounted_price": "Rs. 177",
       "original_price": "Rs. 269",
       "discount": "34% OFF"
     },
     {
-      "id":22,
+      "id": 22,
       "rating": 4.5,
-      "reviews": "4.6k",
+      "rating_count": "4.6k",
       "ad": false,
       "product_url": "https://www.myntra.com/conditioner/dove/dove-daily-shine-conditioner-with-bio-protein---175-ml/365117/buy",
       "brand": "Dove",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/MARCH/25/9EJCw54L_a4970165896141b6a551892c6201d98a.jpg",
       "title": "Daily Shine Conditioner",
       "volume": "150-180 ML",
-      "price": "Rs. 142",
+      "discounted_price": "Rs. 142",
       "original_price": "Rs. 285",
       "discount": "50% OFF"
     },
     {
-      "id":23,
+      "id": 23,
       "rating": 4.5,
-      "reviews": "14.7k",
+      "rating_count": "14.7k",
       "ad": true,
       "product_url": "https://www.myntra.com/serum-and-gel/minimalist/minimalist-2-salicylic-acid-serum-with-bha---30-ml/14173104/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17706418/2023/9/6/e96b4c57-caf6-4d64-bcb9-16b5190f10d51693992489644-Minimalist-16-Vitamin-C-Face-Serum-with-Vitamin-E--Ferulic-A-1.jpg",
       "brand": "Minimalist",
       "title": "2% Salicylic Acid Serum 30 ml",
       "volume": "20-30 ML",
-      "price": "Rs. 521",
+      "discounted_price": "Rs. 521",
       "original_price": "Rs. 549",
       "discount": "5% OFF"
     },
     {
-      "id":24,
-      "rating": 4.5,
+      "id": 24,
+      "rating_count": 4.5,
       "reviews": "10.9k",
       "ad": false,
       "product_url": "https://www.myntra.com/toner/plum/plum-3-niacinamide-alcohol-free-toner-with-rice-water-to-reduce-pores--blemishes---150ml/16776662/buy",
@@ -332,7 +332,7 @@
       "brand": "Plum",
       "title": "Niacinamide Toner 150 ml",
       "volume": "140-160 ML",
-      "price": "Rs. 399",
+      "discounted_price": "Rs. 399",
       "original_price": "Rs. 420",
       "discount": "5% OFF"
     }
@@ -437,10 +437,9 @@
         }
       ]
     },
-     
-   "brand1": {
+    "brand1": {
       "brand": "The Souled Store",
-      "videoUrl":"https://www.youtube.com/embed/nZ2a4xDFGlc",
+      "videoUrl": "https://www.youtube.com/embed/nZ2a4xDFGlc",
       "images": [
         "https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_32,c_limit,fl_progressive/assets/images/2024/12/13/881e832c-0d27-46fd-b77b-413575363af21734063659392-Kizi-logo--1---2-_page-0001--1-.jpg",
         "https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_400,c_limit,fl_progressive/assets/images/2025/4/22/9d0ce09e-4463-47f0-8f7a-050c409d34a91745333821557-videoId-6807ae29303f99c5d3e281c5.png",
@@ -460,7 +459,7 @@
       ]
     },
     "brand3": {
-      "videoUrl":"https://www.youtube.com/embed/9cYf2VlYLT0",
+      "videoUrl": "https://www.youtube.com/embed/9cYf2VlYLT0",
       "brand": "KIZI",
       "images": [
         "https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_32,c_limit,fl_progressive/assets/images/2024/12/13/881e832c-0d27-46fd-b77b-413575363af21734063659392-Kizi-logo--1---2-_page-0001--1-.jpg",
@@ -480,7 +479,259 @@
         "https://static.magicpin.com/storage/blog/images/myntra-online-shopping-for-women-party-4.PNG"
       ]
     }
-    
-    
-  }
+  },
+  "cart": [
+    {
+      "productId": 20,
+      "title": "10% Niacinamide Face Serum",
+      "price": 569,
+      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14197742/2022/4/11/fa46c621-7f6a-4a6b-9c42-9d97cc5e88ff1649661795019Minimalist10NiacinamideFaceSerumwithZinc-30ml1.jpg",
+      "quantity": 1,
+      "rating": 4.5,
+      "rating_count": "18.2k",
+      "category": "Minimalist",
+      "volume": "20-30 ML",
+      "original_price": 599,
+      "discount": "5% OFF",
+      "id": 4
+    },
+    {
+      "productId": 21,
+      "title": "Fit Me Compact - Ivory 115",
+      "price": 177,
+      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/13/eWAYHtH0_7856e436e9f045b4b16ed0695ed454d2.jpg",
+      "quantity": 1,
+      "rating": 4.4,
+      "rating_count": "33.4k",
+      "category": "Maybelline",
+      "volume": "6-7 ML",
+      "original_price": 269,
+      "discount": "34% OFF",
+      "id": 5
+    },
+    {
+      "productId": 38,
+      "price": 237,
+      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/26350576/2024/2/21/614d29b5-2a2f-498b-b044-28c8501aef451708494364579-HRX-by-Hrithik-Roshan-Women-Tshirts-8821708494364184-5.jpg",
+      "quantity": 1,
+      "rating": 4.5,
+      "rating_count": "909",
+      "category": "HRX by Hrithik Roshan",
+      "original_price": 699,
+      "discount": "66% OFF",
+      "id": 6
+    }
+  ],
+  "description": [
+    {
+      "id": 25,
+      "product_url": "https://www.myntra.com/kurtis/moda+rapido/moda-rapido-women-ethnic-motifs-printed-mandarin-collar-a-line-top/33561095/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/10/vEMhG0kN_40e5ff2be6a843d5aafe2a28ec6842d0.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Women Printed A-Line Top",
+      "size": "XL",
+      "discounted_price": "Rs. 493",
+      "original_price": "Rs. 1899",
+      "discount": "74% OFF"
+    },
+    {
+      "id": 26,
+      "product_url": "https://www.myntra.com/kurta-sets/sangria/sangria-bandhej-printed-kaftan--tube-top-with-sharara/32859228/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/FEBRUARY/22/Vjkt0iJO_54c70d0062f44a0b93934e2dffb087f5.jpg",
+      "brand": "Sangria",
+      "product_name": "Kaftan & Tube Top With Sharara",
+      "size": "S",
+      "discounted_price": "Rs. 1567",
+      "original_price": "Rs. 4899",
+      "discount": "68% OFF",
+      "rating": 3.8,
+      "rating_count": "214"
+    },
+    {
+      "id": 27,
+      "product_url": "https://www.myntra.com/saree-blouse/moda+rapido/moda-rapido-woven-design-saree-blouse/33658503/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/17/bbc9KW6V_0a20bdba3f274da6aaeefd3bb07d9f5d.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Woven Design Saree Blouse",
+      "size": "XL",
+      "discounted_price": "Rs. 598",
+      "original_price": "Rs. 2065",
+      "discount": "71% OFF",
+      "ad": true
+    },
+    {
+      "id": 28,
+      "product_url": "https://www.myntra.com/tops/dressberry/dressberry-pink-solid-regular-top/14216860/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14216860/2021/9/29/f5686ed0-015d-4688-a0aa-00efcccd57521632898770250-DressBerry-Women-Tops-9271632898769855-1.jpg",
+      "brand": "DressBerry",
+      "product_name": "Solid Regular Top",
+      "size": "S",
+      "discounted_price": "Rs. 224",
+      "original_price": "Rs. 899",
+      "discount": "75% OFF",
+      "rating": 3.8,
+      "rating_count": "1.4k"
+    },
+    {
+      "id": 29,
+      "product_url": "https://www.myntra.com/kurtis/anouk+rustic/anouk-rustic-floral-print-mandarin-collar-top/32331880/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/JANUARY/14/Y0vXSOkx_da4d84c96cac4c8ca75095eab46a6d0c.jpg",
+      "brand": "Anouk Rustic",
+      "product_name": "Floral Print Mandarin Collar Top",
+      "size": "M",
+      "discounted_price": "Rs. 645",
+      "original_price": "Rs. 1699",
+      "discount": "Rs. 1054 OFF",
+      "rating": 4.4,
+      "rating_count": "96"
+    },
+    {
+      "id": 30,
+      "product_url": "https://www.myntra.com/saree-blouse/moda+rapido/moda-rapido-woven-design-saree-blouse-/33658528/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/17/8gmpejNL_f0ee1425e1ab48e38faab66919794691.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Woven Design Saree Blouse",
+      "size": "XXL",
+      "discounted_price": "Rs. 598",
+      "original_price": "Rs. 2065",
+      "discount": "71% OFF",
+      "ad": true
+    },
+    {
+      "id": 31,
+      "product_url": "https://www.myntra.com/saree-blouse/moda+rapido/moda-rapido-woven-design-saree-blouse/33661306/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/17/oCjyBk9Y_9411bf119c0e40b496e96e3db20e03c4.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Woven Design Saree Blouse",
+      "size": "XL",
+      "discounted_price": "Rs. 598",
+      "original_price": "Rs. 2065",
+      "discount": "71% OFF"
+    },
+    {
+      "id": 32,
+      "product_url": "https://www.myntra.com/tops/dressberry/dressberry-floral-embroidered-puff-sleeve-top/23954524/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/23954524/2023/7/19/cfe9232b-78c2-4294-b1b3-683e813dfcec1689768290869-DressBerryPink-Viscose-Rayon-Floral-Embroidered-A-line-Top-9-1.jpg",
+      "brand": "DressBerry",
+      "product_name": "Floral Embroidered Top",
+      "size": "S",
+      "discounted_price": "Rs. 639",
+      "original_price": "Rs. 1999",
+      "discount": "68% OFF",
+      "rating": 4,
+      "rating_count": "3.1k"
+    },
+    {
+      "id": 33,
+      "product_url": "https://www.myntra.com/saree-blouse/moda+rapido/moda-rapido-woven-design-saree-blouse-/33660855/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/17/T4lVs2jm_d670d912da464776aa9e2194f361fc51.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Woven Design Saree Blouse",
+      "size": "L",
+      "discounted_price": "Rs. 598",
+      "original_price": "Rs. 2065",
+      "discount": "71% OFF",
+      "ad": true
+    },
+    {
+      "id": 34,
+      "product_url": "https://www.myntra.com/tops/all+about+you/all-about-you-lace-detailed-puff-sleeves-pure-cotton-a-line-top/26190558/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/26190558/2024/2/28/869de851-3ba4-4252-a95f-10c34e7f3b6f1709115944119-all-about-you-Women-Tops-8291709115943740-1.jpg",
+      "brand": "all about you",
+      "product_name": "Pure Cotton A-Line Top",
+      "size": "XL",
+      "discounted_price": "Rs. 449",
+      "original_price": "Rs. 1799",
+      "discount": "75% OFF",
+      "rating": 3.8,
+      "rating_count": "140"
+    },
+    {
+      "id": 35,
+      "product_url": "https://www.myntra.com/tops/roadster/the-roadster-lifestyle-co-front-tie-sleeveless-top/30386230/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/JULY/29/YEAXXxlF_4c52053584e14cd7b3c8c5ca453c0a49.jpg",
+      "brand": "Roadster",
+      "product_name": "Front Tie Sleeveless Tops",
+      "size": "S",
+      "discounted_price": "Rs. 384",
+      "original_price": "Rs. 1099",
+      "discount": "65% OFF",
+      "rating": 4.2,
+      "rating_count": "1.3k"
+    },
+    {
+      "id": 36,
+      "product_url": "https://www.myntra.com/saree-blouse/moda+rapido/moda-rapido-embroidered-cotton-saree-blouse/33658475/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/17/h5wgobSV_bb6784c0aea146b297fd7e65643a1bab.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Cotton Saree Blouse",
+      "size": "S",
+      "discounted_price": "Rs. 598",
+      "original_price": "Rs. 2065",
+      "discount": "71% OFF",
+      "ad": true
+    },
+    {
+      "id": 37,
+      "product_url": "https://www.myntra.com/co-ords/sangria/sangria-floral-embroidery-top-with-trousers-co-ords/32464687/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/32464687/2025/1/30/415e289a-0023-453e-8d98-20e17e4445091738240151762-Sangria-Floral-Embroidery-Top-With-Trousers-Co-Ords-93317382-1.jpg",
+      "brand": "Sangria",
+      "product_name": "Top With Trousers Co-Ords",
+      "size": "XXL",
+      "discounted_price": "Rs. 799",
+      "original_price": "Rs. 4999",
+      "discount": "Rs. 4200 OFF",
+      "rating": 3.6,
+      "rating_count": "90"
+    },
+    {
+      "id": 38,
+      "product_url": "https://www.myntra.com/tshirts/hrx+by+hrithik+roshan/hrx-by-hrithik-roshan-reflective-elements-detailed-rapid-dry-training-t-shirt/26350576/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/26350576/2024/2/21/614d29b5-2a2f-498b-b044-28c8501aef451708494364579-HRX-by-Hrithik-Roshan-Women-Tshirts-8821708494364184-5.jpg",
+      "brand": "HRX by Hrithik Roshan",
+      "product_name": "Rapid-Dry Training T-shirt",
+      "size": "XL",
+      "discounted_price": "Rs. 237",
+      "original_price": "Rs. 699",
+      "discount": "66% OFF",
+      "rating": 4.5,
+      "rating_count": "909"
+    },
+    {
+      "id": 39,
+      "product_url": "https://www.myntra.com/saree-blouse/moda+rapido/moda-rapido-woven-design-saree-blouse-/33658526/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/17/2wAnhGnW_e5f4aa81e9e8471b9d29e8c1e8c7d814.jpg",
+      "brand": "Moda Rapido",
+      "product_name": "Woven Design Saree Blouse",
+      "size": "XXL",
+      "discounted_price": "Rs. 598",
+      "original_price": "Rs. 2065",
+      "discount": "71% OFF",
+      "ad": true
+    },
+    {
+      "id": 40,
+      "product_url": "https://www.myntra.com/kurta-sets/sangria/sangria-floral-yoke-design-high-slit-zari-fusion-kurta-with-trousers--/30770256/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/AUGUST/29/142mgmxN_a2cf6f7c71df4bb79405357e27325d68.jpg",
+      "brand": "Sangria",
+      "product_name": "Yoke Design Fusion Kurta Set",
+      "size": "XXL",
+      "discounted_price": "Rs. 1493",
+      "original_price": "Rs. 5149",
+      "discount": "71% OFF",
+      "rating": 3.8,
+      "rating_count": "24"
+    },
+    {
+      "id": 41,
+      "product_url": "https://www.myntra.com/kurta-sets/divastri/divastri-women-solid-kurta-with-trouser--dupatta/33634046/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/APRIL/16/GrWvXq6i_72b6317619e5413088fff3954ca35a50.jpg",
+      "brand": "DIVASTRI",
+      "product_name": "Women Solid Kurta Set",
+      "size": "S",
+      "discounted_price": "Rs. 1099",
+      "original_price": "Rs. 4999",
+      "discount": "Rs. 3900 OFF"
+    }
+  ]
 }

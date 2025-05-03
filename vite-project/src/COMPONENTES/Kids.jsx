@@ -4,7 +4,7 @@ const Kids = () => {
   return (
     <>
 
-      <div style={{ width: "100%", height: "430px", marginTop: "80px" }}>
+      <div style={{ width: "100%", height: "430px", marginTop: "30px" }}>
         <div
           id="carouselExampleDark"
           className="carousel carousel-dark slide"

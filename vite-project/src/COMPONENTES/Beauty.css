@@ -10,12 +10,13 @@
 
 .main-body{
     display: flex;
+    width: 100%;
 }
 
 .left{
-    width: 18%;
-    /* background-color: aqua; */
-    margin: 20px;
+   
+   width: 20%;
+   margin: 50px;
 }
 .filter{
     line-height: 30px;
@@ -49,7 +50,7 @@
 
 .right{
     width: 80%;
-    /* background-color: aqua; */
+   
 }
 .right-menu{
     display: flex;
@@ -64,8 +65,8 @@
 .sort-by-div{
     font-size: 14px;
     height: 40px ;
-    width: 250px;
-    margin: 10px;
+    width: 150px;
+   margin-right: 50PX;
     line-height: 40px;
     /* padding-left: 10px; */
     border: 1px solid lightgrey;
@@ -80,7 +81,7 @@
     flex-wrap: wrap;
 }
 .shop-item{
-    height: 450px;
+    height: 350px;
     width: 23%;
 }
 .shop-item img{
@@ -111,4 +112,10 @@
     font-size: 13px;
     color: red;
     font-weight: normal;
+}
+input::placeholder{
+    color: darkred;
+}
+input{
+    accent-color: darkred;
 }

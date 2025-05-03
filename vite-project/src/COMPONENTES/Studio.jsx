@@ -49,7 +49,7 @@ const Studio = () => {
         <section className="brand-section">
           <div className="brand-header">
             {data.brand_logo && (
-              <img src={data.brand_logo} alt={`${title} logo`} className="brand-logo" />
+              <img src={data.brand_logo} alt={`${title} logo`} className="brand-logo" style={{height:"auto",width:"auto",paddingLeft:"20px",marginTop:"10px"}}/>
             )}
             <h2>{title}</h2>
           </div>
@@ -107,17 +107,17 @@ const Studio = () => {
         </ul>
       </nav>
 
-      <section id="looks" className="product-section" style={{marginTop:"90px"}}>
-        <h2>Guide To Influencers’ Most Coveted Looks</h2>
+      <section id="looks" className="product-section" style={{marginTop:"0px"}}>
+        <h3 style={{paddingLeft:"30px",marginTop:"10px",color:"black"}}>Guide To Influencers’ Most Coveted Looks</h3>
         {renderImages(GuideToInfluencersMostCovetedLooks)}
       </section>
 
       <section id="influencers" className="product-section">
-        <h2>Follow Our Top Influencers</h2>
+        <h2 style={{paddingLeft:"30px",marginTop:"10px",color:"black"}}>Follow Our Top Influencers</h2>
         {renderImages(FollowOurTopInfluencers)}
       </section>
 
-      <section id="brands">
+      <section id="brands"  style={{color:"black"}}>
         {renderBrandSection("Binni's Wardrobe", BinnisWardrobe)}
         {renderBrandSection("Technosport", Technosport)}
         {renderBrandSection("Kasee", Kasee)}
@@ -126,6 +126,7 @@ const Studio = () => {
         {renderBrandSection(brand3?.brand_name || 'Brand', brand3)}
       </section>
     </div>
+    
   );
 };
 

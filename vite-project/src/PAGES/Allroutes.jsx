@@ -11,23 +11,35 @@ import Studio from '../COMPONENTES/Studio'
 import Login from '../COMPONENTES/Login'
 import ProductList from '../COMPONENTES/product'
 import Description from '../COMPONENTES/Description'
+import Privatepage from './Privatepage'
+import CartPage from '../COMPONENTES/Addcart'
+// import DTD from '../COMPONENTES/DTD'
+
+
 
 const Allroutes = () => {
   return (
     <Routes>
-        <Route path="/" element={<Myntra/>} />
-          <Route path="/men" element={<Men/>} />
-          <Route path="/women" element={<Women />} />
-          <Route path="/kids" element={<Kids />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/beauty" element={<Beauty />} />
-          <Route path="/genz" element={<GENZ />} />
-          <Route path="/studio" element={<Studio />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/product" element={<ProductList />} />
-          <Route path="/description/:id" element={<Description />} />
-     
-      </Routes>
+      <Route path="/" element={<Myntra />} />
+      <Route path="/men" element={<Men />} />
+      <Route path="/women" element={<Women />} />
+      <Route path="/kids" element={<Kids />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/beauty" element={<Beauty />} />
+      <Route path="/genz" element={<GENZ />} />
+      <Route path="/studio" element={<Studio />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/product" element={<ProductList />} />
+      <Route path="/cart" element={<CartPage />} />
+      <Route path="/description/:id" element={
+        <Privatepage>
+          <Description />
+      
+        </Privatepage>
+      } />
+       
+
+    </Routes>
   )
 }
 
