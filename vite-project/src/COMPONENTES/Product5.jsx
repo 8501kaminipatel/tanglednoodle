@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-const Product3 = () => {
+const Product5 = () => {
   const location = useLocation(); // To track the location (URL)
   const [products, setProducts] = useState([]);
   const [ascproduct, setascproduct] = useState(null); // To track sorting
@@ -59,7 +59,7 @@ const Product3 = () => {
 
   const getdata = () => {
     axios
-      .get(' http://localhost:5000/men4', { params: parmobj })
+      .get(' http://localhost:5000/men7', { params: parmobj })
       .then(response => {
         setProducts(response.data);
         let filteredProducts = response.data;
@@ -83,10 +83,11 @@ const Product3 = () => {
   };
 
   // Use useEffect to fetch products when location/search or other parameters change
-   useEffect(() => {
-      getdata(parmobj); 
-      setSearchParams({ category: categorydata })
-    }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+  useEffect(() => {
+     getdata(parmobj); 
+     setSearchParams({ category: categorydata })
+   }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+
   return (
     <>
       <div className="text-head" style={{ marginTop: "5px" }}>
@@ -374,4 +375,4 @@ const Product3 = () => {
   );
 };
 
-export default Product3;
+export default Product5;

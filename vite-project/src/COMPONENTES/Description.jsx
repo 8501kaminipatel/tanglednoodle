@@ -16,32 +16,38 @@ const Description = () => {
 
     const getSingleData = async () => {
         const endpoints = [
-          `http://localhost:5000/products/${id}`,
-          `http://localhost:5000/description/${id}`,
-          `http://localhost:5000/men1/${id}`,
-          `http://localhost:5000/men2/${id}`,
-          `http://localhost:5000/men3/${id}`,
-          `http://localhost:5000/men4/${id}`,
-           `http://localhost:5000/men5/${id}`
+            `http://localhost:5000/products/${id}`,
+            `http://localhost:5000/description/${id}`,
+            `http://localhost:5000/men1/${id}`,
+            `http://localhost:5000/men2/${id}`,
+            `http://localhost:5000/men3/${id}`,
+            `http://localhost:5000/men4/${id}`,
+            `http://localhost:5000/men5/${id}`,
+            `http://localhost:5000/men7/${id}`,
+            `http://localhost:5000/men6/${id}`,
+            `http://localhost:5000/men8/${id}`,
+            `http://localhost:5000/men9/${id}`,
+             `http://localhost:5000/men10/${id}`,
+                `http://localhost:5000/men11/${id}`
         ];
-      
+
         for (let i = 0; i < endpoints.length; i++) {
-          try {
-            const res = await fetch(endpoints[i]);
-            if (!res.ok) throw new Error(`Not found at endpoint ${endpoints[i]}`);
-            const data = await res.json();
-            console.log(`Data from ${endpoints[i]}:`, data);
-            setSingleData(data);
-            return;
-          } catch (err) {
-            console.log(`Error fetching from ${endpoints[i]}:`, err);
-          }
+            try {
+                const res = await fetch(endpoints[i]);
+                if (!res.ok) throw new Error(`Not found at endpoint ${endpoints[i]}`);
+                const data = await res.json();
+                console.log(`Data from ${endpoints[i]}:`, data);
+                setSingleData(data);
+                return;
+            } catch (err) {
+                console.log(`Error fetching from ${endpoints[i]}:`, err);
+            }
         }
-      
+
         // If all fail
         setError("Failed to load product details.");
-      };
-      
+    };
+
 
 
     const getdata = () => {

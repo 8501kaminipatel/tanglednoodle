@@ -85,6 +85,7 @@ const Product4 = () => {
   // Use useEffect to fetch products when location/search or other parameters change
   useEffect(() => {
      getdata(parmobj); 
+     setSearchParams({ category: categorydata })
    }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
 
   return (

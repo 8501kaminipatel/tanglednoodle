@@ -49,7 +49,7 @@ const Studio = () => {
         <section className="brand-section">
           <div className="brand-header">
             {data.brand_logo && (
-              <img src={data.brand_logo} alt={`${title} logo`} className="brand-logo" style={{height:"auto",width:"auto",paddingLeft:"20px",marginTop:"10px"}}/>
+              <img src={data.brand_logo} alt={`${title} logo`} className="brand-logo" style={{height:"auto",width:"auto"}}/>
             )}
             <h2>{title}</h2>
           </div>
@@ -64,7 +64,7 @@ const Studio = () => {
             <iframe
               className="brand-video"
               width="100%"
-              height="315"
+              height="215"
               src={data.videoUrl}
               title={`${title} video`}
               frameBorder="0"
@@ -97,23 +97,23 @@ const Studio = () => {
   };
 
   return (
-    <div className="product-container" style={{marginTop:"80px",border:"1px solid black"}}>
+    <div className="product-container" style={{marginTop:"90px"}}>
       <nav className="product-nav" >
         <div className="product-logo"><Link to="/"><i class="bi bi-arrow-left-circle-fill" style={{paddingRight:"8px",  color: "#ff3f6c"}}></i></Link>STUDIO</div>
         <ul className="product-nav-list">
-          <li><a href="#looks" className="product-nav-link">Looks</a></li>
-          <li><a href="#influencers" className="product-nav-link">Influencers</a></li>
-          <li><a href="#brands" className="product-nav-link">Brands</a></li>
+          <li><a href="#looks" className="product-nav-link">Look</a></li>
+          <li><a href="#influencers" className="product-nav-link">infl</a></li>
+          <li><a href="#brands" className="product-nav-link">Brand</a></li>
         </ul>
       </nav>
 
-      <section id="looks" className="product-section" style={{marginTop:"0px"}}>
-        <h3 style={{paddingLeft:"30px",marginTop:"10px",color:"black"}}>Guide To Influencers’ Most Coveted Looks</h3>
+      <section id="looks" className="product-section" >
+        <h5 style={{paddingLeft:"30px",color:"black"}}>Guide To Influencers’ Most Coveted Looks</h5>
         {renderImages(GuideToInfluencersMostCovetedLooks)}
       </section>
 
       <section id="influencers" className="product-section">
-        <h2 style={{paddingLeft:"30px",marginTop:"10px",color:"black"}}>Follow Our Top Influencers</h2>
+        <h5 style={{paddingLeft:"30px",marginTop:"10px",color:"black"}}>Follow Our Top Influencers</h5>
         {renderImages(FollowOurTopInfluencers)}
       </section>
 

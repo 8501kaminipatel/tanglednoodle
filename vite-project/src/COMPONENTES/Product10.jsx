@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-const Product3 = () => {
+const Product10 = () => {
   const location = useLocation(); // To track the location (URL)
   const [products, setProducts] = useState([]);
   const [ascproduct, setascproduct] = useState(null); // To track sorting
@@ -59,7 +59,7 @@ const Product3 = () => {
 
   const getdata = () => {
     axios
-      .get(' http://localhost:5000/men4', { params: parmobj })
+      .get(' http://localhost:5000/men11', { params: parmobj })
       .then(response => {
         setProducts(response.data);
         let filteredProducts = response.data;
@@ -83,10 +83,11 @@ const Product3 = () => {
   };
 
   // Use useEffect to fetch products when location/search or other parameters change
-   useEffect(() => {
-      getdata(parmobj); 
-      setSearchParams({ category: categorydata })
-    }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+  useEffect(() => {
+     getdata(parmobj); 
+     setSearchParams({ category: categorydata })
+   }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+
   return (
     <>
       <div className="text-head" style={{ marginTop: "5px" }}>
@@ -327,6 +328,7 @@ const Product3 = () => {
                     <div key={product.id} className="col-md-3 col-sm-6 mb-4">
                       <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
                         <div className="position-relative">
+                            
                           <img
                             src={product.image_url}
                             alt={product.title}
@@ -374,4 +376,4 @@ const Product3 = () => {
   );
 };
 
-export default Product3;
+export default Product10;
