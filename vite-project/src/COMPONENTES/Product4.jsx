@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-const Beauty = () => {
+const Product4 = () => {
   const location = useLocation(); // To track the location (URL)
   const [products, setProducts] = useState([]);
   const [ascproduct, setascproduct] = useState(null); // To track sorting
@@ -59,7 +59,7 @@ const Beauty = () => {
 
   const getdata = () => {
     axios
-      .get('http://localhost:5000/products', { params: parmobj })
+      .get(' http://localhost:5000/men5', { params: parmobj })
       .then(response => {
         setProducts(response.data);
         let filteredProducts = response.data;
@@ -83,13 +83,9 @@ const Beauty = () => {
   };
 
   // Use useEffect to fetch products when location/search or other parameters change
-
-  
   useEffect(() => {
-    console.log('API params:', parmobj);
-    setSearchParams({ category: categorydata })
-    getdata( parmobj); // Fetch data when URL search parameters change
-  }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+     getdata(parmobj); 
+   }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
 
   return (
     <>
@@ -332,7 +328,7 @@ const Beauty = () => {
                       <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
                         <div className="position-relative">
                           <img
-                            src={product.image_url || 'https://via.placeholder.com/150'}
+                            src={product.image_url}
                             alt={product.title}
                             className="card-img-top img-fluid"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -378,4 +374,4 @@ const Beauty = () => {
   );
 };
 
-export default Beauty;
+export default Product4;

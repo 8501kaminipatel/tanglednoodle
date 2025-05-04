@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Men = () => {
   return (
     <>
-      <div style={{ width: "90%", height: "auto", paddingTop: "30px", margin: "auto" }}>
+      <div style={{ width: "90%", height: "auto", paddingTop: "10px", margin: "auto" }}>
         <img src="/IMAGES/men1.webp" className="d-block w-100" />
       </div>
       <div style={{ width: "90%", height: "auto", margin: "auto" }}>
-        <img src="/IMAGES/men2.webp" className="d-block w-100" />
+        <Link to="/product">
+          <img src="/IMAGES/men2.webp" className="d-block w-100" />
+        </Link>
       </div>
       <div style={{ width: "90%", height: "auto", margin: "auto" }}>
         <img src="/IMAGES/men3.gif" className="d-block w-100" />
@@ -63,19 +66,27 @@ const Men = () => {
             <div className="carousel-item active">
               <div className="d-flex">
                 <div className="flex-fill">
-                  <img src="/IMAGES/men8.webp" className="d-block w-100" alt="Slide 1" />
+                  <Link to="/product1">
+                    <img src="/IMAGES/men8.webp" className="d-block w-100" alt="Slide 1" />
+                  </Link>
                 </div>
                 <div className="flex-fill">
-                  <img src="/IMAGES/men9.webp" className="d-block w-100" alt="Slide 2" />
+                  <Link to="/product3">
+                    <img src="/IMAGES/men13.webp" className="d-block w-100" alt="Slide 2" />
+                  </Link>
                 </div>
                 <div className="flex-fill">
-                  <img src="/IMAGES/men10.webp" className="d-block w-100" alt="Slide 3" />
+                  <Link to="/product4">
+                    <img src="/IMAGES/men10.webp" className="d-block w-100" alt="Slide 3" />
+                  </Link>
                 </div>
                 <div className="flex-fill">
                   <img src="/IMAGES/men11.webp" className="d-block w-100" alt="Slide 4" />
                 </div>
                 <div className="flex-fill">
-                  <img src="/IMAGES/men16.webp" className="d-block w-100" alt="Slide 5" />
+                  <Link to="/product2">
+                    <img src="/IMAGES/men16.webp" className="d-block w-100" alt="Slide 5" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -84,10 +95,12 @@ const Men = () => {
             <div className="carousel-item">
               <div className="d-flex">
                 <div className="flex-fill">
-                  <img src="/IMAGES/men12.webp" className="d-block w-100" alt="Slide 6" />
+                  <Link to="/product3">
+                    <img src="/IMAGES/men12.webp" className="d-block w-100" alt="Slide 6" />
+                  </Link>
                 </div>
                 <div className="flex-fill">
-                  <img src="/IMAGES/men13.webp" className="d-block w-100" alt="Slide 7" />
+                  <img src="/IMAGES/men9.webp" className="d-block w-100" alt="Slide 7" />
                 </div>
                 <div className="flex-fill">
                   <img src="/IMAGES/men14.webp" className="d-block w-100" alt="Slide 8" />
@@ -96,7 +109,9 @@ const Men = () => {
                   <img src="/IMAGES/men15.webp" className="d-block w-100" alt="Slide 9" />
                 </div>
                 <div className="flex-fill">
+                <Link to="/product4">
                   <img src="/IMAGES/men10.webp" className="d-block w-100" alt="Slide 10" />
+                  </Link>
                 </div>
               </div>
             </div>

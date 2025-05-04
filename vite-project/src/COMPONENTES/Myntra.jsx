@@ -4,7 +4,7 @@ const Myntra = () => {
   return (
     <>
 
-      <div style={{ width: "100%", height: "430px", marginTop: "30px" }}>
+      <div style={{ width: "100%", height: "430px", marginTop: "10px" }}>
 
 
 

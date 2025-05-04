@@ -14,16 +14,30 @@ const Navbar = () => {
     const [search, setSearch] = useState('');
     const navigate = useNavigate();
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (search.trim()) {
-            navigate(`/beauty?search=${encodeURIComponent(search.trim())}`);
-        } else {
-            // If search is empty, navigate to beauty page without search param
-            navigate(`/beauty`);
+        const trimmed = search.trim().toLowerCase();
+      
+        if (!trimmed) {
+          navigate("/beauty"); // default page
+          return;
         }
+      
+        if (["tresemme", "renee", "maybelline", "minimalist"].some(keyword => trimmed.includes(keyword))) {
+          navigate(`/beauty?search=${encodeURIComponent(trimmed)}`);
+        } else if (["klotthe", "mamaearth", "pilgrim"].some(keyword => trimmed.includes(keyword))) {
+          navigate(`/product1?search=${encodeURIComponent(trimmed)}`);
+        } else if (["men", "puma", "vastramay"].some(keyword => trimmed.includes(keyword))) {
+          navigate(`/product2?search=${encodeURIComponent(trimmed)}`);
+        } else {
+          navigate(`/product?search=${encodeURIComponent(trimmed)}`);
+        }
+      };
+      
+      
 
-    };
+    
 
     return (
         <>
@@ -1335,12 +1349,12 @@ const Navbar = () => {
                                                             />
 
                                                         </li>
-                                                        <div style={{ fontSize: "20px", fontWeight: "normal" }}>Your daily inspiration for everything fashion</div>
+                                                        <div style={{ fontSize: "20px", fontWeight: "normal" ,color:"black"}}>Your daily inspiration for everything fashion</div>
 
                                                         <li className="nav-item list-unstyled">
                                                             <img
                                                                 src="/public/IMAGES/Sudio-nav-banner.png"
-                                                                style={{ width: "500px", height: "300px", paddingTop: "20px" }}
+                                                                style={{ width: "400px", height: "250px", paddingTop: "20px" }}
                                                                 alt="Studio Banner"
                                                             />
                                                         </li>
@@ -1375,18 +1389,18 @@ const Navbar = () => {
                                                     <p>User</p>
                                                 </Link>
 
-                                                <div className="user-card position-absolute" style={{marginRight:"150px"}}>
+                                                <div className="user-card position-absolute" style={{ marginRight: "150px" }}>
                                                     <div className="nav-link text-center mt-2" >
                                                         <ul className="list-unstyled p-3">
-                                                            <li><Link to="/login" className="text-decoration-none">Login</Link></li>
+                                                            <li><Link to="/login" className="text-decoration-none" style={{ cursor: "pointer", fontSize: "16px" }}>🔐 Login</Link></li>
                                                             <li>
                                                                 <div onClick={changeicon} style={{ cursor: "pointer", fontSize: "16px" }}>
                                                                     {flag ? '🌙 Dark Theme' : '☀️ Light Theme'}
-                                                                   
+
                                                                 </div>
                                                             </li>
-                                                            <li><Link to="/contact" className="text-decoration-none">Contact Us</Link></li> 
-                                                            <li><Link to="/profile" className="text-decoration-none">My Profile</Link></li>
+                                                            <li><Link to="/contact" className="text-decoration-none" style={{ cursor: "pointer", fontSize: "16px" }}>📬Contact Us</Link></li>
+                                                            <li><Link to="/profile" className="text-decoration-none" style={{ cursor: "pointer", fontSize: "16px" }}>👤 My Profile</Link></li>
                                                             {user && (
                                                                 <li>
                                                                     <button onClick={handleSignOut} className="btn btn-outline-danger mt-2" title="Logout">
@@ -1414,7 +1428,7 @@ const Navbar = () => {
                                                 <p>Bag</p>
                                             </Link>
                                         </a>
-                                       
+
                                     </div>
 
 

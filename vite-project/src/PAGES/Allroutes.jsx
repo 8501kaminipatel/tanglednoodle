@@ -9,11 +9,15 @@ import Beauty from '../COMPONENTES/Beauty'
 import GENZ from '../COMPONENTES/GENZ'
 import Studio from '../COMPONENTES/Studio'
 import Login from '../COMPONENTES/Login'
-import ProductList from '../COMPONENTES/product'
 import Description from '../COMPONENTES/Description'
 import Privatepage from './Privatepage'
 import CartPage from '../COMPONENTES/Addcart'
-// import DTD from '../COMPONENTES/DTD'
+import Product from '../COMPONENTES/product'
+import Product1 from '../COMPONENTES/Product1'
+import Product2 from '../COMPONENTES/Product2'
+import Product3 from '../COMPONENTES/Product3'
+import Product4 from '../COMPONENTES/Product4'
+
 
 
 
@@ -29,7 +33,11 @@ const Allroutes = () => {
       <Route path="/genz" element={<GENZ />} />
       <Route path="/studio" element={<Studio />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/product" element={<ProductList />} />
+      <Route path="/product" element={<Product />} />
+      <Route path="/product1" element={<Product1 />} />
+      <Route path="/product2" element={<Product2 />} />
+      <Route path="/product3" element={<Product3 />} />
+      <Route path="/product4" element={<Product4 />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/description/:id" element={
         <Privatepage>

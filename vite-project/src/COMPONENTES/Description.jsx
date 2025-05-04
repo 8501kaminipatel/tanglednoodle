@@ -15,28 +15,34 @@ const Description = () => {
 
 
     const getSingleData = async () => {
-        try {
-            const res = await fetch(`http://localhost:5000/products/${id}`);
-            if (!res.ok) throw new Error("Not in products");
+        const endpoints = [
+          `http://localhost:5000/products/${id}`,
+          `http://localhost:5000/description/${id}`,
+          `http://localhost:5000/men1/${id}`,
+          `http://localhost:5000/men2/${id}`,
+          `http://localhost:5000/men3/${id}`,
+          `http://localhost:5000/men4/${id}`,
+           `http://localhost:5000/men5/${id}`
+        ];
+      
+        for (let i = 0; i < endpoints.length; i++) {
+          try {
+            const res = await fetch(endpoints[i]);
+            if (!res.ok) throw new Error(`Not found at endpoint ${endpoints[i]}`);
             const data = await res.json();
-            console.log('Product Data:', data); // ચેક કરો કે રિસ્પોન્સ ડેટા મળી રહ્યો છે
+            console.log(`Data from ${endpoints[i]}:`, data);
             setSingleData(data);
-           
-        } catch (err1) {
-            console.log('Error fetching from products endpoint:', err1);
-            try {
-                const res2 = await fetch(`http://localhost:5000/description/${id}`);
-                const data2 = await res2.json();
-                console.log('Description Data:', data2); // ચેક કરો કે રિસ્પોન્સ ડેટા મળ્યો છે
-                setSingleData(data2);
-              
-            } catch (err2) {
-                console.log('Error fetching from description endpoint:', err2);
-                setError("Failed to load product details.");
-            }
+            return;
+          } catch (err) {
+            console.log(`Error fetching from ${endpoints[i]}:`, err);
+          }
         }
-    };
-    
+      
+        // If all fail
+        setError("Failed to load product details.");
+      };
+      
+
 
     const getdata = () => {
         console.log('Fetching description data...');
@@ -88,7 +94,7 @@ const Description = () => {
 
     return (
         <>
-            <div className="description-wrapper py-5" style={{ background: 'linear-gradient(135deg,rgb(60, 60, 62),rgb(229, 229, 235))' }}>
+            <div className="description-wrapper py-1" style={{ background: 'linear-gradient(135deg,rgb(60, 60, 62),rgb(229, 229, 235))' }}>
                 <div className="container my-5">
                     <div className="row justify-content-center align-items-start glassmorphic-row">
                         {/* Left: Image Gallery */}
