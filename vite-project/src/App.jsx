@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useLocation } from 'react-router-dom'; // ✅ import this
+import { useLocation } from 'react-router-dom'; 
 import './App.css';
 import { Usercontext } from './CONTEXT/Authcontext';
 import Allroutes from './PAGES/Allroutes';
@@ -7,7 +7,7 @@ import Footer from './PAGES/Footer';
 import Navbar from './PAGES/Navbar';
 
 function App() {
-  const { flag, changeicon } = useContext(Usercontext);
+  const { flag } = useContext(Usercontext);
   const location = useLocation(); 
 
   const hideFooterRoutes = ['/studio']; 

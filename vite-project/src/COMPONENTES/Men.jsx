@@ -105,7 +105,9 @@ const Men = () => {
                   <img src="/IMAGES/men9.webp" className="d-block w-100" alt="Slide 7" />
                 </div>
                 <div className="flex-fill">
+                <Link to="/product5">
                   <img src="/IMAGES/men14.webp" className="d-block w-100" alt="Slide 8" />
+                  </Link>
                 </div>
                 <div className="flex-fill">
                   <img src="/IMAGES/men15.webp" className="d-block w-100" alt="Slide 9" />
@@ -165,16 +167,24 @@ const Men = () => {
             <img src="/IMAGES/men24.webp" className="d-block w-100" />
           </div>
           <div className="col-6 col-md-2">
+          <Link to="/product11">
             <img src="/IMAGES/men25.webp" className="d-block w-100" />
+            </Link>
           </div>
           <div className="col-6 col-md-2">
+          <Link to="/product12">
             <img src="/IMAGES/men26.webp" className="d-block w-100" />
+            </Link>
           </div>
           <div className="col-6 col-md-2">
-            <img src="/IMAGES/men27.webp" className="d-block w-100" />
+          <Link to="/product13">
+            <img src="/IMAGES/men27.webp" className="d-block w-100" /> 
+            </Link>
           </div>
           <div className="col-6 col-md-2">
+          <Link to="/product14">
             <img src="/IMAGES/men28.webp" className="d-block w-100" />
+            </Link>
           </div>
           <div className="col-6 col-md-2">
             <img src="/IMAGES/men29.webp" className="d-block w-100" />

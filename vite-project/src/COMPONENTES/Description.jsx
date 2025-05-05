@@ -27,8 +27,12 @@ const Description = () => {
             `http://localhost:5000/men6/${id}`,
             `http://localhost:5000/men8/${id}`,
             `http://localhost:5000/men9/${id}`,
-             `http://localhost:5000/men10/${id}`,
-                `http://localhost:5000/men11/${id}`
+            `http://localhost:5000/men10/${id}`,
+            `http://localhost:5000/men11/${id}`,
+            `http://localhost:5000/men12/${id}`,
+            `http://localhost:5000/men13/${id}`,
+            `http://localhost:5000/men14/${id}`,
+             `http://localhost:5000/men15/${id}`
         ];
 
         for (let i = 0; i < endpoints.length; i++) {

@@ -811,7 +811,7 @@ swiper-slide img {
 
 .login-content {
   text-align: center;
-  background: linear-gradient(to right, crimson, orange, gold, deeppink, coral);
+  background: linear-gradient(to right, rgb(230, 180, 190), rgb(242, 226, 198), rgb(238, 229, 179), rgb(220, 186, 204), coral);
   height: 500px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -861,7 +861,7 @@ swiper-slide img {
   max-width: 960px;
   margin: auto;
   padding: 24px 16px;
-  background-color: #f9fafb;
+  background-color: #f1f1f1;
 
 }
 

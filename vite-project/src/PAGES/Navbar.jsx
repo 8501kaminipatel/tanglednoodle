@@ -24,10 +24,10 @@ const Navbar = () => {
           return;
         }
       
-        if (["tresemme", "renee", "maybelline", "minimalist"].some(keyword => trimmed.includes(keyword))) {
-          navigate(`/beauty?search=${encodeURIComponent(trimmed)}`);
-        } else if (["klotthe", "mamaearth", "pilgrim"].some(keyword => trimmed.includes(keyword))) {
-          navigate(`/product1?search=${encodeURIComponent(trimmed)}`);
+        if (["home"].some(keyword => trimmed.includes(keyword))) {
+          navigate(`/product11?search=${encodeURIComponent(trimmed)}`);
+        } else if (["sports shoes"].some(keyword => trimmed.includes(keyword))) {
+          navigate(`/product14?search=${encodeURIComponent(trimmed)}`);
         } else if (["men", "puma", "vastramay"].some(keyword => trimmed.includes(keyword))) {
           navigate(`/product2?search=${encodeURIComponent(trimmed)}`);
         } else {

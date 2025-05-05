@@ -107,7 +107,7 @@ const Studio = () => {
         </ul>
       </nav>
 
-      <section id="looks" className="product-section" >
+      <section id="looks" className="product-section" style={{marginTop:"-9.7px"}}>
         <h5 style={{paddingLeft:"30px",color:"black"}}>Guide To Influencers’ Most Coveted Looks</h5>
         {renderImages(GuideToInfluencersMostCovetedLooks)}
       </section>

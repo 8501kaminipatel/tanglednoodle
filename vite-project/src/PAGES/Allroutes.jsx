@@ -23,6 +23,10 @@ import Product7 from '../COMPONENTES/Product7'
 import Product8 from '../COMPONENTES/Product8'
 import Product9 from '../COMPONENTES/Product9'
 import Product10 from '../COMPONENTES/Product10'
+import Product11 from '../COMPONENTES/Product11'
+import Product12 from '../COMPONENTES/Product12'
+import Product13 from '../COMPONENTES/Product13'
+import Product14 from '../COMPONENTES/Product14'
 
 
 
@@ -50,6 +54,10 @@ const Allroutes = () => {
       <Route path="/product8" element={<Product8 />} />
       <Route path="/product9" element={<Product9 />} />
       <Route path="/product10" element={<Product10 />} />
+      <Route path="/product11" element={<Product11 />} />
+      <Route path="/product12" element={<Product12 />} />
+      <Route path="/product13" element={<Product13 />} />
+      <Route path="/product14" element={<Product14 />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/description/:id" element={
         <Privatepage>
