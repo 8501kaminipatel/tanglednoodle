@@ -21,7 +21,6 @@
 .gallary{
     height:1500px;
     width: 100%;
-    /* background-color: aqua; */
     margin-top: 4%;
 }
 .gallary .container .row{
@@ -344,3 +343,66 @@ margin-left: -4.4%;
     transition: 2.5s;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+    .banner1 {
+      width: 100%;
+    }
+  
+    .gallary .gallary-box1,
+    .gallary .gallary-box2,
+    .gallary .gallary-box3,
+    .gallary .gallary-box4,
+    .gallary .gallary-box5,
+    .gallary .gallary-box6 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .tranding-images .tranding-box1,
+    .tranding-images .tranding-box2,
+    .tranding-images .tranding-box3 {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .brand-boxes .brand-box1,
+    .brand-boxes .brand-box2,
+    .brand-boxes .brand-box3,
+    .brand-boxes .brand-box4,
+    .brand-boxes .brand-box5 {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Small devices (phones, 576px and up) */
+  @media (max-width: 576px) {
+    .banner1 img,
+    .gallary img,
+    .tranding-images img,
+    .brands img,
+    .brand-boxes img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .gallary {
+      height: auto;
+    }
+  
+    .gallary .container .row {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .brand-boxes .brand-box1,
+    .brand-boxes .brand-box2,
+    .brand-boxes .brand-box3,
+    .brand-boxes .brand-box4,
+    .brand-boxes .brand-box5 {
+      width: 100%;
+    }
+  }
+  

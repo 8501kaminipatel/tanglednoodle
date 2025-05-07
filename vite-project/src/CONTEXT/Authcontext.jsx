@@ -1,5 +1,10 @@
 import { createContext, useState, useEffect } from "react";
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import {
+  onAuthStateChanged,
+  signOut,
+  signInWithPhoneNumber,
+  RecaptchaVerifier,
+} from "firebase/auth";
 import { auth } from "../SERVICES/Firebase";
 import { toast } from "react-toastify";
 
@@ -8,13 +13,14 @@ export const Usercontext = createContext();
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [flag, setFlag] = useState(false);
+  const [confirmationResult, setConfirmationResult] = useState(null);
 
-  // Change icon flag
+  // Toggle icon flag
   const changeicon = () => {
     setFlag(!flag);
   };
 
-  // Load user from localStorage or Firebase auth on initial load
+  // Monitor auth state or restore from localStorage
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
@@ -24,7 +30,6 @@ export const UserProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
         setUser(currentUser);
-        // Optionally store the user in localStorage
         localStorage.setItem("user", JSON.stringify(currentUser));
       } else {
         setUser(null);
@@ -35,40 +40,70 @@ export const UserProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  // Sign out handler
-  function handleSignOut() {
+  // Sign out logic
+  const handleSignOut = () => {
     signOut(auth)
       .then(() => {
         setUser(null);
-        localStorage.removeItem("user");  // Remove user from localStorage on logout
-        toast.success("Logout successful ✅", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
+        localStorage.removeItem("user");
+        toast.success("Logout successful ✅", { theme: "dark" });
       })
       .catch((error) => {
         console.error(error);
-        toast.error("Logout failed ❌", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
+        toast.error("Logout failed ❌", { theme: "dark" });
       });
-  }
+  };
+
+  // 🔢 Phone login: Step 1 - Send OTP
+  const sendOTP = async (phoneNumber) => {
+    try {
+      if (!window.recaptchaVerifier) {
+        window.recaptchaVerifier = new RecaptchaVerifier(auth, "recaptcha-container", {
+          size: "invisible",
+          callback: () => {},
+        });
+      }
+
+      const appVerifier = window.recaptchaVerifier;
+      const result = await signInWithPhoneNumber(auth, phoneNumber, appVerifier);
+      setConfirmationResult(result);
+      toast.success("OTP sent 📲", { theme: "dark" });
+      return true;
+    } catch (error) {
+      console.error("OTP Send Error:", error);
+      toast.error("Failed to send OTP ❌", { theme: "dark" });
+      return false;
+    }
+  };
+
+  // 🔐 Phone login: Step 2 - Verify OTP
+  const verifyOTP = async (code) => {
+    try {
+      if (!confirmationResult) throw new Error("No confirmation result found");
+      const result = await confirmationResult.confirm(code);
+      setUser(result.user);
+      localStorage.setItem("user", JSON.stringify(result.user));
+      toast.success("Login successful ✅", { theme: "dark" });
+      return true;
+    } catch (error) {
+      console.error("OTP Verify Error:", error);
+      toast.error("Invalid OTP ❌", { theme: "dark" });
+      return false;
+    }
+  };
 
   return (
-    <Usercontext.Provider value={{ user, setUser, handleSignOut, flag, changeicon }}>
+    <Usercontext.Provider
+      value={{
+        user,
+        setUser,
+        handleSignOut,
+        flag,
+        changeicon,
+        sendOTP,
+        verifyOTP,
+      }}
+    >
       {children}
     </Usercontext.Provider>
   );

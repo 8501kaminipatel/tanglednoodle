@@ -27,6 +27,9 @@ import Product11 from '../COMPONENTES/Product11'
 import Product12 from '../COMPONENTES/Product12'
 import Product13 from '../COMPONENTES/Product13'
 import Product14 from '../COMPONENTES/Product14'
+import InsightsChart from '../COMPONENTES/chart'
+
+ 
 
 
 
@@ -59,6 +62,8 @@ const Allroutes = () => {
       <Route path="/product13" element={<Product13 />} />
       <Route path="/product14" element={<Product14 />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/chart" element={< InsightsChart/>} />
+   
       <Route path="/description/:id" element={
         <Privatepage>
           <Description />

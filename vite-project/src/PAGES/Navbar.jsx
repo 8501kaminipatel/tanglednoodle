@@ -26,12 +26,17 @@ const Navbar = () => {
       
         if (["home"].some(keyword => trimmed.includes(keyword))) {
           navigate(`/product11?search=${encodeURIComponent(trimmed)}`);
-        } else if (["sports shoes"].some(keyword => trimmed.includes(keyword))) {
-          navigate(`/product14?search=${encodeURIComponent(trimmed)}`);
+        } else if (["women"].some(keyword => trimmed.includes(keyword))) {
+          navigate(`/product?search=${encodeURIComponent(trimmed)}`);
         } else if (["men", "puma", "vastramay"].some(keyword => trimmed.includes(keyword))) {
           navigate(`/product2?search=${encodeURIComponent(trimmed)}`);
-        } else {
-          navigate(`/product?search=${encodeURIComponent(trimmed)}`);
+        } else if (["flip-flop"].some(keyword => trimmed.includes(keyword))) {
+            navigate(`/product13?search=${encodeURIComponent(trimmed)}`);
+          }
+          else if (["sports shoes","track pants","tracksuits","shorts"].some(keyword => trimmed.includes(keyword))) {
+            navigate(`/product14?search=${encodeURIComponent(trimmed)}`);
+          }else {
+          navigate(`/beauty?search=${encodeURIComponent(trimmed)}`);
         }
       };
       
@@ -49,9 +54,9 @@ const Navbar = () => {
                 zIndex: 1000
             }}>
 
-                <div className="header" style={{ color: flag ? 'white' : 'black' }}>
-                    <div className="container-fluid" style={{ color: flag ? 'white' : 'black' }}>
-                        <div className="row" style={{ color: flag ? 'white' : 'black' }}>
+                <div className="header" >
+                    <div className="container-fluid" >
+                        <div className="row" >
                             <div
                                 className="navbar navbar-expand-lg p-0 m-0 position-fixed top-0 color: flag ? 'white' : 'black' background: flag ? 'white' : 'black'"
                                 style={{ height: "80px", width: "100%" }}
@@ -1399,6 +1404,7 @@ const Navbar = () => {
 
                                                                 </div>
                                                             </li>
+                                                            <li><Link to="/chart" className="text-decoration-none" style={{ cursor: "pointer", fontSize: "16px" }}>📊chart</Link></li>
                                                             <li><Link to="/contact" className="text-decoration-none" style={{ cursor: "pointer", fontSize: "16px" }}>📬Contact Us</Link></li>
                                                             <li><Link to="/profile" className="text-decoration-none" style={{ cursor: "pointer", fontSize: "16px" }}>👤 My Profile</Link></li>
                                                             {user && (

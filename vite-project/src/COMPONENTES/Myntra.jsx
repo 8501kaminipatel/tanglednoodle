@@ -96,12 +96,12 @@ const Myntra = () => {
 
       </div>
 
-      <h2 style={{ fontWeight: "bolder", margin: "30px" }}>RISING STARS</h2>
-      <div style={{ width: "100%", height: "530px", marginTop: "80px" }}>
+      <h2 style={{ fontWeight: "bolder", margin: "10px" }}>RISING STARS</h2>
+      <div style={{ width: "100%", height: "530px", marginTop: "10px" }}>
 
 
 
-        <div style={{ width: "100%", height: "500px", marginTop: "80px" }}>
+        <div style={{ width: "100%", height: "500px" }}>
           <div
             id="carouselExampleDark2"
             className="carousel carousel-dark slide"
@@ -195,11 +195,11 @@ const Myntra = () => {
       </div>
 
       <h2 style={{ fontWeight: "bolder", margin: "30px" }}>LUXE GRAND REDUCTION DEALS</h2>
-      <div style={{ width: "100%", height: "350px", marginTop: "80px" }}>
+      <div style={{ width: "100%", height: "350px", marginTop: "10px" }}>
 
 
 
-        <div style={{ width: "100%", height: "500px", marginTop: "80px" }}>
+        <div style={{ width: "100%", height: "500px" }}>
           <div
             id="carouselExampleDark3"
             className="carousel carousel-dark slide"

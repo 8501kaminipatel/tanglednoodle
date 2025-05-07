@@ -20,7 +20,7 @@ function App() {
         color: flag ? 'white' : 'black',
       }}
     >
-      <Navbar />
+      <Navbar className={flag ? 'dark-theme' : 'light-theme'} />
       <Allroutes />
 
       {!shouldHideFooter && <Footer />}

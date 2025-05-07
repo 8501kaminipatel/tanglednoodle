@@ -17,6 +17,11 @@ const Product14 = () => {
 
   const [categorydata, setcategorydata] = useState(searchParams.getAll("category") || []);
   console.log(categorydata)
+  const [selectedColors, setSelectedColors] = useState([]);
+  const [selectedProductNames, setSelectedProductNames] = useState([]);
+  const [selectedBrands, setSelectedBrands] = useState([]);
+  
+  
 
   const handlechange = (e) => {
     const { value } = e.target;
@@ -56,7 +61,28 @@ const Product14 = () => {
 
   };
 
+  const handleColorChange = (e) => {
+    const { value } = e.target;
+    setSelectedColors((prev) => prev.includes(value) ? prev.filter(color => color !== value) : [...prev, value]);
+  };
 
+  const handleProductNameChange = (e) => {
+    const { value } = e.target;
+    setSelectedProductNames((prev) =>
+      prev.includes(value) ? prev.filter((name) => name !== value) : [...prev, value]
+    );
+  };
+
+  const handleBrandChange = (e) => {
+    const { value, checked } = e.target;
+    setSelectedBrands((prev) => {
+      if (checked) {
+        return [...prev, value];
+      } else {
+        return prev.filter(brand => brand !== value);
+      }
+    });
+  };
   const getdata = () => {
     axios
       .get(' http://localhost:5000/men15', { params: parmobj })
@@ -74,7 +100,31 @@ const Product14 = () => {
             });
           });
         }
+        if (selectedProductNames.length > 0) {
+          filteredProducts = filteredProducts.filter(product =>
+            selectedProductNames.some(name =>
+              product.product_name.toLowerCase().includes(name.toLowerCase())
+            )
+          );
+        }
+        if (selectedBrands.length > 0) {
+          filteredProducts = filteredProducts.filter(product =>
+            selectedBrands.includes(product.brand)
+          );
+        }
 
+        // Color filter
+        if (selectedColors.length > 0) {
+          filteredProducts = filteredProducts.filter((product) =>
+            selectedColors.includes(product.color?.toLowerCase())
+          );
+        }
+
+        if (categorydata.length > 0) {
+          filteredProducts = filteredProducts.filter(product =>
+            categorydata.includes(product.category?.toLowerCase())
+          );
+        }
         setProducts(filteredProducts);
       })
       .catch(error => {
@@ -84,9 +134,10 @@ const Product14 = () => {
 
   // Use useEffect to fetch products when location/search or other parameters change
   useEffect(() => {
-     getdata(parmobj); 
-     setSearchParams({ category: categorydata })
-   }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+    getdata(parmobj);
+    // setSearchParams({ category: categorydata })
+  }, [location.search, ascproduct, searchParams, discountFilters, categorydata, selectedProductNames, selectedBrands, selectedColors]);
+
 
   return (
     <>
@@ -127,32 +178,58 @@ const Product14 = () => {
                 <h5>Categories</h5>
                 <i className="ri-search-line"></i>
               </div>
+
               <label>
-                <input type="checkbox" /> Lipstick(13573)
+                <input type="checkbox" value="Unisex Running Shoes"
+                  checked={selectedProductNames.includes("Unisex Running Shoes")}
+                  onChange={handleProductNameChange} /> Unisex Running Shoes
               </label><br />
+
               <label>
-                <input type="checkbox" /> Nail Polish(11100)
+                <input type="checkbox" value="Men Running Shoes"
+                  checked={selectedProductNames.includes("Men Running Shoes")}
+                  onChange={handleProductNameChange} /> Men Running Shoes
               </label><br />
+
               <label>
-                <input type="checkbox" /> Perfume(4991)
+                <input type="checkbox" value="Men Mid Rise Track Pants"
+                  checked={selectedProductNames.includes("Men Mid Rise Track Pants")}
+                  onChange={handleProductNameChange} /> Men Mid Rise Track Pants
               </label><br />
+
               <label>
-                <input type="checkbox" /> Massage Oils(3520)
+                <input type="checkbox" value="Rapid-Dry Striped Tracksuit"
+                  checked={selectedProductNames.includes("Rapid-Dry Striped Tracksuit")}
+                  onChange={handleProductNameChange} /> Rapid-Dry Striped Tracksuit
               </label><br />
+
               <label>
-                <input type="checkbox" /> Face Wash(3114)
+                <input type="checkbox" value="Unisex Badminton Indoor Shoes"
+                  checked={selectedProductNames.includes("Unisex Badminton Indoor Shoes")}
+                  onChange={handleProductNameChange} /> Unisex Badminton Indoor Shoes
               </label><br />
+
               <label>
-                <input type="checkbox" /> Bindi(2787)
+                <input type="checkbox" value="Men Rapid-Dry Running Shorts"
+                  checked={selectedProductNames.includes("Men Rapid-Dry Running Shorts")}
+                  onChange={handleProductNameChange} /> Men Rapid-Dry Running Shorts
               </label><br />
+
               <label>
-                <input type="checkbox" /> Serum and Gel(2701)
+                <input type="checkbox" value="Men Go Run Consistent Shoes"
+                  checked={selectedProductNames.includes("Men Go Run Consistent Shoes")}
+                  onChange={handleProductNameChange} /> Men Go Run Consistent Shoes
               </label><br />
+
               <label>
-                <input type="checkbox" /> Skin Care Combo(2562)
+                <input type="checkbox" value="Men Sports Shorts"
+                  checked={selectedProductNames.includes("Men Sports Shorts")}
+                  onChange={handleProductNameChange} /> Men Sports Shorts
               </label><br />
+
               <h6 className="text-danger ms-4 mt-3">+173 more</h6>
             </div>
+
             <hr />
 
             <div className="filter-brand">
@@ -160,29 +237,52 @@ const Product14 = () => {
                 <h5>Brand</h5>
                 <i className="ri-search-line"></i>
               </div>
+
               <label>
-                <input type="checkbox" /> Comet Busters(2729)
+                <input type="checkbox" value="HRX by Hrithik Roshan"
+                  checked={selectedBrands.includes("HRX by Hrithik Roshan")}
+                  onChange={handleBrandChange} /> HRX by Hrithik Roshan
               </label><br />
+
               <label>
-                <input type="checkbox" /> PERPAA(2598)
+                <input type="checkbox" value="WROGN"
+                  checked={selectedBrands.includes("WROGN")}
+                  onChange={handleBrandChange} /> WROGN
               </label><br />
+
               <label>
-                <input type="checkbox" /> MI FASHION(2410)
+                <input type="checkbox" value="TURNFIT"
+                  checked={selectedBrands.includes("TURNFIT")}
+                  onChange={handleBrandChange} /> TURNFIT
               </label><br />
+
               <label>
-                <input type="checkbox" /> NOY(2222)
+                <input type="checkbox" value="Puma"
+                  checked={selectedBrands.includes("Puma")}
+                  onChange={handleBrandChange} /> Puma
               </label><br />
+
               <label>
-                <input type="checkbox" /> Deve Herbes(1986)
+                <input type="checkbox" value="Red Tape"
+                  checked={selectedBrands.includes("Red Tape")}
+                  onChange={handleBrandChange} /> Red Tape
               </label><br />
+
               <label>
-                <input type="checkbox" /> ME-ON(1345)
+                <input type="checkbox" value="Campus"
+                  checked={selectedBrands.includes("Campus")}
+                  onChange={handleBrandChange} /> Campus
               </label><br />
+
               <label>
-                <input type="checkbox" /> BEROMT(1229)
+                <input type="checkbox" value="Skechers"
+                  checked={selectedBrands.includes("Skechers")}
+                  onChange={handleBrandChange} /> Skechers
               </label><br />
+
               <h6 className="text-danger ms-4 mt-3">+1878 more</h6>
             </div>
+
             <hr />
 
             <div className="filter-price">
@@ -202,32 +302,58 @@ const Product14 = () => {
                 <i className="ri-search-line"></i>
               </div>
               <label>
-                <input type="checkbox" />
+                <input type="checkbox" value="white"
+                  checked={selectedColors.includes("white")}
+                  onChange={handleColorChange} />
                 <i className="bi bi-circle-fill" style={{ color: "whitesmoke", padding: "5px" }}></i> White (13605)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "pink", padding: "5px" }}></i> Pink (10892)
+                <input type="checkbox" value="gray"
+                  checked={selectedColors.includes("gray")}
+                  onChange={handleColorChange} />
+                <i className="bi bi-circle-fill" style={{ color: "Gray", padding: "5px" }}></i> Gray (10892)
               </label>
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  value="multi"
+                  checked={selectedColors.includes("multi")}
+                  onChange={handleColorChange}
+                />
+                <i
+                  className="bi bi-circle-fill"
+                  style={{
+                    background: "linear-gradient(to right, rgb(227,109,178), rgb(255,255,0), rgb(255,0,0))",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    padding: "5px"
+                  }}
+                ></i>{" "}
+                Multi (9226)
+              </label>
+              <label>
+                <input type="checkbox" value="black"
+                  checked={selectedColors.includes("black")}
+                  onChange={handleColorChange} />
                 <i className="bi bi-circle-fill" style={{ color: "black", padding: "5px" }}></i> Black (9226)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "blue", padding: "5px" }}></i> Blue (9114)
-              </label>
-              <label>
-                <input type="checkbox" />
+                <input type="checkbox" value="brown"
+                  checked={selectedColors.includes("brown")}
+                  onChange={handleColorChange} />
                 <i className="bi bi-circle-fill" style={{ color: "brown", padding: "5px" }}></i> Brown (7995)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "red", padding: "5px" }}></i> Red (6871)
+                <input type="checkbox" value="golden"
+                  checked={selectedColors.includes("golden")}
+                  onChange={handleColorChange} />
+                <i className="bi bi-circle-fill" style={{ color: "yellow", padding: "5px" }}></i> golden(6871)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "green", padding: "5px" }}></i> Green (6392)
+                <input type="checkbox" value="green"
+                  checked={selectedColors.includes("green")}
+                  onChange={handleColorChange} />
+                <i className="bi bi-circle-fill" style={{ color: "#008000", padding: "5px" }}></i> Green (6392)
               </label>
               <h6 className="text-danger ms-4 mt-3">+39 more</h6>
             </div>
@@ -319,20 +445,21 @@ const Product14 = () => {
             </div>
           </div>
 
-          <div className="right-shop mt-5">
+
+          <div className="right-shop mt-5" >
             <div className="product-list">
               <div className="container">
                 <div className="row">
                   {products.map((product) => (
-                    <div key={product.id} className="col-md-3 col-sm-6 mb-4">
+                    <div key={product.id} className="col-md-3 col-sm-6 mb-4" style={{ height: "630px", width: "220px" }}>
+                  
                       <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
                         <div className="position-relative">
-                            
                           <img
                             src={product.image_url}
                             alt={product.title}
                             className="card-img-top img-fluid"
-                            style={{ height: '250px', objectFit: 'cover' }}
+
                           />
                           <div className="overlay">
                             <div className="btn btn-primary" target="_blank" rel="noopener noreferrer">
@@ -346,12 +473,12 @@ const Product14 = () => {
                           <p className="card-text">
                             <strong>Rating:</strong> {product.rating} ({product.rating_count} reviews)
                           </p>
-                          <h5 className="card-title">{product.title}</h5>
+                          <h5 className="card-title" style={{ fontStyle: "10px" }}>{product.product_name}</h5>
                           <p className="card-text text-muted">{product.brand}</p>
                           <p className="card-text">Sizes: {product.volume}</p>
                           <p className="card-text">
                             <span className="text-muted me-2">
-                              <span className="line-through text-red-500 mr-2">₹{product.original_price}</span>
+                              <span className="text-decoration-line-through text-danger me-2">₹{product.original_price}</span>
                             </span>
                             <span className="fw-bold me-2 text-dark">₹{product.discounted_price}</span>
                             <span className="badge bg-success">{product.discount}</span>
@@ -371,6 +498,9 @@ const Product14 = () => {
           </div>
         </div>
       </div >
+      <div className="recently-viewed-link">
+  <Link to="/recently-viewed">See Recently Viewed Products</Link>
+</div>
     </>
   );
 };
