@@ -78,7 +78,7 @@ const Description = () => {
         try {
             const res = await axios.post('http://localhost:5000/cart', {
                 productId: product.id,
-                title: product.title,
+                title: product_name,
                 price: Number(product.discounted_price.replace("Rs. ", "")),
                 image: product.image_url, // using image_url here
                 quantity: 1,
@@ -142,7 +142,7 @@ const Description = () => {
 
                         {/* Right: Product Details with Glassmorphism */}
                         <div className="col-md-5 product-card-glass text-white" style={{ height: "500px" }}>
-                            <h3>{singleData.title}</h3>
+                            <h3>{singleData.product_name}</h3>
                             <p className="text-light">{singleData.brand}</p>
                             <p className="text-light"><i class="bi bi-person-bounding-box" style={{ color: "#3498db" }}></i> {singleData.rating_count}</p>
                             <p className="mb-2">

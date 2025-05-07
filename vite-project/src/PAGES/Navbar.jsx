@@ -1383,7 +1383,7 @@ const Navbar = () => {
                                             value={search}
                                             placeholder="Search beauty products..."
                                             onChange={(e) => setSearch(e.target.value)}
-                                            style={{ paddingLeft: "15px", color: flag ? 'white' : 'black' }}
+                                            style={{ paddingLeft: "15px",  color: "black" }}
                                         />
                                     </form>
                                     <div className="main-icon d-flex">

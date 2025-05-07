@@ -1,3 +1,5 @@
+/* navbar */
+
 * {
   padding: 0;
   margin: 0%;
@@ -9,9 +11,6 @@
 .header {
   width: 100%;
   height: 80px;
-
-
-
 }
 
 .header .navbar-brand img {
@@ -30,11 +29,8 @@
   border: none;
   border-radius: 5px;
   outline: none;
-
   color: inherit;
   z-index: 1;
-
-
 }
 
 .header form i {
@@ -44,7 +40,6 @@
   z-index: 2;
   color: inherit;
   font-size: 20px;
-
 }
 
 .main-icon {
@@ -62,8 +57,6 @@
 .list5:hover .list {
   background-color: inherit;
 }
-
-
 
 .header ul .list1 {
   position: relative;
@@ -84,10 +77,7 @@
 .list1 .list {
   position: absolute;
   top: 46%;
-
 }
-
-
 
 .header ul .list2 {
   position: relative;
@@ -147,9 +137,6 @@
   background-color: white;
   width: 1200%;
   height: 480px;
-
-
-
 }
 
 .list4 .list {
@@ -157,7 +144,6 @@
   top: -50%;
   left: -290%;
 }
-
 
 .header ul .list5 {
   position: relative;
@@ -183,14 +169,10 @@
   left: -400%;
 }
 
-
-
 .fs-6 a {
   font-size: 10px;
   height: 25px;
 }
-
-
 
 .header ul li::after {
   content: '';
@@ -198,7 +180,6 @@
   display: none;
   width: 90%;
   margin: auto;
-
 }
 
 .list1:hover::after {
@@ -341,29 +322,21 @@
 
 
 /* footer */
+
 .footer {
   height: 1600px;
   width: 100%;
-  /* background-color: whitesmoke; */
   margin-top: 80px;
   padding-top: 30px;
 }
 
-.footer5 {
-  /* background-color: whitesmoke; */
-}
-
-
-
 ul li {
   list-style: none;
-
 }
 
 ul li a {
   color: rgb(129, 129, 129);
   text-decoration: none;
-
 }
 
 .footer h6 {
@@ -401,7 +374,10 @@ ul li a {
   margin-top: 10px;
 }
 
+
+
 /* myntra */
+
 .carousel-indicators [data-bs-target] {
   width: 12px !important;
   height: 12px !important;
@@ -440,6 +416,7 @@ swiper-slide img {
 
 
 /* beauty */
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
@@ -476,15 +453,12 @@ swiper-slide img {
 
 
 
-
-
 /* studio */
-/* General */
+
 .product-container {
   font-family: 'Poppins', sans-serif;
   max-width: 300px;
   margin: auto;
-
   background: #f9f9f9;
 }
 
@@ -499,7 +473,6 @@ swiper-slide img {
   top: 0;
   padding: 0px 10px;
   width: 300px;
-
   height: 80px;
   border-bottom: 1px solid #eee;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -530,12 +503,6 @@ swiper-slide img {
 
 .product-nav-link:hover {
   color: #ff3f6c;
-}
-
-/* Section */
-.product-section {
-  /* margin-top: 60px; */
-  /* padding-bottom: 40px; */
 }
 
 /* Grid */
@@ -665,12 +632,10 @@ swiper-slide img {
   padding: 60px 0;
   font-family: 'Poppins', sans-serif;
   color: #333;
-
 }
 
 /* Right Panel: Modern Glassmorphic Card */
 .product-card-glass {
-
   padding: 30px;
   color: #222;
   transition: all 0.3s ease-in-out;
@@ -798,14 +763,12 @@ swiper-slide img {
 
 
 /* login */
-/* General container for the login page */
-/* Basic styling for the login page */
+
 .login-page {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
 
 .login-content {
@@ -853,15 +816,12 @@ swiper-slide img {
 }
 
 
-
-
 /* addcart */
+
 .cart-container {
   max-width: 960px;
   margin: auto;
   padding: 24px 16px;
-
-
 }
 
 .cart-title {
@@ -869,7 +829,6 @@ swiper-slide img {
   font-weight: bold;
   margin-bottom: 24px;
   text-align: center;
- 
 }
 
 .cart-item {
@@ -1031,7 +990,7 @@ swiper-slide img {
 
 /* mediaquery */
 
-@media(max-width:992px) {
+@media(max-width:1200px) {
   .header {
     .header {
       width: 100%;
@@ -1040,13 +999,15 @@ swiper-slide img {
       top: 0;
       z-index: 2;
       display: block;
-      background-color: white; /* default */
+      background-color: white;
+      /* default */
     }
-  
+
     .dark-mode .header {
       background-color: black;
     }
   }
+
   .navbar {
     background-color: inherit;
     color: inherit;
@@ -1204,9 +1165,10 @@ swiper-slide img {
       top: 0;
       z-index: 2;
       display: block;
-      background-color: white; /* default */
+      background-color: white;
+      /* default */
     }
-  
+
     .dark-mode .header {
       background-color: black;
     }
@@ -1335,9 +1297,10 @@ swiper-slide img {
       top: 0;
       z-index: 2;
       display: block;
-      background-color: white; /* default */
+      background-color: white;
+      /* default */
     }
-  
+
     .dark-mode .header {
       background-color: black;
     }
@@ -1480,4 +1443,63 @@ swiper-slide img {
 .light-theme .header {
   background-color: white;
   color: black;
+}
+
+
+
+
+
+/* beauty */
+
+.right {
+  width: 100%;
+  padding: 10px;
+}
+
+.right-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.right-ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.right-li {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort-select select {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  .right-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sort-select {
+    width: 100%;
+  }
+
+  .sort-select select {
+    width: 100%;
+  }
 }

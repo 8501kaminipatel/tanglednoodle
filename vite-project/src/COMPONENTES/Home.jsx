@@ -7,9 +7,7 @@ const Home = () => {
   return (
     <>
       <div className="banner1 container-fluid">
-        <Link to="/product">
         <img src="/IMAGES/homeimg-1.webp" />
-        </Link>
       </div>
       <div className="gallary">
         <div className="container d-flex">

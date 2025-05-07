@@ -178,3 +178,17 @@
 
 
 
+/* Ensure the carousel container is responsive */
+.carousel-container {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+/* Make sure the carousel images are responsive */
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+

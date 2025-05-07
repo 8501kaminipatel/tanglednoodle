@@ -13,7 +13,8 @@
       "discounted_price": "Rs. 130",
       "original_price": "Rs. 200",
       "discount": "35% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "Yellow"
     },
     {
       "id": 2,
@@ -28,7 +29,8 @@
       "discounted_price": "Rs. 699",
       "original_price": "Rs. 750",
       "discount": "Rs. 51% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "Black"
     },
     {
       "id": 3,
@@ -43,7 +45,8 @@
       "discounted_price": "Rs. 398",
       "original_price": "Rs. 429",
       "discount": "7% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "White"
     },
     {
       "id": 4,
@@ -58,7 +61,8 @@
       "discounted_price": "Rs. 331",
       "original_price": "Rs. 349",
       "discount": "20% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "White"
     },
     {
       "id": 5,
@@ -73,7 +77,8 @@
       "discounted_price": "Rs. 239",
       "original_price": "Rs. 420",
       "discount": "43% OFF",
-      "category": "   Girls"
+      "category": "Girls",
+      "color": "Black"
     },
     {
       "id": 6,
@@ -88,7 +93,8 @@
       "discounted_price": "Rs. 239",
       "original_price": "Rs. 420",
       "discount": "10% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "golden"
     },
     {
       "id": 7,
@@ -103,7 +109,8 @@
       "discounted_price": "Rs. 194",
       "original_price": "Rs. 329",
       "discount": "41% OFF",
-      "category": "Girls"
+      "category": "Girls",
+      "color": "golden"
     },
     {
       "id": 8,
@@ -118,7 +125,8 @@
       "discounted_price": "Rs. 699",
       "original_price": "Rs. 750",
       "discount": "Rs. 51% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "Black"
     },
     {
       "id": 9,
@@ -133,7 +141,8 @@
       "discounted_price": "Rs. 823",
       "original_price": "Rs. 885",
       "discount": "7% OFF",
-      "category": "women"
+      "category": "women",
+      "color": "White"
     },
     {
       "id": 10,
@@ -148,7 +157,8 @@
       "discounted_price": "Rs. 188",
       "original_price": "Rs. 299",
       "discount": "37% OFF",
-      "category": "Girls"
+      "category": "Girls",
+      "color": "Black"
     },
     {
       "id": 11,
@@ -158,11 +168,13 @@
       "product_url": "https://www.myntra.com/serum-and-gel/minimalist/minimalist-vitamin-c-10-face-serum-for-glowing-skin-30-ml/14173102/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14173102/2024/8/7/d244d100-2645-4658-adf1-a686908651d01723024186451-Minimalist-Vitamin-C-10-Face-Serum-for-Glowing-Skin-30-ml-64-1.jpg",
       "brand": "Minimalist",
-      "title": "Vitamin C Serum",
+      "product_name": "Vitamin C Serum",
       "volume": "20-30 ML",
       "discounted_price": "Rs. 664",
       "original_price": "Rs. 699",
-      "discount": "5% OFF"
+      "discount": "5% OFF",
+      "category": "Girls",
+      "color": "White"
     },
     {
       "id": 12,
@@ -172,11 +184,13 @@
       "product_url": "https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-100-ml/2508145/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2508145/2023/5/31/1e1b780b-66b6-42a3-a08e-7a3256c6f4641685528431373-Indulekha-Bringha-Hair-Oil-100-ml-5081685528430928-1.jpg",
       "brand": "indulekha",
-      "title": "Bringha Hair Oil 100 ml",
+      "product_name": "Bringha Hair Oil 100 ml",
       "volume": "100ML",
       "discounted_price": "Rs. 280",
       "original_price": "Rs. 468",
-      "discount": "40% OFF"
+      "discount": "40% OFF",
+      "category": "Girls",
+      "color": "Yellow"
     },
     {
       "id": 13,
@@ -186,11 +200,13 @@
       "product_url": "https://www.myntra.com/lipstick/maybelline/maybelline-new-york-superstay-vinyl-ink-liquid-lipstick-45-ml---lippy/19444472/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/13/nxgAxDgB_199e36ce65d34f6583b5b7697ea0fae2.jpg",
       "brand": "Maybelline",
-      "title": "Superstay Lipstick - Lippy",
+      "product_name": "Superstay Lipstick - Lippy",
       "volume": "4-5 ML",
       "discounted_price": "Rs. 534",
       "original_price": "Rs. 849",
-      "discount": "37% OFF"
+      "discount": "37% OFF",
+      "category": "Girls",
+      "color": "Red"
     },
     {
       "id": 14,
@@ -200,11 +216,13 @@
       "product_url": "https://www.myntra.com/kajal/renee/renee-midnight-kohl-kajal-pencil---15g---black/27362474/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/27362474/2024/2/5/0a270d3d-64d9-445a-bf4a-619bbe760f671707137241015ReneeMidnightKohlKajalPencil-15g-Black1.jpg",
       "brand": "Renee",
-      "title": "Midnight Kohl Kajal Pencil",
+      "product_name": "Midnight Kohl Kajal Pencil",
       "volume": "1-2 ML",
       "discounted_price": "Rs. 399",
       "original_price": "Rs. 450",
-      "discount": "Rs. 51 OFF"
+      "discount": "Rs. 51 OFF",
+      "category": "Girls",
+      "color": "Black"
     },
     {
       "id": 15,
@@ -214,11 +232,13 @@
       "product_url": "https://www.myntra.com/hair-colour/nat+habit/nat-habit-2pcs-ready-to-apply-henna-paste-with-black-tea--herbs-220g-each---rich-brown/22048752/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/22048752/2024/8/21/520bed21-1483-4f55-8e92-12660911721f1724221876350-Nat-Habit-Set-of-2-100-Natural-Ready-To-Apply-Henna-Paste-22-11.jpg",
       "brand": "Nat Habit",
-      "title": "Set of 2 Henna Paste HairColor",
+      "product_name": "Set of 2 Henna Paste HairColor",
       "volume": "Pack",
       "discounted_price": "Rs. 346",
       "original_price": "Rs. 462",
-      "discount": "25% OFF"
+      "discount": "25% OFF",
+      "category": "women",
+      "color": "green"
     },
     {
       "id": 16,
@@ -228,11 +248,13 @@
       "product_url": "https://www.myntra.com/eyeshadow/mars/mars-back-to-basics-eyeshadow-palette-shade-02/16228114/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/25/t8hUW84R_cea13351a377476fa118ec250f03acab.jpg",
       "brand": "MARS",
-      "title": "Back to Basics Palette",
+      "product_name": "Back to Basics Palette",
       "volume": "10-15 ML",
       "discounted_price": "Rs. 269",
       "original_price": "Rs. 299",
-      "discount": "10% OFF"
+      "discount": "10% OFF",
+      "category": "Girls",
+      "color": "multi"
     },
     {
       "id": 17,
@@ -242,11 +264,13 @@
       "product_url": "https://www.myntra.com/hair-serum/tresemme/tresemme-gloss-ultimate-ultra-shine-hair-serum-with-macademia--coconut-oil---100-ml/20875346/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20875346/2024/1/23/17be188c-25f4-478b-a024-901e677954191705990762968-TRESemme-Gloss-Ultimate-Ultra-Shine-Hair-Serum-with-Macademi-1.jpg",
       "brand": "TRESemme",
-      "title": "Gloss Ultimate Hair Serum",
+      "product_name": "Gloss Ultimate Hair Serum",
       "volume": "80-100 ML",
       "discounted_price": "Rs. 389",
       "original_price": "Rs. 599",
-      "discount": "35% OFF"
+      "discount": "35% OFF",
+      "category": "Girls",
+      "color": "golden"
     },
     {
       "id": 18,
@@ -256,11 +280,13 @@
       "product_url": "https://www.myntra.com/body-wash-and-shower-gel/marks+%26+spencer/marks--spencer-neroli-jasmine--sea-salt-shower-gel-500-ml/20488124/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20488124/2022/10/21/0077a29b-03e1-43dd-aed0-2d5580968eca1666335582023BodyWashandScrub1.jpg",
       "brand": "Marks & Spencer",
-      "title": "Neroli, Jasmine & Sea Salt Shower Gel 500 ml",
+      "product_name": "Neroli, Jasmine & Sea Salt Shower Gel 500 ml",
       "volume": "500 ML & Above",
       "discounted_price": "Rs. 389",
       "original_price": "Rs. 599",
-      "discount": "35% OFF"
+      "discount": "35% OFF",
+      "category": "Girls",
+      "color": "Blue"
     },
     {
       "id": 19,
@@ -270,11 +296,13 @@
       "product_url": "https://www.myntra.com/body-cream-and-lotion/marks+%26+spencer/marks--spencer-library-of-scent-lime-bergamot--mandarin-hand--body-lotion---300ml/27565378/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/27565378/2024/2/13/0b30707d-1dc9-42bb-bfdd-b5704f0ca3281707815137248BodyCreamandLotion1.jpg",
       "brand": "Marks & Spencer",
-      "title": "Hand & Body Lotion - 300ml",
+      "product_name": "Hand & Body Lotion - 300ml",
       "volume": "250-350 ML",
       "discounted_price": "Rs. 389",
       "original_price": "Rs. 599",
-      "discount": "35% OFF"
+      "discount": "35% OFF",
+      "category": "Girls",
+      "color": "White"
     },
     {
       "id": 20,
@@ -284,11 +312,13 @@
       "product_url": "https://www.myntra.com/serum-and-gel/minimalist/minimalist-10-niacinamide-face-serum-with-zinc---30-ml/14197742/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14197742/2022/4/11/fa46c621-7f6a-4a6b-9c42-9d97cc5e88ff1649661795019Minimalist10NiacinamideFaceSerumwithZinc-30ml1.jpg",
       "brand": "Minimalist",
-      "title": "10% Niacinamide Face Serum",
+      "product_name": "10% Niacinamide Face Serum",
       "volume": "20-30 ML",
       "discounted_price": "Rs. 569",
       "original_price": "Rs. 599",
-      "discount": "5% OFF"
+      "discount": "5% OFF",
+      "category": "Girls",
+      "color": "White"
     },
     {
       "id": 21,
@@ -298,11 +328,13 @@
       "product_url": "https://www.myntra.com/compact/maybelline/maybelline-new-york-fit-me-matte--poreless-spf-32-compact-powder-6g---ivory-115/13609226/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/13/eWAYHtH0_7856e436e9f045b4b16ed0695ed454d2.jpg",
       "brand": "Maybelline",
-      "title": "Fit Me Compact - Ivory 115",
+      "product_name": "Fit Me Compact - Ivory 115",
       "volume": "6-7 ML",
       "discounted_price": "Rs. 177",
       "original_price": "Rs. 269",
-      "discount": "34% OFF"
+      "discount": "34% OFF",
+      "category": "Girls",
+      "color": "golden"
     },
     {
       "id": 22,
@@ -312,11 +344,13 @@
       "product_url": "https://www.myntra.com/conditioner/dove/dove-daily-shine-conditioner-with-bio-protein---175-ml/365117/buy",
       "brand": "Dove",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/MARCH/25/9EJCw54L_a4970165896141b6a551892c6201d98a.jpg",
-      "title": "Daily Shine Conditioner",
+      "product_name": "Daily Shine Conditioner",
       "volume": "150-180 ML",
       "discounted_price": "Rs. 142",
       "original_price": "Rs. 285",
-      "discount": "50% OFF"
+      "discount": "50% OFF",
+      "category": "Girls",
+      "color": "White"
     },
     {
       "id": 23,
@@ -326,11 +360,13 @@
       "product_url": "https://www.myntra.com/serum-and-gel/minimalist/minimalist-2-salicylic-acid-serum-with-bha---30-ml/14173104/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17706418/2023/9/6/e96b4c57-caf6-4d64-bcb9-16b5190f10d51693992489644-Minimalist-16-Vitamin-C-Face-Serum-with-Vitamin-E--Ferulic-A-1.jpg",
       "brand": "Minimalist",
-      "title": "2% Salicylic Acid Serum 30 ml",
+      "product_name": "2% Salicylic Acid Serum 30 ml",
       "volume": "20-30 ML",
       "discounted_price": "Rs. 521",
       "original_price": "Rs. 549",
-      "discount": "5% OFF"
+      "discount": "5% OFF",
+      "category": "Girls",
+      "color": "White"
     },
     {
       "id": 24,
@@ -340,11 +376,13 @@
       "product_url": "https://www.myntra.com/toner/plum/plum-3-niacinamide-alcohol-free-toner-with-rice-water-to-reduce-pores--blemishes---150ml/16776662/buy",
       "image_url": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16776662/2025/1/4/7361e4e4-296e-4569-8754-f91731d1f7521735975570339-Plum-3-Niacinamide-Alcohol-Free-Toner-With-Rice-Water-To-Red-1.jpg",
       "brand": "Plum",
-      "title": "Niacinamide Toner 150 ml",
+      "product_name": "Niacinamide Toner 150 ml",
       "volume": "140-160 ML",
       "discounted_price": "Rs. 399",
       "original_price": "Rs. 420",
-      "discount": "5% OFF"
+      "discount": "5% OFF",
+      "category": "Girls",
+      "color": "white"
     }
   ],
   "studio": {
@@ -492,101 +530,11 @@
   },
   "cart": [
     {
-      "productId": 224,
-      "price": 849,
-      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/31452072/2024/12/24/9201198b-f204-4e26-bbd2-43f4d981b80b1735025739061-Mens-Textured-Jacquard-Full-Sleeve-Front-Open-Kurta-56517350-1.jpg",
-      "quantity": 1,
-      "rating": 4.3,
-      "rating_count": "12",
-      "category": "Sangria",
-      "volume": "S",
-      "original_price": 2499,
-      "discount": "66% OFF",
-      "id": 1
-    },
-    {
-      "productId": 273,
-      "price": 1139,
-      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18814952/2022/11/6/a65f4416-a86c-45b1-ad06-7a32119bd00a1667717435331PumaUnisexBlackPrintedPopcat20Sliders1.jpg",
-      "quantity": 1,
-      "rating": 4.4,
-      "rating_count": "6.4k",
-      "category": "Puma",
-      "volume": "UK7",
-      "original_price": 1999,
-      "discount": "43% OFF",
-      "id": 2
-    },
-    {
-      "productId": 42,
-      "price": 162,
-      "image": "https://assets.myntassets.com/dpr_2,q_40,w_210,c_limit,fl_progressive/assets/images/15324494/2024/1/3/c3fad2f9-2d34-4535-b848-90b65ed57e791704273946714VaselineLipTherapyCocoaButterLipTin17g1.jpg",
-      "quantity": 1,
-      "rating": 4.7,
-      "rating_count": "2.5k",
-      "category": "Vaseline",
-      "volume": "15-20 ML",
-      "original_price": 270,
-      "discount": "40% OFF",
-      "id": 3
-    },
-    {
-      "productId": 307,
-      "price": 689,
-      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/27505210/2024/2/12/62ab0602-8cb1-4fd4-b249-f23f591190cc1707715693408ABROSMenMeshRunningShoes1.jpg",
-      "quantity": 1,
-      "rating": 4.3,
-      "rating_count": "16",
-      "category": "ABROS",
-      "volume": "7",
-      "original_price": 2299,
-      "discount": "70% OFF",
-      "id": 4
-    },
-    {
-      "productId": 59,
-      "price": 587,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSet-g5YxFGvG1iG-YBHEndFVDzzBXMJGzBXA&s",
-      "quantity": 1,
-      "rating": 4.1,
-      "rating_count": "36",
-      "category": "KARATCART",
-      "volume": "Onesize",
-      "original_price": 3674,
-      "discount": "84% OFF",
-      "id": 5
-    },
-    {
-      "productId": 29,
-      "price": 645,
-      "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/JANUARY/14/Y0vXSOkx_da4d84c96cac4c8ca75095eab46a6d0c.jpg",
-      "quantity": 1,
-      "rating": 4.4,
-      "rating_count": "96",
-      "category": "Anouk Rustic",
-      "original_price": 1699,
-      "discount": "Rs. 1054 OFF",
-      "id": 6
-    },
-    {
-      "productId": 42,
-      "price": 162,
-      "image": "https://assets.myntassets.com/dpr_2,q_40,w_210,c_limit,fl_progressive/assets/images/15324494/2024/1/3/c3fad2f9-2d34-4535-b848-90b65ed57e791704273946714VaselineLipTherapyCocoaButterLipTin17g1.jpg",
-      "quantity": 1,
-      "rating": 4.7,
-      "rating_count": "2.5k",
-      "category": "Vaseline",
-      "volume": "15-20 ML",
-      "original_price": 270,
-      "discount": "40% OFF",
-      "id": 7
-    },
-    {
       "productId": 22,
       "title": "Daily Shine Conditioner",
       "price": 142,
       "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2025/MARCH/25/9EJCw54L_a4970165896141b6a551892c6201d98a.jpg",
-      "quantity": 1,
+      "quantity": 3,
       "rating": 4.5,
       "rating_count": "4.6k",
       "category": "Dove",

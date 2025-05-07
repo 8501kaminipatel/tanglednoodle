@@ -17,6 +17,10 @@ const Beauty = () => {
 
   const [categorydata, setcategorydata] = useState(searchParams.getAll("category") || []);
   console.log(categorydata)
+  const [selectedColors, setSelectedColors] = useState([]);
+  const [selectedProductNames, setSelectedProductNames] = useState([]);
+  const [selectedBrands, setSelectedBrands] = useState([]);
+
 
   const handlechange = (e) => {
     const { value } = e.target;
@@ -55,7 +59,28 @@ const Beauty = () => {
     category: searchParams.getAll("category"),
 
   };
+  const handleColorChange = (e) => {
+    const { value } = e.target;
+    setSelectedColors((prev) => prev.includes(value) ? prev.filter(color => color !== value) : [...prev, value]);
+  };
 
+  const handleProductNameChange = (e) => {
+    const { value } = e.target;
+    setSelectedProductNames((prev) =>
+      prev.includes(value) ? prev.filter((name) => name !== value) : [...prev, value]
+    );
+  };
+
+  const handleBrandChange = (e) => {
+    const { value, checked } = e.target;
+    setSelectedBrands((prev) => {
+      if (checked) {
+        return [...prev, value];
+      } else {
+        return prev.filter(brand => brand !== value);
+      }
+    });
+  };
 
   const getdata = () => {
     axios
@@ -74,6 +99,31 @@ const Beauty = () => {
             });
           });
         }
+        if (selectedProductNames.length > 0) {
+          filteredProducts = filteredProducts.filter(product =>
+            selectedProductNames.some(name =>
+              product.product_name.toLowerCase().includes(name.toLowerCase())
+            )
+          );
+        }
+        if (selectedBrands.length > 0) {
+          filteredProducts = filteredProducts.filter(product =>
+            selectedBrands.includes(product.brand)
+          );
+        }
+
+        // Color filter
+        if (selectedColors.length > 0) {
+          filteredProducts = filteredProducts.filter((product) =>
+            selectedColors.includes(product.color?.toLowerCase())
+          );
+        }
+
+        if (categorydata.length > 0) {
+          filteredProducts = filteredProducts.filter(product =>
+            categorydata.includes(product.category?.toLowerCase())
+          );
+        }
 
         setProducts(filteredProducts);
       })
@@ -84,12 +134,11 @@ const Beauty = () => {
 
   // Use useEffect to fetch products when location/search or other parameters change
 
-  
+
   useEffect(() => {
-    console.log('API params:', parmobj);
-    setSearchParams({ category: categorydata })
-    getdata( parmobj); // Fetch data when URL search parameters change
-  }, [location.search, ascproduct, searchParams, discountFilters, categorydata]);
+    getdata(parmobj);
+    // setSearchParams({ category: categorydata })
+  }, [location.search, ascproduct, searchParams, discountFilters, categorydata, selectedProductNames, selectedBrands, selectedColors]);
 
   return (
     <>
@@ -120,7 +169,7 @@ const Beauty = () => {
               </label>
 
               <label htmlFor="men">
-                <input type="checkbox" value="Girls" checked={categorydata.includes("Girls")} onChange={handlechange} />
+                <input type="checkbox" value="girls" checked={categorydata.includes("girls")} onChange={handlechange} />
                 Girls
               </label>
             </div>
@@ -131,32 +180,80 @@ const Beauty = () => {
                 <h5>Categories</h5>
                 <i className="ri-search-line"></i>
               </div>
+
               <label>
-                <input type="checkbox" /> Lipstick(13573)
+                <input type="checkbox" value="Anti Frizz Argan Hair Serum"
+                  checked={selectedProductNames.includes("Anti Frizz Argan Hair Serum")}
+                  onChange={handleProductNameChange} />
+                Anti Frizz Argan Hair Serum
               </label><br />
+
               <label>
-                <input type="checkbox" /> Nail Polish(11100)
+                <input type="checkbox" value="Cover Up Hair Powder 4g- Black"
+                  checked={selectedProductNames.includes("Cover Up Hair Powder 4g- Black")}
+                  onChange={handleProductNameChange} />
+                Cover Up Hair Powder 4g- Black
               </label><br />
+
               <label>
-                <input type="checkbox" /> Perfume(4991)
+                <input type="checkbox" value="Gentle Skin Cleanser - 125 ml"
+                  checked={selectedProductNames.includes("Gentle Skin Cleanser - 125 ml")}
+                  onChange={handleProductNameChange} />
+                Gentle Skin Cleanser - 125 ml
               </label><br />
+
               <label>
-                <input type="checkbox" /> Massage Oils(3520)
+                <input type="checkbox" value="Gel Sunscreen-SPF 55+ 50g"
+                  checked={selectedProductNames.includes("Gel Sunscreen-SPF 55+ 50g")}
+                  onChange={handleProductNameChange} />
+                Gel Sunscreen-SPF 55+ 50g
               </label><br />
+
               <label>
-                <input type="checkbox" /> Face Wash(3114)
+                <input type="checkbox" value="Set of 2 Eyeconic Kajal"
+                  checked={selectedProductNames.includes("Set of 2 Eyeconic Kajal")}
+                  onChange={handleProductNameChange} />
+                Set of 2 Eyeconic Kajal
               </label><br />
+
               <label>
-                <input type="checkbox" /> Bindi(2787)
+                <input type="checkbox" value="Absolut Repair Hair Mask-250g"
+                  checked={selectedProductNames.includes("Absolut Repair Hair Mask-250g")}
+                  onChange={handleProductNameChange} />
+                Absolut Repair Hair Mask-250g
               </label><br />
+
               <label>
-                <input type="checkbox" /> Serum and Gel(2701)
+                <input type="checkbox" value="Fit Me Matte Foundation"
+                  checked={selectedProductNames.includes("Fit Me Matte Foundation")}
+                  onChange={handleProductNameChange} />
+                Fit Me Matte Foundation
               </label><br />
+
               <label>
-                <input type="checkbox" /> Skin Care Combo(2562)
+                <input type="checkbox" value="Bringha Hair Oil 100 ml"
+                  checked={selectedProductNames.includes("Bringha Hair Oil 100 ml")}
+                  onChange={handleProductNameChange} />
+                Bringha Hair Oil 100 ml
               </label><br />
+
+              <label>
+                <input type="checkbox" value="Superstay Lipstick - Lippy"
+                  checked={selectedProductNames.includes("Superstay Lipstick - Lippy")}
+                  onChange={handleProductNameChange} />
+                Superstay Lipstick - Lippy
+              </label><br />
+
+              <label>
+                <input type="checkbox" value="Midnight Kohl Kajal Pencil"
+                  checked={selectedProductNames.includes("Midnight Kohl Kajal Pencil")}
+                  onChange={handleProductNameChange} />
+                Midnight Kohl Kajal Pencil
+              </label><br />
+
               <h6 className="text-danger ms-4 mt-3">+173 more</h6>
             </div>
+
             <hr />
 
             <div className="filter-brand">
@@ -164,29 +261,59 @@ const Beauty = () => {
                 <h5>Brand</h5>
                 <i className="ri-search-line"></i>
               </div>
+
               <label>
-                <input type="checkbox" /> Comet Busters(2729)
+                <input type="checkbox" value="TRESemme"
+                  checked={selectedBrands.includes("TRESemme")}
+                  onChange={handleBrandChange} />
+                TRESemme
               </label><br />
+
               <label>
-                <input type="checkbox" /> PERPAA(2598)
+                <input type="checkbox" value="Renee"
+                  checked={selectedBrands.includes("Renee")}
+                  onChange={handleBrandChange} />
+                Renee
               </label><br />
+
               <label>
-                <input type="checkbox" /> MI FASHION(2410)
+                <input type="checkbox" value="Cetaphil"
+                  checked={selectedBrands.includes("Cetaphil")}
+                  onChange={handleBrandChange} />
+                Cetaphil
               </label><br />
+
               <label>
-                <input type="checkbox" /> NOY(2222)
+                <input type="checkbox" value="Lakme"
+                  checked={selectedBrands.includes("Lakme")}
+                  onChange={handleBrandChange} />
+                Lakme
               </label><br />
+
               <label>
-                <input type="checkbox" /> Deve Herbes(1986)
+                <input type="checkbox" value="Maybelline"
+                  checked={selectedBrands.includes("Maybelline")}
+                  onChange={handleBrandChange} />
+                Maybelline
               </label><br />
+
               <label>
-                <input type="checkbox" /> ME-ON(1345)
+                <input type="checkbox" value="Minimalist"
+                  checked={selectedBrands.includes("Minimalist")}
+                  onChange={handleBrandChange} />
+                Minimalist
               </label><br />
+
               <label>
-                <input type="checkbox" /> BEROMT(1229)
+                <input type="checkbox" value="Marks & Spencer"
+                  checked={selectedBrands.includes("Marks & Spencer")}
+                  onChange={handleBrandChange} />
+                Marks & Spencer
               </label><br />
+
               <h6 className="text-danger ms-4 mt-3">+1878 more</h6>
             </div>
+
             <hr />
 
             <div className="filter-price">
@@ -206,32 +333,58 @@ const Beauty = () => {
                 <i className="ri-search-line"></i>
               </div>
               <label>
-                <input type="checkbox" />
+                <input type="checkbox" value="white"
+                  checked={selectedColors.includes("white")}
+                  onChange={handleColorChange} />
                 <i className="bi bi-circle-fill" style={{ color: "whitesmoke", padding: "5px" }}></i> White (13605)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "pink", padding: "5px" }}></i> Pink (10892)
+                <input type="checkbox" value="red"
+                  checked={selectedColors.includes("red")}
+                  onChange={handleColorChange} />
+                <i className="bi bi-circle-fill" style={{ color: "Red", padding: "5px" }}></i> Red (10892)
               </label>
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  value="multi"
+                  checked={selectedColors.includes("multi")}
+                  onChange={handleColorChange}
+                />
+                <i
+                  className="bi bi-circle-fill"
+                  style={{
+                    background: "linear-gradient(to right, rgb(227,109,178), rgb(255,255,0), rgb(255,0,0))",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    padding: "5px"
+                  }}
+                ></i>{" "}
+                Multi (9226)
+              </label>
+              <label>
+                <input type="checkbox" value="black"
+                  checked={selectedColors.includes("black")}
+                  onChange={handleColorChange} />
                 <i className="bi bi-circle-fill" style={{ color: "black", padding: "5px" }}></i> Black (9226)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "blue", padding: "5px" }}></i> Blue (9114)
-              </label>
-              <label>
-                <input type="checkbox" />
+                <input type="checkbox" value="brown"
+                  checked={selectedColors.includes("brown")}
+                  onChange={handleColorChange} />
                 <i className="bi bi-circle-fill" style={{ color: "brown", padding: "5px" }}></i> Brown (7995)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "red", padding: "5px" }}></i> Red (6871)
+                <input type="checkbox" value="golden"
+                  checked={selectedColors.includes("golden")}
+                  onChange={handleColorChange} />
+                <i className="bi bi-circle-fill" style={{ color: "yellow", padding: "5px" }}></i> golden(6871)
               </label>
               <label>
-                <input type="checkbox" />
-                <i className="bi bi-circle-fill" style={{ color: "green", padding: "5px" }}></i> Green (6392)
+                <input type="checkbox" value="green"
+                  checked={selectedColors.includes("green")}
+                  onChange={handleColorChange} />
+                <i className="bi bi-circle-fill" style={{ color: "#008000", padding: "5px" }}></i> Green (6392)
               </label>
               <h6 className="text-danger ms-4 mt-3">+39 more</h6>
             </div>
@@ -323,57 +476,57 @@ const Beauty = () => {
             </div>
           </div>
 
-         
-                   <div className="right-shop mt-5" >
-                     <div className="product-list">
-                       <div className="container">
-                         <div className="row">
-                           {products.map((product) => (
-                             <div key={product.id} className="col-md-3 col-sm-6 mb-4" style={{height:"630px",width:"220px"}}>
-                               <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
-                                 <div className="position-relative" >
-                             
-                                   <img
-                                     src={product.image_url}
-                                     alt={product.title}
-                                     className="card-img-top img-fluid"
-                                    
-                                   />
-                                   <div className="overlay">
-                                     <div className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                       <Link to={`/description/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
-                                         Buy Now
-                                       </Link>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 <div className="card-body">
-                                   <p className="card-text">
-                                     <strong>Rating:</strong> {product.rating} ({product.rating_count} reviews)
-                                   </p>
-                                   <h5 className="card-title" style={{ fontStyle: "10px" }}>{product.product_name}</h5>
-                                   <p className="card-text text-muted">{product.brand}</p>
-                                   <p className="card-text">Sizes: {product.volume}</p>
-                                   <p className="card-text">
-                                     <span className="text-muted me-2">
-                                     <span className="text-decoration-line-through text-danger me-2">₹{product.original_price}</span>
-                                     </span>
-                                     <span className="fw-bold me-2 text-dark">₹{product.discounted_price}</span>
-                                     <span className="badge bg-success">{product.discount}</span>
-                                   </p>
-                                 </div>
-                                 <div className="card-footer text-center">
-                                   <a href={product.product_url} className="btn btn-outline-primary w-100" target="_blank" rel="noopener noreferrer">
-                                     View Details
-                                   </a>
-                                 </div>
-                               </div>
-                             </div>
-                           ))}
-                         </div>
-                       </div>
-                     </div>
-                   </div>
+
+          <div className="right-shop mt-5" >
+            <div className="product-list">
+              <div className="container">
+                <div className="row">
+                  {products.map((product) => (
+                    <div key={product.id} className="col-md-3 col-sm-6 mb-4" style={{ height: "630px", width: "220px" }}>
+                      <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
+                        <div className="position-relative" >
+
+                          <img
+                            src={product.image_url}
+                            alt={product.title}
+                            className="card-img-top img-fluid"
+
+                          />
+                          <div className="overlay">
+                            <div className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                              <Link to={`/description/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                                Buy Now
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="card-body">
+                          <p className="card-text">
+                            <strong>Rating:</strong> {product.rating} ({product.rating_count} reviews)
+                          </p>
+                          <h5 className="card-title" style={{ fontStyle: "10px" }}>{product.product_name}</h5>
+                          <p className="card-text text-muted">{product.brand}</p>
+                          <p className="card-text">Sizes: {product.volume}</p>
+                          <p className="card-text">
+                            <span className="text-muted me-2">
+                              <span className="text-decoration-line-through text-danger me-2">₹{product.original_price}</span>
+                            </span>
+                            <span className="fw-bold me-2 text-dark">₹{product.discounted_price}</span>
+                            <span className="badge bg-success">{product.discount}</span>
+                          </p>
+                        </div>
+                        <div className="card-footer text-center">
+                          <a href={product.product_url} className="btn btn-outline-primary w-100" target="_blank" rel="noopener noreferrer">
+                            View Details
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div >
     </>

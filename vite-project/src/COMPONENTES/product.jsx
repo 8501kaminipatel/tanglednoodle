@@ -452,7 +452,7 @@ const Product = () => {
               </li>
             </ul>
 
-            <div className="sort-by-div">
+            <div className="sort-select">
               <select onChange={(e) => setascproduct(e.target.value)}>
                 <option value="">Sort by: <span>Recommended</span> <i className="ri-arrow-down-s-line"></i></option>
                 <option value="asc">Low to High</option>
