@@ -52,7 +52,7 @@ const CartPage = () => {
       setCartItem((prev) => prev.filter((item) => item.id !== id));
        toast.success("✅ REMOVE SUCCESSFULLY!");
     } catch (error) {
-      console.error("Error removing item:", error);
+      console.log("Error removing item:", error);
       alert("Failed to remove item.");
        toast.error("❌ PRODUCT NOT REMOVE!!");
     }
@@ -74,12 +74,12 @@ const CartPage = () => {
             >
               <img
                 src={item.image}
-                alt={item.title}
+                alt={item.product_name}
                 className="cart-item-img"
               />
               <div className="cart-details">
                 <div className="cart-header">
-                  <h2>{item.title}</h2>
+                  <h2>{item.product_name}</h2>
                   <button
                     onClick={() => removeItem(item.id)}
                     className="remove-btn"

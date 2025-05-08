@@ -24,7 +24,7 @@ const InsightsChart = () => {
   };
 
   return (
-    <div style={{ width: '100%', height: '400px', margin: '20px 0' }}>
+    <div style={{ width: '100%', height: '500px', margin: '20px 0'}}>
       <h3 style={{ textAlign: 'center' }}>Top Viewed Categories</h3>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data}>
@@ -36,9 +36,9 @@ const InsightsChart = () => {
         </BarChart>
       </ResponsiveContainer>
 
-      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+      <div style={{ textAlign: 'center' }}>
         {/* Step 4: Button to trigger data update */}
-        <button onClick={updateData} style={{ padding: '10px 20px', backgroundColor: '#ff3f6c', color: 'white', border: 'none', cursor: 'pointer' }}>
+        <button onClick={updateData} style={{ padding: '10px 20px', backgroundColor: '#ff3f6c', color: 'white', border: 'none', cursor: 'pointer'}}>
           Update Data
         </button>
       </div>

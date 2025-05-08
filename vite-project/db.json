@@ -4703,5 +4703,39 @@
       "category": "lounge pants",
       "color": "Black"
     }
+  ],
+  "wishlist": [
+    {
+      "id": 42,
+      "rating": 4.7,
+      "rating_count": "2.5k",
+      "ad": false,
+      "product_url": "https://www.myntra.com/lip-balm/vaseline/vaseline-lip-therapy-cocoa-butter-lip-tin-17g/15324494/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_40,w_210,c_limit,fl_progressive/assets/images/15324494/2024/1/3/c3fad2f9-2d34-4535-b848-90b65ed57e791704273946714VaselineLipTherapyCocoaButterLipTin17g1.jpg",
+      "brand": "Vaseline",
+      "product_name": "Cocoa Butter Lip Care",
+      "volume": "15-20 ML",
+      "discounted_price": "Rs. 162",
+      "original_price": "Rs. 270",
+      "discount": "40% OFF",
+      "category": "women",
+      "color": "White"
+    },
+    {
+      "id": 49,
+      "rating": 4.2,
+      "rating_count": "297",
+      "ad": false,
+      "product_url": "https://www.myntra.com/lipstick/pilgrim/pilgrim-matte-me-up-long-lasting-liquid-matte-lipstick---9g---pink-kisses-07/25823564/buy",
+      "image_url": "https://assets.myntassets.com/dpr_2,q_40,w_210,c_limit,fl_progressive/assets/images/2024/OCTOBER/24/zfbXNVAW_81a58b6089f0481c9efbbec8a94cd40b.jpg",
+      "brand": "Pilgrim",
+      "product_name": "Matte Me Up Liquid Lipstick-07",
+      "volume": "3-3.5 ML",
+      "discounted_price": "Rs. 173",
+      "original_price": "Rs. 495",
+      "discount": "65% OFF",
+      "category": "women",
+      "color": "Red"
+    }
   ]
 }

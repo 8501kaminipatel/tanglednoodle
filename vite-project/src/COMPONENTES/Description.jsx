@@ -6,14 +6,32 @@ import { toast } from "react-toastify";
 
 const Description = () => {
     const [singleData, setSingleData] = useState({});
-    const [singlData, setSinglData] = useState({});
     const [selectedSize, setSelectedSize] = useState('');
     const { id } = useParams();
     const navigate = useNavigate();
     const [descriptiondata, setdescriptiondata] = useState([]);
+    const [reward, setReward] = useState(null);
 
 
+    const addToWishlist = async (product) => {
+        try {
+            // Check if the product is already in wishlist
+            const res = await axios.get(`http://localhost:5000/wishlist?id=${product.id}`);
+            if (res.data.length > 0) {
+                toast.info("🛍️ Already in wishlist")
+                navigate("/wishlist")
+                return;
+            }
 
+           
+            await axios.post("http://localhost:5000/wishlist", product);
+            toast.success("❤️ Added to Wishlist")
+            navigate("/wishlist")
+        } catch (err) {
+            console.error("Error adding to wishlist:", err);
+            toast.error("🚫 Failed to add to wishlist")
+        }
+    };
     const getSingleData = async () => {
         const endpoints = [
             `http://localhost:5000/products/${id}`,
@@ -32,7 +50,7 @@ const Description = () => {
             `http://localhost:5000/men12/${id}`,
             `http://localhost:5000/men13/${id}`,
             `http://localhost:5000/men14/${id}`,
-             `http://localhost:5000/men15/${id}`
+            `http://localhost:5000/men15/${id}`
         ];
 
         for (let i = 0; i < endpoints.length; i++) {
@@ -70,6 +88,13 @@ const Description = () => {
     useEffect(() => {
         getSingleData();
         getdata();
+        const today = new Date().toDateString();
+        const lastScratch = localStorage.getItem('scratchDate');
+        const rewardText = localStorage.getItem('scratchReward');
+
+        if (lastScratch === today && rewardText) {
+            setReward(rewardText);
+        }
     }, [id]);  // Add singleData as a dependency
 
 
@@ -78,7 +103,7 @@ const Description = () => {
         try {
             const res = await axios.post('http://localhost:5000/cart', {
                 productId: product.id,
-                title: product_name,
+                title: product.product_name,
                 price: Number(product.discounted_price.replace("Rs. ", "")),
                 image: product.image_url, // using image_url here
                 quantity: 1,
@@ -92,18 +117,23 @@ const Description = () => {
             navigate("/cart")
             toast.success("✅ Product added to cart!");
         } catch (error) {
-            console.error("Error adding to cart:", error);
+            console.log("Error adding to cart:", error);
             toast.error("❌ Failed to add to cart.");
         }
     };
 
 
 
-
-
-
     return (
         <>
+            <div className="product-description">
+                {/* Product details here */}
+                {reward && (
+                    <div className="reward-banner" style={{ background: "#e8f5e9", padding: "10px", marginTop: "10px", borderRadius: "8px", color: "#2e7d32" }}>
+                        🎉 Your Scratch Reward: <strong>{reward}</strong>
+                    </div>
+                )}
+            </div>
             <div className="description-wrapper py-1" style={{ background: 'linear-gradient(135deg,rgb(60, 60, 62),rgb(229, 229, 235))' }}>
                 <div className="container my-5">
                     <div className="row justify-content-center align-items-start glassmorphic-row">
@@ -124,7 +154,7 @@ const Description = () => {
                             </motion.div>
 
                             {/* Animated Thumbnails */}
-                            <div className="d-flex gap-2 mt-3">
+                            <div className="d-flex flex-wrap gap-2 mt-3 justify-content-center">
                                 {[1, 2, 3, 4, 5].map((_, i) => (
                                     <motion.img
                                         key={i}
@@ -192,7 +222,7 @@ const Description = () => {
 
                                 <button className="btn btn-danger" style={{ width: "100%" }} onClick={() => addToCart(singleData)}>Add to Bag</button>
 
-                                <button className="btn btn-outline-light">Wishlist</button>
+                                <button className="btn btn-outline-light" onClick={() => addToWishlist(singleData)}><i className="bi bi-heart"></i> Wishlist</button>
                             </div>
                         </div>
                     </div>
@@ -223,7 +253,7 @@ const Description = () => {
                                         <p className="card-text">
                                             <strong>Rating:</strong> {product.rating} ({product.rating_count} reviews)
                                         </p>
-                                        <h5 className="card-title">{product.title}</h5>
+                                        <h5 className="card-title">{product.product_name}</h5>
                                         <p className="card-text text-muted">{product.brand}</p>
                                         <p className="card-text">Sizes: {product.volume}</p>
                                         <p className="card-text">

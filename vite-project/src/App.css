@@ -666,7 +666,7 @@ swiper-slide img {
 
 /* Thumbnail Images */
 .thumb-img {
-  width: 80px;
+  width: 60px;
   height: 80px;
   object-fit: cover;
   border-radius: 10px;
@@ -744,7 +744,15 @@ swiper-slide img {
     margin-top: 20px;
   }
 }
-
+/* thumb-img {
+  max-width: 80px;
+  height: auto;
+} */
+@media (max-width: 400px) {
+  .thumb-img {
+    max-width: 60px;
+  }
+}
 .glassmorphic-row {
   margin-top: 100px;
   padding: 20px;
@@ -765,54 +773,15 @@ swiper-slide img {
 /* login */
 
 .login-page {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: center;
 }
 
 .login-content {
-  text-align: center;
   background: linear-gradient(to right, rgb(230, 180, 190), rgb(242, 226, 198), rgb(238, 229, 179), rgb(220, 186, 204), coral);
-  height: 700px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow effect */
-  max-width: 400px;
-  width: 100%;
-}
-
-.brand-logo {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.login-heading {
-  font-size: 24px;
-  color: #333333;
-  /* Dark text for better readability */
-  margin-bottom: 20px;
-}
-
-.google-button {
-  width: 100%;
-  /* Full-width button */
-  background-color: #4285f4;
-  /* Google's signature blue */
-
-  border-radius: 4px;
-  border: none;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-
-  transition: background-color 0.3s ease;
-}
-
-.google-button:hover {
-  background-color: #357ae8;
-  /* Darker shade of blue on hover */
+  border-radius: 12px;
 }
 
 
@@ -1269,7 +1238,6 @@ swiper-slide img {
   .footer {
     height: 2850px;
     width: 100%;
-
     margin-top: 50px;
     padding-top: 30px;
   }
@@ -1324,7 +1292,6 @@ swiper-slide img {
     border-radius: 5px;
     outline: none;
     z-index: 1;
-
     margin-top: -70px;
     display: none;
   }
@@ -1403,7 +1370,6 @@ swiper-slide img {
   .footer {
     height: 2850px;
     width: 100%;
-
     margin-top: 50px;
     padding-top: 30px;
   }
@@ -1502,4 +1468,67 @@ swiper-slide img {
   .sort-select select {
     width: 100%;
   }
+}
+
+
+
+
+/* timing */
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* scratchcard */
+.scratch-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 50px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  color: #fff;
+}
+
+.back {
+  background: #222;
+  color: #00ffab;
+  transform: rotateY(180deg);
 }

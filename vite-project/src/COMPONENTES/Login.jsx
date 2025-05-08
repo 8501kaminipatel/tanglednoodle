@@ -50,63 +50,61 @@ const Login = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-content">
+    <div className="container login-page py-5">
+    <div className="row justify-content-center">
+      <div className="col-12 col-sm-10 col-md-8 col-lg-6 login-content text-center p-4 shadow rounded bg-white">
+  
         <img
           src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg"
           alt="Brand"
-          className="brand-logo"
+          className="img-fluid brand-logo mb-4"
+          style={{ maxWidth: '100%', height: 'auto' }}
         />
-
-        <h3 className="login-heading">Sign in with Google</h3>
-        <div style={{ marginLeft: '80px' }}>
+  
+        <h3 className="login-heading mb-3">Sign in with Google</h3>
+        <div className="d-flex justify-content-center mb-4">
           <GoogleButton onClick={handlegooglesubmit} />
         </div>
-
-        <hr style={{ margin: '30px 0' }} />
-
-        <h3 className="login-heading">Or Login with Phone</h3>
-        <div style={{ padding: '10px' }}>
+  
+        <hr className="my-4" />
+  
+        <h3 className="login-heading mb-3">Or Login with Phone</h3>
+  
+        <div className="px-3">
           <input
             type="tel"
             placeholder="Enter mobile number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            style={{ padding: '10px', width: '80%', marginBottom: '10px' }}
+            className="form-control mb-3"
           />
-          <br />
           {otpSent && (
             <input
               type="text"
               placeholder="Enter OTP"
               value={otp}
               onChange={(e) => setOtp(e.target.value)}
-              style={{ padding: '10px', width: '80%', marginBottom: '10px' }}
+              className="form-control mb-3"
             />
           )}
           {!otpSent ? (
-            <button onClick={handleSendOtp} style={btnStyle}>Send OTP</button>
+            <button onClick={handleSendOtp} className="btn btn-primary w-100 mb-2">Send OTP</button>
           ) : (
-            <button onClick={handleVerifyOtp} style={btnStyle}>Verify OTP</button>
+            <button onClick={handleVerifyOtp} className="btn btn-success w-100 mb-2">Verify OTP</button>
           )}
-          <div id="recaptcha-container"></div>
+          <div id="recaptcha-container" />
         </div>
-
-        <p style={{ marginTop: '20px', padding: '10px' }}>
+  
+        <p className="mt-4 px-3 text-muted" style={{ fontSize: "0.95rem" }}>
           This login page allows users to securely access the application using Google OAuth 2.0 or phone number OTP. Simple, secure, and fast.
         </p>
+  
       </div>
     </div>
+  </div>
+  
   );
 };
 
-const btnStyle = {
-  padding: '10px 20px',
-  backgroundColor: '#ff3f6c',
-  color: 'white',
-  border: 'none',
-  cursor: 'pointer',
-  marginTop: '10px',
-};
 
 export default Login;

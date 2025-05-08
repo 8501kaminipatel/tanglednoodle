@@ -18,7 +18,7 @@ const Footer = () => {
               <li><a href="/giftcard">Gift Cards</a></li>
               <li><a href="/myntrainsider?cache=false">Myntra Insider</a></li>
             </ul>
-
+            <div className="col-2 col-sm-6 col-md-6 col-lg-2">
             <h6 style={{ margin: "10px 0px" }}>USEFUL LINKS</h6>
             <ul style={{ display: "block", justifyContent: "start", alignItems: "start", padding: 0, lineHeight: "30px" }}>
               <li><a href="#">Blog</a></li>
@@ -28,6 +28,7 @@ const Footer = () => {
               <li><a href="#">Whitehat</a></li>
               <li><a href="#">Cleartrip</a></li>
             </ul>
+          </div>
           </div>
 
           {/* CUSTOMER POLICIES */}
@@ -48,7 +49,7 @@ const Footer = () => {
           </div>
 
           {/* EXPERIENCE MYNTRA APP ON MOBILE + KEEP IN TOUCH */}
-          <div className="col-3 col-sm-6 col-md-6 col-lg-3">
+          <div className="col-3 col-sm-6 col-md-6 col-lg-4">
             <h6 style={{ margin: "10px 0px" }}>EXPERIENCE MYNTRA APP ON MOBILE</h6>
             <ul style={{ display: "flex", padding: 0, color: "rgb(129, 129, 129)" }}>
               <li>
@@ -58,7 +59,7 @@ const Footer = () => {
                 <a href="#"><img src="/IMAGES/FOOTER2.png" alt="Play Store" style={{ height: "45px", width: "90%" }} /></a>
               </li>
             </ul>
-
+            <div className="col-3 col-sm-6 col-md-6 col-lg-4"> 
             <h6 style={{ margin: "10px 0px" }}>KEEP IN TOUCH</h6>
             <ul style={{ display: "flex", padding: 0, width: "50%", color: "rgb(129, 129, 129)" }}>
               <li>
@@ -75,9 +76,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          </div>
 
           {/* 100% ORIGINAL GUARANTEE + RETURN INFO */}
-          <div className="col-3 col-sm-6 col-md-6 col-lg-3">
+          <div className="col-3 col-sm-6 col-md-6 col-lg-4">
             <div className="fott1 d-flex" style={{ margin: "10px 0px" }}>
               <div className="fott2">
                 <a href="#">

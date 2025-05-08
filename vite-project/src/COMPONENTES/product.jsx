@@ -25,6 +25,7 @@ const Product = () => {
     const { value } = e.target;
     setSelectedColors((prev) => prev.includes(value) ? prev.filter(color => color !== value) : [...prev, value]);
   };
+ 
 
 
 
@@ -154,8 +155,11 @@ const Product = () => {
       category: categorydata,
       color: selectedColors
     });
+
+    
   }, [location.search, ascproduct, searchParams, discountFilters, categorydata, selectedProductNames, selectedBrands, selectedColors]);
 
+ 
 
   return (
     <>
@@ -163,7 +167,7 @@ const Product = () => {
         <p>Home / <span>Personal Care</span></p>
         <p><span>Personal Care</span> - 110499 items</p>
       </div>
-
+     
       <div className="main-body p-4">
         <div className="sidebar">
           <div className="filter">
@@ -435,7 +439,7 @@ const Product = () => {
             </div>
           </div>
         </div>
-
+       
         <div className="right">
           <div className="right-menu">
             <ul className="right-ul">
@@ -504,6 +508,7 @@ const Product = () => {
                             View Details
                           </a>
                         </div>
+                       
                       </div>
                     </div>
                   ))}

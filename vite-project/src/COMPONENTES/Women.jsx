@@ -1,9 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Women = () => {
+
+  const [timeLeft, setTimeLeft] = useState(5000);
+
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer); // cleanup
+  }, [])
+
+
+  const hours = Math.floor(timeLeft / 3600);
+  const minutes = Math.floor((timeLeft % 3600) / 60);
+  const seconds = timeLeft % 60;
   return (
-   <>
-    <div style={{ width: "90%", height: "auto", paddingTop: "10px", margin: "auto" }}>
+    <>
+
+      <div
+        className="glass-box text-danger d-flex justify-content-center align-items-center fs-5"
+        style={{ width: 'fit-content', padding: '10px 20px', borderRadius: '12px', margin: 'auto' }}
+      >
+        Sale Ends In {String(hours).padStart(2, '0')} H : {String(minutes).padStart(2, '0')} M : {String(seconds).padStart(2, '0')} S
+      </div>
+
+
+      <div style={{ width: "90%", height: "auto", paddingTop: "10px", margin: "auto" }}>
         <img src="/IMAGES/men1.webp" className="d-block w-100" />
       </div>
       <div style={{ width: "90%", height: "auto", margin: "auto" }}>
@@ -157,13 +188,75 @@ const Women = () => {
       <div style={{ width: "90%", height: "auto", margin: "auto" }}>
         <img src="/IMAGES/men30.webp" className="d-block w-100" />
       </div>
-{/* 
+      {/* 
       <video width="600" controls>
     <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video> */}
-   </>
+    </>
   )
 }
 
 export default Women
+
+
+
+
+
+
+
+
+
+
+
+// <form className="d-flex" onSubmit={handleSubmit}>
+// {/* <i className="bi bi-search" style={{paddingLeft:"30px",paddingBottom:"5px"}} >
+
+// </i> */}
+// <input
+//     type="search"
+//     value={search}
+//     placeholder="Search beauty products..."
+//     onChange={(e) => setSearch(e.target.value)}
+//     style={{ paddingLeft: "15px", color: "black" }}
+// />
+
+// <button onClick={handleVoiceSearch} disabled={isListening}>
+//     {isListening ? "Listening..." : "🎤"}
+// </button>
+// {error && <p className="error">{error}</p>}
+// </form>
+
+
+
+
+
+    // const { user, handleSignOut, changeicon, flag } = useContext(Usercontext);
+    // const [search, setSearch] = useState('');
+    // const navigate = useNavigate();
+
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     const trimmed = search.trim().toLowerCase();
+
+    //     if (!trimmed) {
+    //         navigate("/beauty"); // default page
+    //         return;
+    //     }
+
+    //     if (["home"].some(keyword => trimmed.includes(keyword))) {
+    //         navigate(`/product11?search=${encodeURIComponent(trimmed)}`);
+    //     } else if (["women"].some(keyword => trimmed.includes(keyword))) {
+    //         navigate(`/product?search=${encodeURIComponent(trimmed)}`);
+    //     } else if (["men", "puma", "vastramay"].some(keyword => trimmed.includes(keyword))) {
+    //         navigate(`/product2?search=${encodeURIComponent(trimmed)}`);
+    //     } else if (["flip-flop"].some(keyword => trimmed.includes(keyword))) {
+    //         navigate(`/product13?search=${encodeURIComponent(trimmed)}`);
+    //     }
+    //     else if (["sports shoes", "track pants", "tracksuits", "shorts"].some(keyword => trimmed.includes(keyword))) {
+    //         navigate(`/product14?search=${encodeURIComponent(trimmed)}`);
+    //     } else {
+    //         navigate(`/beauty?search=${encodeURIComponent(trimmed)}`);
+    //     }
+    // };

@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Myntra.css"
+import ScratchCard from './ScratchCard'
 
 const Myntra = () => {
   return (
     <>
-
+<ScratchCard />
 <div className="container-fluid px-2">
 
 {/* Hero Carousel */}

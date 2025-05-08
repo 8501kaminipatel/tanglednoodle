@@ -200,7 +200,7 @@ const Product5 = () => {
                   checked={selectedProductNames.includes("Easy Care Men Sustainable Formal Shirt")}
                   onChange={handleProductNameChange}
                 />
-                Easy Care Men Sustainable Formal Shirt
+                Men Sustainable Formal Shirt
               </label><br />
 
               <label>
@@ -478,7 +478,7 @@ const Product5 = () => {
               </li>
             </ul>
 
-            <div className="sort-by-div">
+            <div className="sort-select">
               <select onChange={(e) => setascproduct(e.target.value)}>
                 <option value="">Sort by: <span>Recommended</span> <i className="ri-arrow-down-s-line"></i></option>
                 <option value="asc">Low to High</option>
@@ -486,7 +486,6 @@ const Product5 = () => {
               </select>
             </div>
           </div>
-
 
           <div className="right-shop mt-5" >
             <div className="product-list">
@@ -496,7 +495,7 @@ const Product5 = () => {
                     <div key={product.id} className="col-md-3 col-sm-6 mb-4" style={{ height: "630px", width: "220px" }}>
                       <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
                         <div className="position-relative" >
-                          {product.id}
+
                           <img
                             src={product.image_url}
                             alt={product.title}
@@ -531,6 +530,7 @@ const Product5 = () => {
                             View Details
                           </a>
                         </div>
+
                       </div>
                     </div>
                   ))}

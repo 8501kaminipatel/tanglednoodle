@@ -27,7 +27,9 @@ import Product11 from '../COMPONENTES/Product11'
 import Product12 from '../COMPONENTES/Product12'
 import Product13 from '../COMPONENTES/Product13'
 import Product14 from '../COMPONENTES/Product14'
-import InsightsChart from '../COMPONENTES/chart'
+import ScratchCard from '../COMPONENTES/ScratchCard'
+import Wishlist from '../COMPONENTES/Wishlist'
+import InsightsChart from '../COMPONENTES/Chart'
 
  
 
@@ -63,11 +65,11 @@ const Allroutes = () => {
       <Route path="/product14" element={<Product14 />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/chart" element={< InsightsChart/>} />
-   
+      <Route path="/ScratchCard" element={< ScratchCard/>} />
+      <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/description/:id" element={
         <Privatepage>
           <Description />
-      
         </Privatepage>
       } />
        

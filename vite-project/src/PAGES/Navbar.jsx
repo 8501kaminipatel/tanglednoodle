@@ -18,31 +18,30 @@ const Navbar = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const trimmed = search.trim().toLowerCase();
-      
+
         if (!trimmed) {
-          navigate("/beauty"); // default page
-          return;
+            navigate("/beauty"); // default page
+            return;
         }
-      
+
         if (["home"].some(keyword => trimmed.includes(keyword))) {
-          navigate(`/product11?search=${encodeURIComponent(trimmed)}`);
+            navigate(`/product11?search=${encodeURIComponent(trimmed)}`);
         } else if (["women"].some(keyword => trimmed.includes(keyword))) {
-          navigate(`/product?search=${encodeURIComponent(trimmed)}`);
+            navigate(`/product?search=${encodeURIComponent(trimmed)}`);
         } else if (["men", "puma", "vastramay"].some(keyword => trimmed.includes(keyword))) {
-          navigate(`/product2?search=${encodeURIComponent(trimmed)}`);
+            navigate(`/product2?search=${encodeURIComponent(trimmed)}`);
         } else if (["flip-flop"].some(keyword => trimmed.includes(keyword))) {
             navigate(`/product13?search=${encodeURIComponent(trimmed)}`);
-          }
-          else if (["sports shoes","track pants","tracksuits","shorts"].some(keyword => trimmed.includes(keyword))) {
-            navigate(`/product14?search=${encodeURIComponent(trimmed)}`);
-          }else {
-          navigate(`/beauty?search=${encodeURIComponent(trimmed)}`);
         }
-      };
-      
-      
+        else if (["sports shoes", "track pants", "tracksuits", "shorts"].some(keyword => trimmed.includes(keyword))) {
+            navigate(`/product14?search=${encodeURIComponent(trimmed)}`);
+        } else {
+            navigate(`/beauty?search=${encodeURIComponent(trimmed)}`);
+        }
+    };
 
-    
+
+
 
     return (
         <>
@@ -1354,7 +1353,7 @@ const Navbar = () => {
                                                             />
 
                                                         </li>
-                                                        <div style={{ fontSize: "20px", fontWeight: "normal" ,color:"black"}}>Your daily inspiration for everything fashion</div>
+                                                        <div style={{ fontSize: "20px", fontWeight: "normal", color: "black" }}>Your daily inspiration for everything fashion</div>
 
                                                         <li className="nav-item list-unstyled">
                                                             <img
@@ -1383,8 +1382,9 @@ const Navbar = () => {
                                             value={search}
                                             placeholder="Search beauty products..."
                                             onChange={(e) => setSearch(e.target.value)}
-                                            style={{ paddingLeft: "15px",  color: "black" }}
+                                            style={{ paddingLeft: "15px", color: "black" }}
                                         />
+
                                     </form>
                                     <div className="main-icon d-flex">
                                         <a href="#" className="nav-link text-dark mt-2  ms-3">
@@ -1424,8 +1424,10 @@ const Navbar = () => {
                                         </a>
 
                                         <a href="#" className="nav-link  text-center mt-2  ms-3 color: flag ? 'white' : 'black'">
+                                        <Link to="/wishlist" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
                                             <i className="bi bi-heart"></i>
                                             <p>Wishlist</p>
+                                            </Link>
                                         </a>
 
                                         <a href="#" className="nav-link text-dark mt-2  ms-3">
@@ -1433,6 +1435,53 @@ const Navbar = () => {
                                                 <i className="bi bi-bag-check"></i>
                                                 <p>Bag</p>
                                             </Link>
+                                        </a>
+                                        <a href="#" className="nav-link text-dark mt-2 ms-3 d-block d-lg-none">
+                                            <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                                <i className="bi bi-grid-fill"></i>
+                                            </button>
+
+                                            <div
+                                                className="offcanvas offcanvas-top text-white"
+                                                tabIndex="-1"
+                                                id="offcanvasTop"
+                                                aria-labelledby="offcanvasTopLabel"
+                                                style={{
+                                                    backdropFilter: 'blur(10px)',
+                                                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                                    borderRadius: '0 0 15px 15px',
+                                                    boxShadow: '0 4px 12px rgba(145, 142, 142, 0.3)',
+                                                    border: '1px solid rgba(255, 255, 255, 0.2)'
+                                                }}
+                                            >
+                                                <div className="offcanvas-header">
+                                                    <h5 id="offcanvasTopLabel" className="fw-bold text-uppercase">Explore Categories</h5>
+                                                    <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div className="offcanvas-body d-flex flex-wrap gap-3 justify-content-center">
+                                                    <Link to="/men" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-person-lines-fill"></i> MEN
+                                                    </Link>
+                                                    <Link to="/women" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-person-bounding-box"></i> WOMEN
+                                                    </Link>
+                                                    <Link to="/kids" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-emoji-smile"></i> KIDS
+                                                    </Link>
+                                                    <Link to="/home" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-house-door-fill"></i> HOME
+                                                    </Link>
+                                                    <Link to="/beauty" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-heart-fill"></i> BEAUTY
+                                                    </Link>
+                                                    <Link to="/genz" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-stars"></i> GENZ
+                                                    </Link>
+                                                    <Link to="/studio" className="nav-link text-white d-flex align-items-center gap-2">
+                                                        <i className="bi bi-camera-video-fill"></i> STUDIO
+                                                    </Link>
+                                                </div>
+                                            </div>
                                         </a>
 
                                     </div>
@@ -1443,8 +1492,12 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+
+
             </nav>
+
         </>
+
     )
 };
 
