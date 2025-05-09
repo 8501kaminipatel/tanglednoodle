@@ -1374,20 +1374,18 @@ const Navbar = () => {
 
 
                                     <form className="d-flex" onSubmit={handleSubmit}>
-                                        {/* <i className="bi bi-search" style={{paddingLeft:"30px",paddingBottom:"5px"}} >
-
-                                    </i> */}
                                         <input
                                             type="search"
                                             value={search}
                                             placeholder="Search beauty products..."
                                             onChange={(e) => setSearch(e.target.value)}
+                                            className="form-control"
                                             style={{ paddingLeft: "15px", color: "black" }}
+                                            aria-label="Search beauty products"
                                         />
-
                                     </form>
                                     <div className="main-icon d-flex">
-                                        <a href="#" className="nav-link text-dark mt-2  ms-3">
+                                        <div className="nav-link text-dark mt-2  ms-3">
                                             <div className="user-dropdown position-relative">
                                                 <Link to="/login" className="user-trigger d-flex flex-column align-items-center" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
                                                     <i className="bi bi-person-add fs-4"></i>
@@ -1418,46 +1416,59 @@ const Navbar = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
 
-
-
-                                        </a>
-
-                                        <a href="#" className="nav-link  text-center mt-2  ms-3 color: flag ? 'white' : 'black'">
-                                        <Link to="/wishlist" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
-                                            <i className="bi bi-heart"></i>
-                                            <p>Wishlist</p>
+                                        < div className="nav-link  text-center mt-2  ms-3 color: flag ? 'white' : 'black'">
+                                            <Link to="/wishlist" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
+                                                <i className="bi bi-heart"></i>
+                                                <p>Wishlist</p>
                                             </Link>
-                                        </a>
+                                        </div>
 
-                                        <a href="#" className="nav-link text-dark mt-2  ms-3">
+                                        <div className="nav-link text-dark mt-2  ms-3">
                                             <Link to="/cart" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
                                                 <i className="bi bi-bag-check"></i>
                                                 <p>Bag</p>
                                             </Link>
-                                        </a>
-                                        <a href="#" className="nav-link text-dark mt-2 ms-3 d-block d-lg-none">
-                                            <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                        </div>
+                                        <div className="nav-link text-dark mt-2 ms-3 d-block d-lg-none">
+                                            {/* Toggle Button */}
+                                            <button
+                                                className="btn btn-primary"
+                                                type="button"
+                                                data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasTop"
+                                                aria-controls="offcanvasTop"
+                                            >
                                                 <i className="bi bi-grid-fill"></i>
                                             </button>
 
+                                            {/* Offcanvas Menu */}
                                             <div
                                                 className="offcanvas offcanvas-top text-white"
                                                 tabIndex="-1"
                                                 id="offcanvasTop"
                                                 aria-labelledby="offcanvasTopLabel"
                                                 style={{
-                                                    backdropFilter: 'blur(10px)',
-                                                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                                                    borderRadius: '0 0 15px 15px',
-                                                    boxShadow: '0 4px 12px rgba(145, 142, 142, 0.3)',
-                                                    border: '1px solid rgba(255, 255, 255, 0.2)'
+                                                    backdropFilter: "blur(10px)",
+                                                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                                                    borderRadius: "0 0 15px 15px",
+                                                    boxShadow: "0 4px 12px rgba(145, 142, 142, 0.3)",
+                                                    border: "1px solid rgba(255, 255, 255, 0.2)",
                                                 }}
                                             >
                                                 <div className="offcanvas-header">
-                                                    <h5 id="offcanvasTopLabel" className="fw-bold text-uppercase">Explore Categories</h5>
-                                                    <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                    <h5 id="offcanvasTopLabel" className="fw-bold text-uppercase">
+                                                        Explore Categories
+                                                    </h5>
+                                                    <button
+                                                        type="button"
+                                                        className="btn-close btn-close-white"
+                                                        data-bs-dismiss="offcanvas"
+                                                        aria-label="Close"
+                                                    ></button>
                                                 </div>
+
                                                 <div className="offcanvas-body d-flex flex-wrap gap-3 justify-content-center">
                                                     <Link to="/men" className="nav-link text-white d-flex align-items-center gap-2">
                                                         <i className="bi bi-person-lines-fill"></i> MEN
@@ -1480,10 +1491,12 @@ const Navbar = () => {
                                                     <Link to="/studio" className="nav-link text-white d-flex align-items-center gap-2">
                                                         <i className="bi bi-camera-video-fill"></i> STUDIO
                                                     </Link>
+
+                                                    {/* Search Form */}
+
                                                 </div>
                                             </div>
-                                        </a>
-
+                                        </div>
                                     </div>
 
 

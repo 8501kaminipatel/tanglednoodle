@@ -953,6 +953,30 @@ swiper-slide img {
     font-size: 1.75rem;
   }
 }
+.checkout-btn {
+  background-color: #528ff0;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(82, 143, 240, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: #3f7be0;
+  transform: translateY(-2px);
+}
+
+.checkout-btn:disabled {
+  background-color: #cccccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
 
 
 
@@ -999,7 +1023,6 @@ swiper-slide img {
     border-radius: 5px;
     outline: none;
     z-index: 1;
-
     margin-top: -70px;
   }
 
@@ -1135,7 +1158,6 @@ swiper-slide img {
       z-index: 2;
       display: block;
       background-color: white;
-      /* default */
     }
 
     .dark-mode .header {
@@ -1155,7 +1177,7 @@ swiper-slide img {
 
   .header form {
     width: 40%;
-    display: none;
+   
   }
 
   .header form input {
@@ -1163,11 +1185,11 @@ swiper-slide img {
     width: 100%;
     position: relative;
     border: none;
+    left: 30px;
     border-radius: 5px;
     outline: none;
     z-index: 1;
     margin-top: -70px;
-    display: none;
   }
 
   .navbar-nav .list1 {
@@ -1201,7 +1223,7 @@ swiper-slide img {
     color: rgb(114, 112, 112);
     font-size: 20px;
     z-index: 2;
-    display: none;
+ 
   }
 
   .main-icon {
@@ -1281,19 +1303,20 @@ swiper-slide img {
 
   .header form {
     width: 40%;
-    display: none;
+    display: flex;
   }
 
   .header form input {
     height: 40px;
-    width: 100%;
+    width: 70%;
     position: relative;
+    left: 80px;
     border: none;
     border-radius: 5px;
     outline: none;
     z-index: 1;
     margin-top: -70px;
-    display: none;
+  
   }
 
   .navbar {
@@ -1332,7 +1355,7 @@ swiper-slide img {
     color: rgb(114, 112, 112);
     font-size: 20px;
     z-index: 2;
-    display: none;
+   
   }
 
   .main-icon {

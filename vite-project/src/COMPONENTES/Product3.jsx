@@ -291,16 +291,6 @@ const Product3 = () => {
 
             <hr />
 
-            <div className="filter-price">
-              <h5>PRICE</h5>
-              <div className="range mt-3">
-                <div className="circle1"><i className="ri-circle-fill"></i></div>
-                <div className="line"></div>
-                <div className="circle1"><i className="ri-circle-fill"></i></div>
-              </div>
-              <p className="ms-3">₹0 - ₹10,000+</p>
-            </div>
-            <hr />
 
             <div className="filter-color d-flex flex-column">
               <div className="head-color d-flex justify-content-between">

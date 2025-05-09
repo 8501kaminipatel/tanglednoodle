@@ -16,7 +16,6 @@ const Product12 = () => {
   );
 
   const [categorydata, setcategorydata] = useState(searchParams.getAll("category") || []);
-  console.log(categorydata)
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedProductNames, setSelectedProductNames] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
@@ -132,8 +131,37 @@ const Product12 = () => {
     setSearchParams({ category: categorydata })
   }, [location.search, ascproduct, searchParams, discountFilters, categorydata, selectedProductNames, selectedBrands, selectedColors]);
 
+
+  // timing
+    const [timeLeft, setTimeLeft] = useState(5000);
+  
+  
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setTimeLeft(prev => {
+          if (prev <= 1) {
+            clearInterval(timer);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+  
+      return () => clearInterval(timer); // cleanup
+    }, [])
+  
+  
+    const hours = Math.floor(timeLeft / 3600);
+    const minutes = Math.floor((timeLeft % 3600) / 60);
+    const seconds = timeLeft % 60;
   return (
     <>
+     <div
+        className="glass-box text-danger d-flex justify-content-center align-items-center fs-5"
+        style={{ width: 'fit-content', padding: '10px 20px', borderRadius: '12px', margin: 'auto' }}
+      >
+        Sale Ends In {String(hours).padStart(2, '0')} H : {String(minutes).padStart(2, '0')} M : {String(seconds).padStart(2, '0')} S
+      </div>
       <div className="text-head" style={{ marginTop: "5px" }}>
         <p>Home / <span>Personal Care</span></p>
         <p><span>Personal Care</span> - 110499 items</p>
@@ -270,16 +298,7 @@ const Product12 = () => {
 
             <hr />
 
-            <div className="filter-price">
-              <h5>PRICE</h5>
-              <div className="range mt-3">
-                <div className="circle1"><i className="ri-circle-fill"></i></div>
-                <div className="line"></div>
-                <div className="circle1"><i className="ri-circle-fill"></i></div>
-              </div>
-              <p className="ms-3">₹0 - ₹10,000+</p>
-            </div>
-            <hr />
+          
 
             <div className="filter-color d-flex flex-column">
               <div className="head-color d-flex justify-content-between">

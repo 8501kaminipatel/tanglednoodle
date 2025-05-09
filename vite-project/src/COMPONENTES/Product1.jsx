@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 const Product1 = () => {
     const location = useLocation(); // To track the location (URL)
     const [products, setProducts] = useState([]);
+    console.log(products)
     const [ascproduct, setascproduct] = useState(null); // To track sorting
     const queryParams = new URLSearchParams(location.search); // Get query params
     const search = queryParams.get('search') || ''; // Default to empty if no search param
@@ -14,7 +15,7 @@ const Product1 = () => {
     const [discountFilters, setDiscountFilters] = useState(
         searchParams.get("discount") ? [searchParams.get("discount")] : []
     );
-
+   
     const [categorydata, setcategorydata] = useState(searchParams.getAll("category") || []);
     console.log(categorydata)
     const [selectedProductNames, setSelectedProductNames] = useState([]);
@@ -124,7 +125,7 @@ const Product1 = () => {
                         selectedColors.includes(product.color?.toLowerCase())
                     );
                 }
-
+                
                 setProducts(filteredProducts);
             })
             .catch(error => {
@@ -275,17 +276,7 @@ const Product1 = () => {
                         </div>
                         <hr />
 
-                        <div className="filter-price">
-                            <h5>PRICE</h5>
-                            <div className="range mt-3">
-                                <div className="circle1"><i className="ri-circle-fill"></i></div>
-                                <div className="line"></div>
-                                <div className="circle1"><i className="ri-circle-fill"></i></div>
-                            </div>
-                            <p className="ms-3">₹0 - ₹10,000+</p>
-                        </div>
-                        <hr />
-
+                      
 
                         <div className="filter-color d-flex flex-column">
                             <div className="head-color d-flex justify-content-between">
@@ -424,57 +415,57 @@ const Product1 = () => {
                         </div>
                     </div>
 
-                   
-                             <div className="right-shop mt-5" >
-                               <div className="product-list">
-                                 <div className="container">
-                                   <div className="row">
-                                     {products.map((product) => (
-                                       <div key={product.id} className="col-md-3 col-sm-6 mb-4" style={{height:"630px",width:"220px"}}>
-                                         <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
-                                           <div className="position-relative" >
-                                       
-                                             <img
-                                               src={product.image_url}
-                                               alt={product.title}
-                                               className="card-img-top img-fluid"
-                                              
-                                             />
-                                             <div className="overlay">
-                                               <div className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                                 <Link to={`/description/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
-                                                   Buy Now
-                                                 </Link>
-                                               </div>
-                                             </div>
-                                           </div>
-                                           <div className="card-body">
-                                             <p className="card-text">
-                                               <strong>Rating:</strong> {product.rating} ({product.rating_count} reviews)
-                                             </p>
-                                             <h5 className="card-title" style={{ fontStyle: "10px" }}>{product.product_name}</h5>
-                                             <p className="card-text text-muted">{product.brand}</p>
-                                             <p className="card-text">Sizes: {product.volume}</p>
-                                             <p className="card-text">
-                                               <span className="text-muted me-2">
-                                               <span className="text-decoration-line-through text-danger me-2">₹{product.original_price}</span>
-                                               </span>
-                                               <span className="fw-bold me-2 text-dark">₹{product.discounted_price}</span>
-                                               <span className="badge bg-success">{product.discount}</span>
-                                             </p>
-                                           </div>
-                                           <div className="card-footer text-center">
-                                             <a href={product.product_url} className="btn btn-outline-primary w-100" target="_blank" rel="noopener noreferrer">
-                                               View Details
-                                             </a>
-                                           </div>
-                                         </div>
-                                       </div>
-                                     ))}
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
+
+                    <div className="right-shop mt-5" >
+                        <div className="product-list">
+                            <div className="container">
+                                <div className="row">
+                                    {products.map((product) => (
+                                        <div key={product.id} className="col-md-3 col-sm-6 mb-4" style={{ height: "630px", width: "220px" }}>
+                                            <div className="card shadow-sm border-light rounded h-100 overflow-hidden">
+                                                <div className="position-relative" >
+
+                                                    <img
+                                                        src={product.image_url}
+                                                        alt={product.title}
+                                                        className="card-img-top img-fluid"
+
+                                                    />
+                                                    <div className="overlay">
+                                                        <div className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                                            <Link to={`/description/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                                                                Buy Now
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="card-body">
+                                                    <p className="card-text">
+                                                        <strong>Rating:</strong> {product.rating} ({product.rating_count} reviews)
+                                                    </p>
+                                                    <h5 className="card-title" style={{ fontStyle: "10px" }}>{product.product_name}</h5>
+                                                    <p className="card-text text-muted">{product.brand}</p>
+                                                    <p className="card-text">Sizes: {product.volume}</p>
+                                                    <p className="card-text">
+                                                        <span className="text-muted me-2">
+                                                            <span className="text-decoration-line-through text-danger me-2">₹{product.original_price}</span>
+                                                        </span>
+                                                        <span className="fw-bold me-2 text-dark">₹{product.discounted_price}</span>
+                                                        <span className="badge bg-success">{product.discount}</span>
+                                                    </p>
+                                                </div>
+                                                <div className="card-footer text-center">
+                                                    <a href={product.product_url} className="btn btn-outline-primary w-100" target="_blank" rel="noopener noreferrer">
+                                                        View Details
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div >
 
