@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer1 container">
         <div className="row link-dark ps-5">
           {/* ONLINE SHOPPING & USEFUL LINKS */}
-          <div className="col-2 col-sm-6 col-md-6 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-2">
             <h6 style={{ margin: "10px 0px" }}>ONLINE SHOPPING</h6>
             <ul style={{ display: "block", justifyContent: "start", alignItems: "start", padding: 0, lineHeight: "30px" }}>
               <li><a href="#">Men</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
 
           {/* CUSTOMER POLICIES */}
-          <div className="col-2 col-sm-6 col-md-6 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-2">
             <h6 style={{ margin: "10px 0px" }}>CUSTOMER POLICIES</h6>
             <ul style={{ display: "block", justifyContent: "start", alignItems: "start", padding: 0, lineHeight: "30px", color: "rgb(129, 129, 129)" }}>
               <li><a href="#">Contact Us</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
 
           {/* EXPERIENCE MYNTRA APP ON MOBILE + KEEP IN TOUCH */}
-          <div className="col-3 col-sm-6 col-md-6 col-lg-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4">
             <h6 style={{ margin: "10px 0px" }}>EXPERIENCE MYNTRA APP ON MOBILE</h6>
             <ul style={{ display: "flex", padding: 0, color: "rgb(129, 129, 129)" }}>
               <li>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <a href="#"><img src="/IMAGES/FOOTER2.png" alt="Play Store" style={{ height: "45px", width: "90%" }} /></a>
               </li>
             </ul>
-            <div className="col-3 col-sm-6 col-md-6 col-lg-4"> 
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4"> 
             <h6 style={{ margin: "10px 0px" }}>KEEP IN TOUCH</h6>
             <ul style={{ display: "flex", padding: 0, width: "50%", color: "rgb(129, 129, 129)" }}>
               <li>
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
 
           {/* 100% ORIGINAL GUARANTEE + RETURN INFO */}
-          <div className="col-3 col-sm-6 col-md-6 col-lg-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-4">
             <div className="fott1 d-flex" style={{ margin: "10px 0px" }}>
               <div className="fott2">
                 <a href="#">
@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
 
         <div className="row ps-5 d-flex justify-content-between mt-3">
-          <div className="col-3">
+          <div className="col-12 col-md-3">
             <div className="desktop-contact">
               In case of any concern,{" "}
               <a href="/contactus" style={{ textDecoration: "none" }}>
@@ -152,13 +152,13 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-4">
+          <div className="col-12 col-md-4">
             <div className="desktop-copywrite">
               © 2024 www.myntra.com. All rights reserved.
             </div>
           </div>
 
-          <div className="col-3 ps-5">
+          <div className="col-12  col-md-3">
             <div className="desktop-flipkartCompany">
               <a
                 href="https://www.flipkart.com/"

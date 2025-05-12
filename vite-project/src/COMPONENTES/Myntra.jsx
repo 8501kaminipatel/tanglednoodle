@@ -23,7 +23,7 @@ const Myntra = () => {
       />
     ))}
   </div>
-  <div className="carousel-inner rounded">
+  <div className="carousel-inner rounded" style={{width:"100%"}}>
     {["img5.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img2.jpg"].map((img, idx) => (
       <div key={idx} className={`carousel-item ${idx === 0 ? "active" : ""}`}>
         <img src={`/IMAGES/${img}`} className="d-block w-100 img-fluid" alt={`Slide ${idx + 1}`} />
@@ -100,7 +100,7 @@ const Myntra = () => {
 </div>
 
 {/* Shop by Category */}
-<h2 className="fw-bold mb-4">Shop By Category</h2>
+<h2 className="fw-bold sm-6 mb-4">Shop By Category</h2>
 <div className="image-grid-wrapper">
   {[
     'img32.webp', 'img33.webp', 'img34.webp', 'img35.webp', 'img36.webp', 'img37.webp',

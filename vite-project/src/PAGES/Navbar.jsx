@@ -53,16 +53,16 @@ const Navbar = () => {
                 zIndex: 1000
             }}>
 
-                <div className="header" >
+                <div className="header">
                     <div className="container-fluid" >
                         <div className="row" >
                             <div
                                 className="navbar navbar-expand-lg p-0 m-0 position-fixed top-0 color: flag ? 'white' : 'black' background: flag ? 'white' : 'black'"
-                                style={{ height: "80px", width: "100%" }}
+                                style={{ height: "80px", width: "100%" ,marginBottom:"50px"}}
                             >
                                 <div className="navbar-brand">
                                     <Link to="/" className="nav-link" style={{ color: flag ? 'white' : 'black' }}>
-                                        <img src="/IMAGES/logo.png" style={{ paddingLeft: "50px", }} />
+                                        <img src="/IMAGES/logo.png" style={{ paddingLeft: "50px" }} />
                                     </Link>
 
                                 </div>
@@ -1385,7 +1385,7 @@ const Navbar = () => {
                                         />
                                     </form>
                                     <div className="main-icon d-flex">
-                                        <div className="nav-link text-dark mt-2  ms-3">
+                                        <div className="nav-link text-dark mt-2  ms-3 col-sm-ms-1">
                                             <div className="user-dropdown position-relative">
                                                 <Link to="/login" className="user-trigger d-flex flex-column align-items-center" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
                                                     <i className="bi bi-person-add fs-4"></i>
@@ -1418,20 +1418,20 @@ const Navbar = () => {
                                             </div>
                                         </div>
 
-                                        < div className="nav-link  text-center mt-2  ms-3 color: flag ? 'white' : 'black'">
+                                        < div className="nav-link  text-center mt-2  ms-3 col-sm-ms-1 color: flag ? 'white' : 'black'">
                                             <Link to="/wishlist" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
                                                 <i className="bi bi-heart"></i>
                                                 <p>Wishlist</p>
                                             </Link>
                                         </div>
 
-                                        <div className="nav-link text-dark mt-2  ms-3">
+                                        <div className="nav-link text-dark mt-2  ms-3 col-sm-ms-1">
                                             <Link to="/cart" style={{ color: flag ? 'white' : 'black', textDecoration: "none" }}>
                                                 <i className="bi bi-bag-check"></i>
                                                 <p>Bag</p>
                                             </Link>
                                         </div>
-                                        <div className="nav-link text-dark mt-2 ms-3 d-block d-lg-none">
+                                        <div className="nav-link text-dark mt-2 ms-3  col-sm-ms-1 d-block d-lg-none">
                                             {/* Toggle Button */}
                                             <button
                                                 className="btn btn-primary"
